@@ -47,7 +47,7 @@ This project is a playground for practicing DDD. After the first iteration of ap
 
 The skeleton of application was [created](https://github.com/marcinciapa/actracker-search-feeder/pull/10) according to Implementing Domain Driven Design, after finishing the book. This was the first iteration of the DDD implementation, with the intention of refactoring it after going back to applicable chapters of the book:
 - [Modules](https://github.com/marcinciapa/actracker-search-feeder/pull/11) chapter
-- Integrating bounded contexts chapter
+- Integrating bounded contexts chapter ([notification publishing change](https://github.com/marcinciapa/actracker-api/pull/33), [notification consuming change](https://github.com/marcinciapa/actracker-search-feeder/pull/17))
 - Services chapter (no changes required)
 - [Application chapter](https://github.com/marcinciapa/actracker-search-feeder/pull/13)
 - Architecture chapter (no changes required, but there is a potential of applying Event Sourcing)
