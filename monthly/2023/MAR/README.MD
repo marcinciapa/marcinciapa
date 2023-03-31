@@ -10,7 +10,7 @@ I want my next steps in mastering DDD be implementing these book's suggestions. 
 And that's my plan for practicing DDD. Implement, review with book, understand described patterns, understand them slightly better this time, correct implementation, and again.
 
 ### Clean Coder (ISBN:  978-0-13-708107-3)
-Finished the first (Prefesionalism) and second (Saying No) chapter. I'm very positive about this book. It's a game changer. The hints covered in the first chapters should be obvious to anyone wanting to be considered a professional in any area. But I know only a few really representing this kind of attitude. And those are the people to admire, to learn from, true mentors. 
+Finished the first (Prefesionalism), second (Saying No) and third (Saying Yes) chapters. I'm very positive about this book. It's a game changer. The hints covered in the first chapters should be obvious to anyone wanting to be considered a professional in any area. But I know only a few really representing this kind of attitude. And those are the people to admire, to learn from, true mentors. 
 It's a very accessible book, my approach is to read it fragment by fragment, short, and reflect a bit on it. It's a book to fill time otherwise wasted, in a tram or waiting room at the doctor.
 
 Here are the most prominent outcomes of the first chapter:
@@ -26,7 +26,7 @@ Here are the most prominent outcomes of the first chapter:
 - Problems of employers are problems of professionals as well. They identify with customers' problems to better assess if the requirements they are working on solve customers' issues.
 - Professionals are aware that they create increadible staff: translating electic impulses into complicated applications. But they are aware that they will fail, make error in risk calculation one day. But they are first who laugh of themselves and learn from failures. They don't put fingers at others who fail, because they know that they could be next.
 
-And the second chapter:
+Second chapter:
 - There might be situation when you are affraid to say "no" to the pushy manager. In the best case you say "I'll try", which is usually a lie to avoid confrontation with attitude for failure, or admition that there are still some spare forces not demonstrated every day.
 - Avoid confrontation is not a solution. You both have your objectives. The solution is to achieve a compromise: a solution with missing functionalities which can be delivered on time.
 - It's not that important to explain why, technical implementation details. The exception is when manager has technical background or is ambitious enough to be interersted in your work. But it creates an opportunity for micro management, when he tells you how to do your job, what compromises you should take.
@@ -36,6 +36,12 @@ And the second chapter:
 - Sometimes saying the correct "Yes" means not being affraid of saying "no".
 - Those who make themselves heros should blame themselves for failures. Those are people, who think that sacrificing profesionalism and discipline may solve problem. It creates problems instead.
 
+And third chapter:
+- There are three rules of saying true Yes: Say it, Mean it, Do it.
+- There are words which help to recognise when someone doesn't Mean it: "Someone should", "I hope I will", "Let's do something" etc, not taking personal responsibility.
+- Meaning it is a commitment: "I will do it until Friday".
+- Sometimes it's impossible to commit to do something: when there are dependencies for doing it, then the commitment should be to solve the dependency, talking to a person from other team; when we don't know if doing it is possible, then the commitment should be to find out, investigating, doing a spike; when sometimes unexpected things happen and plans have to be changed, then it's important to communicate early.
+- There may be situations, when we have a strong believe something is possible to be done. In such situation it's important to assess the cost: "I can finish that for Monday having some overtime during the weekend, but then I will be out until Wednesday.
 
 # Projects
 ### actracker-search-feeder
