@@ -3,7 +3,7 @@
 ### Implementing Domain-Driven Design (ISBN: 978-0-13-303990-0)
 Finished. But I feel a need to periodically go back to individual chapters from time to time. When there will be a need to recall them during implementation. It's an interresting book, worth recommending. But hard to me to catch up without examples. 
 
-The DDD concepts are introduced in an accessible form, easy to understand, with reasonable examples. However, in my oppinion, going all-in into DDD, as author suggests, may be counter productive. I totally support some ideas, like bounded contexts mapping, application services explanation, architectural patterns overview and many more. I find some of the ideas profitable. But not one, nor twice I saw DDD implementations causing code more complex and complicated. Use with caution.
+The DDD concepts are introduced in an accessible form, easy to understand, with reasonable examples. However, in my oppinion, going all-in into DDD, as author suggests, may be counter productive. I totally support some ideas, like bounded contexts mapping, application services explanation, architectural patterns overview and many more. I find some of the ideas profitable. But not once, nor twice I saw DDD implementations causing code more complex and complicated. Use with caution.
 
 I want my next steps in mastering DDD be implementing these book's suggestions. I need some side projects to do it. After reading the book I find [actracker-api](https://github.com/marcinciapa/actracker-api), my first attempt to implement DDD, totally wrong. I see some fields for improvement. So I feel a need to review each ideas implemented in my projects and confronting them with approaches described in this book. 
 
@@ -27,10 +27,10 @@ Here are the most prominent outcomes of the first chapter:
 - Professionals are aware that they create increadible staff: translating electic impulses into complicated applications. But they are aware that they will fail, make error in risk calculation one day. But they are first who laugh of themselves and learn from failures. They don't put fingers at others who fail, because they know that they could be next.
 
 Second chapter:
-- There might be situation when you are affraid to say "no" to the pushy manager. In the best case you say "I'll try", which is usually a lie to avoid confrontation with attitude for failure, or admition that there are still some spare forces not demonstrated every day.
+- There might be situation when you are affraid to say "no" to the pushy manager. In the best case you say "I'll try", which is usually a lie to avoid confrontation with attitude for failure, or admition that there are still some spare forces not used every day.
 - Avoid confrontation is not a solution. You both have your objectives. The solution is to achieve a compromise: a solution with missing functionalities which can be delivered on time.
 - It's not that important to explain why, technical implementation details. The exception is when manager has technical background or is ambitious enough to be interersted in your work. But it creates an opportunity for micro management, when he tells you how to do your job, what compromises you should take.
-- It's event more important to say no if the stake is high. If the life of the company depends of your estimate, they should be precise and early to communicate to customers. "Firing me won't change estimates".
+- It's even more important to say no if the stake is high. If the life of the company depends of your estimate, they should be precise and early to communicate to customers. "Firing me won't change estimates".
 - It's a team sport. You are not allowed to communicate commitment, or make decision, which the team doesn't feel comfortable with.
 - If the manager refuses to communicate your stong "no" up, accepting it and collecting memos is passive aggression, allowing him to hang himself up. You should be responsible for communicate up instead.
 - Sometimes saying the correct "Yes" means not being affraid of saying "no".
