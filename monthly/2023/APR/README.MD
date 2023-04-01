@@ -1,3 +1,11 @@
+# Readings
+### Patterns of Enterprise Application Architecture (ISBN:  978-0-321-12742-6)
+I expect this book to be a good addition to learning DDD, as it is also about designing domain model and infrastructure around it.
+From preface: The book contains of two parts.
+First explaining problems and solutions, which is expected to be read from the beginning to the end.
+Second describing solutions in details, in examples, which is expected as a reference in time of need.
+And that's my plan for this book: go through the first part and get back to references when necessary.
+
 # Projects
 ### ACTracker
 Activity comment feature added:
