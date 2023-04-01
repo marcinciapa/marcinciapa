@@ -108,7 +108,7 @@ The system contains of following components
 
 Applications and their infrastructure are deployed to [Equino Kubernetes](https://github.com/marcinciapa/equino-kubernetes) cluster.
 
-Except functional part, the application is a sandbox to practice the software engineering techniques and technologies, like: DDD, persistence, messaging, Kubernetes, Angular.
+Except functional part, the application is a sandbox to practice the software engineering techniques and technologies, like: DDD, persistence, messaging, Elastic Search, Kubernetes, Angular.
 
 ### tutorials
 The [repository](https://github.com/marcinciapa/tutorials) for exercises related to software engineering field, like practicing concepts learnt from books.
