@@ -23,9 +23,6 @@ It's possible to create use-case controllers, containing repeatable logic (a con
 
 # Projects
 ## ACTracker
-Activity comment feature added:
-- https://github.com/marcinciapa/actracker-ui/pull/8
-- https://github.com/marcinciapa/actracker-api/pull/35
-
-Managing tags:
-- https://github.com/marcinciapa/actracker-api/pull/36
+- Activity comment feature was added to [UI](https://github.com/marcinciapa/actracker-ui/pull/8) and [Backend](https://github.com/marcinciapa/actracker-api/pull/35).
+- Tags management was added to [Backend](https://github.com/marcinciapa/actracker-api/pull/36) and [UI](https://github.com/marcinciapa/actracker-ui/pull/9).
+Tags will be assigned to activities.
