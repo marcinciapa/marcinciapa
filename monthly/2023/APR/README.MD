@@ -17,3 +17,6 @@ IMO, the approach is a bit archaic and today insufficient.
 Activity comment feature added:
 - https://github.com/marcinciapa/actracker-ui/pull/8
 - https://github.com/marcinciapa/actracker-api/pull/35
+
+Managing tags:
+- https://github.com/marcinciapa/actracker-api/pull/36
