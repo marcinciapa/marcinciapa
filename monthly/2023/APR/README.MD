@@ -1,5 +1,5 @@
 # Readings
-### Patterns of Enterprise Application Architecture (ISBN:  978-0-321-12742-6)
+## Patterns of Enterprise Application Architecture (ISBN:  978-0-321-12742-6)
 I expect this book to be a good addition to learning DDD, as it is also about designing domain model and infrastructure around it.
 It's also commonly referenced in [Implementing Domain-Driven Design](https://github.com/marcinciapa/marcinciapa/blob/master/monthly/2023/MAR/README.MD#implementing-domain-driven-design-isbn-978-0-13-303990-0).
 From preface: The book contains of two parts.
@@ -11,9 +11,18 @@ The author focuses on separating system into 3 basic layers: Presentation, Domai
 As benefits of layering he mentions: context separation, limited knowledge required in other layers to work on a single one, possibility to replace or duplicate particular layers.
 As disadvantages: performance impact of each layer.
 IMO, the approach is a bit archaic and today insufficient.
+- Chapter 2: Organizing business logic
+The author mentions three patterns to organize business logic:
+*Transaction script* (contains of single procedure for individual use cases, simple and easy to understand, integrate easily with data mapping),
+*Domain model* (contains of objects and interactions between them, harder to understand, but easy to extend, harder to integrate with data mapping),
+*Table module* (similar to previous one, but instead of having one object for each row contains of objects of Record Sets we operate on, middle ground between previous two).
+The decision which model to pick depends on predicted complexity of the project, which is hard to know upfront.
+In all cases the author encourages creating a Service Layer (a concept similar to Application Layer in terms of DDD), which is a facade between clients and logic - handle transaction and security.
+It's possible to create use-case controllers, containing repeatable logic (a concept similar to Domain Services in terms of DDD).
+
 
 # Projects
-### ACTracker
+## ACTracker
 Activity comment feature added:
 - https://github.com/marcinciapa/actracker-ui/pull/8
 - https://github.com/marcinciapa/actracker-api/pull/35
