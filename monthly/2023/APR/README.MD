@@ -19,7 +19,7 @@ The author mentions three patterns to organize business logic:
 The decision which model to pick depends on predicted complexity of the project, which is hard to know upfront.
 In all cases the author encourages creating a Service Layer (a concept similar to Application Layer in terms of DDD), which is a facade between clients and logic - handle transaction and security.
 It's possible to create use-case controllers, containing repeatable logic (a concept similar to Domain Services in terms of DDD).
-- Chapter 3: Mapping to relational databases
+- Chapter 3: Mapping to relational databases.
 There are several approaches to interact with relational DBs:
 *Row Data Gateway* assumes single object for a single record in DB.
 *Table Data Gateway* assumes single object for a Record Set.
