@@ -45,7 +45,7 @@ It's OK to mimic the database structure if we use Transactional Script or Table 
 But in case of domain model we should avoid it focusing on iterative upgrades of DB schema.
 Sometimes there is a need to map from multiple data sources.
 The simple solution of this problem is creating separate mapping for each data source, but it may lead to code duplications if the data sources contain similar data.
-An alternative is to create two-steps mapping, where first step map domain to logical model, and second maps it to separate phisical models.
+An alternative is to create two-steps mapping, where first step map domain to logical model, and second maps it to separate physical models.
 Mappings (fields and joins) may be sometimes extracted to the metadata file (XML).
 It gives the possibility to create Query Objects handled by Repositories, which is beneficial in particular for Domain Model pattern.
 We need connection objects to interact with DBs. They're closely tied to transactions and should not be shared between threads.
@@ -53,6 +53,33 @@ They should be closed when no longer needed.
 Modern environments allow pooling connections, as creating them may be expensive.
 It's not always wise to use `select * ` statements, especially when we relay on the column numeric index.
 
+## Clean Coder (ISBN:  978-0-13-708107-3)
+Chapter 4: Coding.
+- You have to feel mistakes while coding, the similar way you feel mistakes while typing.
+- There are several factors to consider: it must work correctly, it must solve customers' problems, it must fit the overall project's structure, it must be readable to others.
+Coding is an intellectually demanding task. Don't start coding while disrupted.
+- Don't lie to yourself that working hard overtime makes you more "professional". Sacrificing eating, sleeping etc. makes you less effective.
+- Don't code when you feel anxiety of the *personal background processes* (like after a fight with your spouse). You will create code to trash, or worse, to live with.
+- Don't get into *The Flow*. You will generate code faster, but you will get back to it more often.
+Take a walk, pair with someone. The Flow is not where you want to be.
+- Be careful with listening to music while working, especially when you're more focused on music than your code. 
+- If you are rude when interrupted, it may mean that you have a relation with The Flow, or problem with switching contexts.
+Pair programming or TDD helps with keeping the context.
+- Sometimes you may feel the *writer's block*, when you sit in front of the monitor and the code just doesn't want to appear.
+The solution is pair programming - it's a psychological switch that enables you in a second.
+Other solution may be to read a fragment of novel or a poem - creative input produces creative output.
+- Debugging is as expensive as writing software. The debugging time should be as short as possible.
+Luckily today we have a modern debugging tools. Debugging may be also shorten with using TDD.
+- It's a marathon rather than a sprint. Be aware of your limits instead of fighting them.
+Sometimes ideas come to your mind in a car or while having shower, when the creative part of the brain is not used.
+- You will be late. It's important to communicate estimate, meaning worst, best, and nominal case scenario.
+Don't relay on hope if your estimates show you can deliver only in optimistic circumstances. Otherwise, you will let yourself and your team down.
+Don't let yourself get rushed, protect your estimates. Negotiate cutting the scope instead.
+Working overtime may sometimes help, but it should be short-term, you have to personally afford it and a backup plan should be created.
+Definition of Done should be defined. Stretching it provides to false delivery.
+- Helping others is your privilege and duty. Code with others to help them. Offer your help when you see someone in trouble.
+- Asking for help is your privilege and duty. Don't refuse if someone offers you help. Ask for help when you stuck.
+- It's your responsibility, as senior professional's, to train and mentor juniors.
 
 # Projects
 ## ACTracker
