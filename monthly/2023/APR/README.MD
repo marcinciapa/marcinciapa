@@ -86,4 +86,5 @@ Definition of Done should be defined. Stretching it provides to false delivery.
 - Activity comment feature was added to [UI](https://github.com/marcinciapa/actracker-ui/pull/8) and [Backend](https://github.com/marcinciapa/actracker-api/pull/35).
 - Tags management was added to [Backend](https://github.com/marcinciapa/actracker-api/pull/36) and [UI](https://github.com/marcinciapa/actracker-ui/pull/9).
 Tags will be assigned to activities.
-- Indexing tags to search index, including sending tags change notifications, was implemented in [actracker-api](https://github.com/marcinciapa/actracker-api/pull/37) and [actracker-search-feeder](https://github.com/marcinciapa/actracker-search-feeder/pull/19).
+- Feeding tags to search index, including sending tags change notifications, was implemented in [actracker-api](https://github.com/marcinciapa/actracker-api/pull/37) and [actracker-search-feeder](https://github.com/marcinciapa/actracker-search-feeder/pull/19).
+- Assigning tags to activities was introduced in [Backend](https://github.com/marcinciapa/actracker-api/pull/38) and [UI](https://github.com/marcinciapa/actracker-ui/pull/10)
