@@ -42,16 +42,31 @@ There are three approaches to handle inheritance in DB:
 *Concrete Class Table Inherinance*, where a single table represents a leaf of the inheritance tree.
 It's a trade-off between data access speed and duplication of data.
 It's OK to mimic the database structure if we use Transactional Script or Table Module.
-But in case of domain model we should avoid it focusing on iterative upgrades of DB schema.
+But in case of Domain Model we should avoid it focusing on iterative upgrades of DB schema.
 Sometimes there is a need to map from multiple data sources.
 The simple solution of this problem is creating separate mapping for each data source, but it may lead to code duplications if the data sources contain similar data.
-An alternative is to create two-steps mapping, where first step map domain to logical model, and second maps it to separate physical models.
+An alternative is to create two-steps mapping, where first step maps domain to logical model, and second maps it to separate physical models.
 Mappings (fields and joins) may be sometimes extracted to the metadata file (XML).
-It gives the possibility to create Query Objects handled by Repositories, which is beneficial in particular for Domain Model pattern.
+It gives the possibility to create *Query Objects* handled by *Repositories*, which is beneficial in particular for Domain Model pattern.
 We need connection objects to interact with DBs. They're closely tied to transactions and should not be shared between threads.
 They should be closed when no longer needed.
 Modern environments allow pooling connections, as creating them may be expensive.
 It's not always wise to use `select * ` statements, especially when we relay on the column numeric index.
+
+Chapter 4: Web presentation
+- Delivering applications in web-browser form is a large change providing new challenges.
+- There are two ways to structure applications: *Server Script* (Java servlets), which works well with interpreting the input, but
+is hard for non-programmers to maintain, or *Server Page*, which does the job of formatting response.
+- To handle two approaches simultaneously, *Model View Controller* patterns exists, with input controller handling requests,
+hand-off to Domain Model to execute the business logic and pass the result to View to present the screen.
+- Sometimes there is a need to introduce a separate layer, *Application Controller*, especially where there are multiple screens to produce.
+- For view there are two patterns to choose: *Transform View* (XSLT), which translates the result of Domain Model to the
+appropriate response form, or *Template View* (JSP), which is a static template with placeholders for dynamic content.
+- For either of these two one-step view may be applied, especially where there is one view per screen, or *Two-steps View*,
+which generates logical view from the separate View results and translates them into different screens, which may be 
+formatted separately for embedding to external pages or different devices.
+- For controller there are two patterns: *Page Controller*, where there are individual controllers for different requests,
+or *Front Controller*, where one controller creates different objects to handle different types of request.
 
 ## Clean Coder (ISBN:  978-0-13-708107-3)
 Chapter 4: Coding.
@@ -59,7 +74,7 @@ Chapter 4: Coding.
 - There are several factors to consider: it must work correctly, it must solve customers' problems, it must fit the overall project's structure, it must be readable to others.
 Coding is an intellectually demanding task. Don't start coding while disrupted.
 - Don't lie to yourself that working hard overtime makes you more "professional". Sacrificing eating, sleeping etc. makes you less effective.
-- Don't code when you feel anxiety of the *personal background processes* (like after a fight with your spouse). You will create code to trash, or worse, to live with.
+- Don't code when you feel an anxiety of the *personal background processes* (like after a fight with your spouse). You will create code to trash, or worse, to live with.
 - Don't get into *The Flow*. You will generate code faster, but you will get back to it more often.
 Take a walk, pair with someone. The Flow is not where you want to be.
 - Be careful with listening to music while working, especially when you're more focused on music than your code. 
