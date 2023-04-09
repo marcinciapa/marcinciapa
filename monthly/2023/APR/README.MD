@@ -74,6 +74,48 @@ formatted separately for embedding to external pages or different devices.
 - For controller there are two patterns: *Page Controller*, where there are individual controllers for different requests,
 or *Front Controller*, where one controller creates different objects to handle different types of request.
 
+Chapter 5: Concurrency.
+- Concurrency is one of the most challenging aspects of software development. It's also hard to test.
+Luckily today we have tools allowing us taking the naive approach to concurrency, like server platforms or transaction managers.
+But they don't solve all problems, for example single application interaction may result in interactions with multiple databases.
+- The most prominent concurrency problems in Enterprise Applications are *Inconsistent Reads* and *Lost Updates*.
+Sometimes they cannot be totally eliminated, so we have to balance between *correctness* and *liveness* (the ability to solve problems concurrently).
+- Execution always takes place in context. 
+In case of integrations with application we consider request or session context.
+For interactions with operating systems we distinguish light-weight threads or more isolated and heavy-weight processes.
+In terms of interactions with databases there is a concept of transaction (system transactions, when we speak about interactions between application and database,
+or business transactions in case of client-application interactions).
+- Concurrency problems only take place when data is shared between clients. Partitioning, isolating data between threads solve these problems.
+- Concurrency problems only take place when data is modified. Creating immutable copies of data solves these problems.
+But sometimes it's impossible to ensure data immutability. Identifying reading and writing threads helps to find the solution.
+- If we have mutable data that can't be isolated, there are two concurrency controls to help: 
+*Optimistic* (oriented for conflict solving, allowing multiple clients to work on the same copies of data
+and putting the responsibility to resolve conflicts to clients), 
+or *Pessimistic* (oriented for conflict prevention, not allowing multiple clients to work on the same copy of data).
+- Both solve concurrency problems: optimistic locking relies on versioning each part of data taking part in calculations,
+pessimistic relies on *Read Locks* (which can be acquired by multiple clients, but no write lock can be acquired in this time)
+and *Write Locks* (when acquired, no other client can acquire any type of lock).
+The choice should be made after assessing frequency and severity of conflicts.
+- Using pessimistic locking may lead to *Deadlocks*, which can occur when clients locked resources and ask for more locks.
+It can be prevented using deadlock detecting software (picking victim when waiting for each other detected), lock timeouts
+(usually also resulting in a victim), locking all resources upfront (not always possible to predict all locks), or allowing 
+further locks only on data placed later according to a sequence.
+- Transactions are set of operations combined against a transactional resource (not always a database).
+They should assure *Atomicity*, *Consistency*, *Isolation* and *Durability* of operations.
+- In terms of SQL we can sacrifice correctness for liveness reducing the isolation levels. But lower isolation levels introduce their problems: 
+*Serializable* ensures that the result of transactions is the same as if they were executed sequentially (order is not guaranteed).
+*Repeatable Reads* introduces *Phantom Read* problem (visibility of inserted data).
+*Read Committed* introduces problem of *Unrepeatable Reads* (read results are not repeatable).
+*Read Uncommitted* introduces problem of *Dirty Reads* (partial result of other unfinished transaction or results of uncommitted transaction).
+- Business transactions are sets of system transactions. They should have the same ACID properties.
+We should avoid long living transactions. Business transactions are usually coupled with sessions.
+- Offline concurrency controls are *Optimistic Offline Locks*, *Pessimistic Offline Locks*, 
+*Coarse-Grained Locks* (lock on group of data) and *Implicit Locks* (developer don't have to deal with locks explicitly). 
+The differences are in complexity of implementation and handling conflicts. 
+- For server concurrency control we should pick one of the approaches: process-per-session, process-per-request, thread-per-request.
+The difference is in performance/cost, pooling possibility, isolation.
+We should prefer objects creation over reuse. Otherwise, we have to take care about data synchronization. 
+
 ## Clean Coder (ISBN:  978-0-13-708107-3)
 Chapter 4: Coding.
 - You have to feel mistakes while coding, the similar way you feel mistakes while typing.
