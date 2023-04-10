@@ -144,6 +144,23 @@ Definition of Done should be defined. Stretching it provides to false delivery.
 - Asking for help is your privilege and duty. Don't refuse if someone offers you help. Ask for help when you stuck.
 - It's your responsibility, as senior professional's, to train and mentor juniors.
 
+Chapter 5: TDD.
+- Programmers should not avoid TDD, as surgeons should not avoid washing hands.
+How can you call yourself a Professional if you don't know if your code works correctly?
+- There are three rules of TDD:
+  - You are not allowed to add production code if you don't have failing unit tests.
+  - You are not allowed to add more unit tests if you have failing unit tests.
+  - You are not allowed to add more production code that is sufficient to make unit tests pass.
+- Benefits of using TDD:
+  - *Certainty*, enough to ship
+  - *Defect injection rate* lowers
+  - *Courage* to change the messy code
+  - *Documentation* by examples of usage
+  - *Design* enforced by interactions with other objects
+- Using TDD is not an option, it's unprofessional not to use it.
+- It's still possible to write bad code while using TDD, as it's possible to write bad tests.
+- There are rare cases, when TDD doesn't work. No professional uses discipline which makes more harm than benefits.
+
 # Projects
 ## ACTracker
 - Activity comment feature was added to [UI](https://github.com/marcinciapa/actracker-ui/pull/8) and [Backend](https://github.com/marcinciapa/actracker-api/pull/35).
