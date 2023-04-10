@@ -51,7 +51,7 @@ Up to the moment I discovered it's time for changes.
 
 :bar_chart:
 
-In 2018 I joined [Smart Recruiters](https://www.smartrecruiters.com/), having that fresh experience of moving from tens of thousands headcount company to the startup hiring ~100 engineers.
+In 2018 I joined [SmartRecruiters](https://www.smartrecruiters.com/), having that fresh experience of moving from tens of thousands headcount company to the startup hiring ~100 engineers.
 I had an impression that I joined the elite, not being sure what am I doing among them. 
 My learning curve went straight up again. Things looked so different in a small company: they were just happening!
 Well, not by themselves, we made them happening.
