@@ -151,12 +151,8 @@ How can you call yourself a Professional if you don't know if your code works co
   - You are not allowed to add production code if you don't have failing unit tests.
   - You are not allowed to add more unit tests if you have failing unit tests.
   - You are not allowed to add more production code that is sufficient to make unit tests pass.
-- Benefits of using TDD:
-  - *Certainty*, enough to ship
-  - *Defect injection rate* lowers
-  - *Courage* to change the messy code
-  - *Documentation* by examples of usage
-  - *Design* enforced by interactions with other objects
+- Benefits of using TDD: Enough *Certainty* to ship, Lower *Defect injection rate*, *Courage* to change the messy code,
+*Documentation* by examples of usage, *Design* enforced by interactions with other objects
 - Using TDD is not an option, it's unprofessional not to use it.
 - It's still possible to write bad code while using TDD, as it's possible to write bad tests.
 - There are rare cases, when TDD doesn't work. No professional uses discipline which makes more harm than benefits.
