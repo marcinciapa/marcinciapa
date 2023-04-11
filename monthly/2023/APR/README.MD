@@ -133,6 +133,20 @@ It also requires the session data to be stored in non-volatile memory.
 - Database Session State requires storing Session State in the similar manner as Record Data.
 Session Data must be transformed to the form understandable for the application.
 
+Chapter 7: Distribution strategies
+- Distributing computation by object is a bad design.
+Remote interfaces should be coarse-grained, while the local processing should use fine-grained interfaces.
+We should also limit the remote calls and focus on computing locally to avoid performance burden.
+The solution to good distributed design is clustering - processing locally, but spreading computations between nodes.
+- There are several situation when we have to distribute processes: server application should be separated from client applications,
+application should be separated from databases, web server should be separated from application server,
+vendor-specific solutions may enforce distribution, in justified cases application may also be distributed.
+- To integrate remotely with coarse-grained interfaces, they should be combined in *Remote Facade* which translates
+them into fine-grained interfaces to process locally. To exchange the information we use *Data Transfer Objects*.
+- There are benefits from using XML-Based SOAP services over HTTP: there is a lot of information that can be exchanged with a round trip.
+But there are also benefits of exchanging objects with RPC, which should be the first choice when data is exchanged between
+application using the same binary platform. SOAP should be considered when different platforms have to talk to each other.
+
 ## Clean Coder (ISBN:  978-0-13-708107-3)
 Chapter 4: Coding.
 - You have to feel mistakes while coding, the similar way you feel mistakes while typing.
