@@ -114,7 +114,24 @@ We should avoid long living transactions. Business transactions are usually coup
 The differences are in complexity of implementation and handling conflicts. 
 - For server concurrency control we should pick one of the approaches: process-per-session, process-per-request, thread-per-request.
 The difference is in performance/cost, pooling possibility, isolation.
-We should prefer objects creation over reuse. Otherwise, we have to take care about data synchronization. 
+We should prefer objects creation over reuse. Otherwise, we have to take care about data synchronization.
+
+Chapter 6: Session state
+- There are a lot of benefits from having a stateless server: new objects can be created when request is processed,
+heavy objects can be pooled, any instance of the application can process any request. But it's not always possible.
+Sometimes business transactions are combination of requests and the state needs to be kept between them.
+- Session state needs to be committed to become a persisted *Record Data*.
+- Session states are not always consistent (some business rules are checked in the commit stage) or isolated 
+(state of Record Data taking part in calculation may change after the session was started).
+- There are three ways of keeping session state: *Client Session State*, *Server Session State*, *Database Session State*.
+They all have their own set of disadvantages.
+- Client Session State requires session state to be transferred with every request. It takes bandwidth. 
+Session information must be properly secured on the client side.
+- Server Session State requires that each request must be handled by the same instance of the application.
+Otherwise, session migration must be implemented.
+It also requires the session data to be stored in non-volatile memory.
+- Database Session State requires storing Session State in the similar manner as Record Data.
+Session Data must be transformed to the form understandable for the application.
 
 ## Clean Coder (ISBN:  978-0-13-708107-3)
 Chapter 4: Coding.
