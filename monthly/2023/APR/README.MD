@@ -195,3 +195,4 @@ How can you call yourself a Professional if you don't know if your code works co
 Tags will be assigned to activities.
 - Feeding tags to search index, including sending tags change notifications, was implemented in [actracker-api](https://github.com/marcinciapa/actracker-api/pull/37) and [actracker-search-feeder](https://github.com/marcinciapa/actracker-search-feeder/pull/19).
 - Assigning tags to activities was introduced in [Backend](https://github.com/marcinciapa/actracker-api/pull/38) and [UI](https://github.com/marcinciapa/actracker-ui/pull/10)
+- API for [Tags searching](https://github.com/marcinciapa/actracker-api/pull/39) was introduced. It is used to [search for tags](https://github.com/marcinciapa/actracker-ui/pull/12) when adding/editing activity.
