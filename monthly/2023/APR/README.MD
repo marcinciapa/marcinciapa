@@ -188,6 +188,21 @@ How can you call yourself a Professional if you don't know if your code works co
 - It's still possible to write bad code while using TDD, as it's possible to write bad tests.
 - There are rare cases, when TDD doesn't work. No professional uses discipline which makes more harm than benefits.
 
+Chapter 6: Practice.
+- Comparing to the early days, today there is no long compile time, cycle time is extremely short.
+We have to make our decisions fast, react quickly. And doing something quickly requires practice.
+- Practice for programmers is comparable to practicing martial arts. So are the techniques:
+  - *Kata* is a series of repeatable sequence practices, which allows to train the body to react automatically.
+For software developers it may be a series of repeatable simple tasks, training keystroke, or some discipline (like TDD).
+  - *Wasa* is a two-man Kata. For software developers there are prepared training for two people, allowing for example
+one person to write tests and the second to make them pass.
+  - *Randori* is a simulated combat training. These can be some real, short, prepared problems, to solve in a group or alone.
+- Usually we stuck in a narrow set of technologies and have little diversity of tools.
+That's why while practicing, it's good to pick a technology we don't work with every day.
+A good way to go is contributing to an open source project.
+- It's our own responsibility to practice. We should spend our time and effort for it, it's not employee's responsibility.
+Concert-goers don't pay to listen to musicians practicing scales.
+
 # Projects
 ## ACTracker
 - Activity comment feature was added to [UI](https://github.com/marcinciapa/actracker-ui/pull/8) and [Backend](https://github.com/marcinciapa/actracker-api/pull/35).
