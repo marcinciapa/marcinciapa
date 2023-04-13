@@ -147,6 +147,29 @@ them into fine-grained interfaces to process locally. To exchange the informatio
 But there are also benefits of exchanging objects with RPC, which should be the first choice when data is exchanged between
 application using the same binary platform. SOAP should be considered when different platforms have to talk to each other.
 
+Chapter 8: Putting it all together
+- Architectural refactoring is hard, but not impossible, so the architectural decisions can be reverted.
+- The first decision should be regarding the domain logic. Transaction Script should be used when the application is
+simple, it communicates well with relational data sources. Domain model is advised for complicated business logic, 
+it requires experience, integrates poorly with databases (objects and relations don't go well together).
+Table Module is a middle ground. It integrates well with databases. It's not widely supported in Java ecosystem.
+- Data source architecture should depend on domain logic architecture. For Transaction Scripts Row Data Gateway or Table Data Gateway
+is a good choice, we don't struggle with concurrency problems too much. For Table Module the only choice is Table Data Gateway.
+For Domain Model, if the model is relatively small, good choice may be Active Record pattern. For more complicated model - separate
+mapping layer with O/R mapping tool.
+- Presentation design is independent on previous choices. Good choice is to go with MVC. When the application is document-oriented,
+it's wise to pick Page Controller. Frontend Controller works well if the presentation logic is complicated.
+When the view should be customised for different vendors, Two-Steps Mapping View should be considered.
+- Execution should be local and run in a single process as much as possible.
+- It's possible to have a good design without EJBs. Using POJOs and O/R mapping tools should suffice.
+However, there are some EJB patterns for each domain logic designs. Providing remote API in EJBs should be avoided.
+Local interfaces should be fine-grained, while remote interfaces should be coarse-grained.
+- .NET supports Table Module pattern pretty well.
+- Stored procedures have a lot of disadvantages, mainly they don't allow good code structure and are vendor-agnostic.
+They should be used to consider for performance improvements of particular operations.
+- Web services should be used for communications between applications. They should not be used to distribute computations.
+- There are other layering patterns than presented in the book, but they all base on the similar layering principles.
+
 ## Clean Coder (ISBN:  978-0-13-708107-3)
 Chapter 4: Coding.
 - You have to feel mistakes while coding, the similar way you feel mistakes while typing.
