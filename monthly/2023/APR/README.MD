@@ -170,6 +170,11 @@ They should be used to consider for performance improvements of particular opera
 - Web services should be used for communications between applications. They should not be used to distribute computations.
 - There are other layering patterns than presented in the book, but they all base on the similar layering principles.
 
+This concludes the first part of the book. IMO the solutions presented are a bit outdated (the book is 20 years old).
+But some of them are still present in modern software development.
+The first part is an introduction to patterns, it draws the context of problems that will be solved.
+I'll give the second part a try learning more about at least few patterns.
+
 ## Clean Coder (ISBN:  978-0-13-708107-3)
 Chapter 4: Coding.
 - You have to feel mistakes while coding, the similar way you feel mistakes while typing.
