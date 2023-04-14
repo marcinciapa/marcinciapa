@@ -240,4 +240,5 @@ Tags will be assigned to activities.
 - Assigning tags to activities was introduced in [Backend](https://github.com/marcinciapa/actracker-api/pull/38) and [UI](https://github.com/marcinciapa/actracker-ui/pull/10)
 - API for [Tags searching](https://github.com/marcinciapa/actracker-api/pull/39) was introduced. It is used to [search for tags](https://github.com/marcinciapa/actracker-ui/pull/12) when adding/editing activity.
 - Get all Tags API calls were [replaced](https://github.com/marcinciapa/actracker-ui/pull/13) in UI with search Tags and resolve Tags API.
-After that, get Tags API was [removed](https://github.com/marcinciapa/actracker-api/pull/40).
+- [Activity search API](https://github.com/marcinciapa/actracker-api/pull/41) was introduced.
+Get all Activities API calls were [replaced](https://github.com/marcinciapa/actracker-ui/pull/14) in the UI
