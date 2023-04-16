@@ -263,3 +263,5 @@ Tags will be assigned to activities.
 - Get all Tags API calls were [replaced](https://github.com/marcinciapa/actracker-ui/pull/13) in UI with search Tags and resolve Tags API.
 - [Activity search API](https://github.com/marcinciapa/actracker-api/pull/41) was introduced.
 Get all Activities API calls were [replaced](https://github.com/marcinciapa/actracker-ui/pull/14) in the UI
+- [API](https://github.com/marcinciapa/actracker-api/pull/44) for instant switching to new activity was exposed.
+It was used by UI to implement [switching to activity with selected tag](https://github.com/marcinciapa/actracker-ui/pull/17).
