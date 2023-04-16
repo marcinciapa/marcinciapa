@@ -175,6 +175,27 @@ But some of them are still present in modern software development.
 The first part is an introduction to patterns, it draws the context of problems that will be solved.
 I'll give the second part a try learning more about at least few patterns.
 
+Chapter 9: Domain logic patterns
+- Transaction Scripts pattern assumes single procedure for single business operation. It's a good pattern for simple business logic.
+It works well with databases. Nevertheless, it's recommended to introduce a separate layer for business logic. 
+It encourages code duplication.
+Each transaction may be instantiated on demand with use of command pattern, which improves concurrency, isolation.
+- Domain Model pattern fits well to the complex business logic. Allows better code structuring. Should use fine-grained interfaces.
+It doesn't work well with relational databases, requires using Active Records pattern or O/R mapping layer. It requires practice to implement it well. 
+It contains of interconnected objects, containing both data and behaviors. It shows the true power when combined with business rules strategies. 
+Domain objects may be simple (Active Records should suffice), or rich (data source mapping layer required).
+The disadvantage is that it tends to introduce fat objects. Also navigating in the code is hard.
+- Table Modules operate on record sets. The pattern offers the benefits of Object-Oriented approach for interacting with objects.
+The price is that it doesn't give the full benefits of objects (polymorphism doesn't work well).
+Data access objects may be instantiated (better isolation, works better with concurrency), or accessible with static methods.
+The client first interacts with Table Data Gateway, and then hands the flow over to Table Modules (for validation, transformation etc.). 
+Inserting data requires providing dedicated methods. Accessing particular records requires providing ID to record sets.
+- Service Layer defines boundaries of applications. It's a facade between clients and domain logic. It's usually coarse-grained.
+May be exposed for remote operations, but it's painful and requires dealing with Data Transfer Objects. 
+Method signatures may use domain objects. Using it is optional when the flow doesn't interact with multiple transactional resources
+or there is only one kind of client.
+Services may be domain facades, simply passing the flow to domain objects, or operational, describing some interactions between domain objects.
+
 ## Clean Coder (ISBN:  978-0-13-708107-3)
 Chapter 4: Coding.
 - You have to feel mistakes while coding, the similar way you feel mistakes while typing.
@@ -238,7 +259,7 @@ Concert-goers don't pay to listen to musicians practicing scales.
 Tags will be assigned to activities.
 - Feeding tags to search index, including sending tags change notifications, was implemented in [actracker-api](https://github.com/marcinciapa/actracker-api/pull/37) and [actracker-search-feeder](https://github.com/marcinciapa/actracker-search-feeder/pull/19).
 - Assigning tags to activities was introduced in [Backend](https://github.com/marcinciapa/actracker-api/pull/38) and [UI](https://github.com/marcinciapa/actracker-ui/pull/10)
-- API for [Tags searching](https://github.com/marcinciapa/actracker-api/pull/39) was introduced. It is used to [search for tags](https://github.com/marcinciapa/actracker-ui/pull/12) when adding/editing activity.
+- API for [Tags search](https://github.com/marcinciapa/actracker-api/pull/39) was introduced. It is used to [search for tags](https://github.com/marcinciapa/actracker-ui/pull/12) when adding/editing activity.
 - Get all Tags API calls were [replaced](https://github.com/marcinciapa/actracker-ui/pull/13) in UI with search Tags and resolve Tags API.
 - [Activity search API](https://github.com/marcinciapa/actracker-api/pull/41) was introduced.
 Get all Activities API calls were [replaced](https://github.com/marcinciapa/actracker-ui/pull/14) in the UI
