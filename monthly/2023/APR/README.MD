@@ -272,3 +272,5 @@ Tags will be assigned to activities.
 Get all Activities API calls were [replaced](https://github.com/marcinciapa/actracker-ui/pull/14) in the UI
 - [API](https://github.com/marcinciapa/actracker-api/pull/44) for instant switching to new activity was exposed.
 It was used by UI to implement [switching to activity with selected tag](https://github.com/marcinciapa/actracker-ui/pull/17).
+- Tag sets were introduced in [API](https://github.com/marcinciapa/actracker-api/pull/45) and [UI](https://github.com/marcinciapa/actracker-ui/pull/18). 
+Tag sets group tags and allow quick switch to activity containing multiple tags.
