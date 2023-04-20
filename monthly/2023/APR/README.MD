@@ -6,13 +6,30 @@ I expect this book to help me better organize my knowledge of DDD.
 is a great book, but it's bloated, very descriptive. I expect from Eric Evan's work a narrow, concrete vision.
 The preface say: design of the application, which is an iterative process, should focus on the domain.
 
-Chapter 1: Crunching Knowledge
+Chapter 1: Crunching Knowledge.
 - The domain model should be created and should iteratively change with a brainstorming sessions between domain experts and developers.
 - Irrelevant parts of the domain knowledge should be removed from the model.
 - Developers should learn the language and gain knowledge of the domain.
 - Building model with waterfall doesn't ensure required feedback.
 - Building model iteratively without domain experts causes the model to be naive.
 - Discovering the domain model should be more than finding nouns, the interactions between objects and applied business rules are equally important.
+
+Chapter 2: Communications and the use of language.
+- There are four basic elements which define the model: common language, diagrams, written documents, code.
+- The common language should be use by both sides: domain experts and developers. One team - one language.
+It should evolve: domain experts should point out which phrases are awkward and eliminate them.
+The language is an intersection between experts' jargon and developers' jargon.
+Requirements, features, acceptance tests, code should be written using common language.
+- Diagrams should be informal, minimal, fragments of domain model which encourage the brainstorming.
+They should not represent the entire domain.
+- Written documents ensure stability and share-ability.
+They should use be written in the current language and updated if out of date.
+Documents should help the developer to fill the gaps in knowledge understanding.
+They may lie if outdated, in opposite to the code, which running correctly never lies.
+- The well structure code can be a good documentation.
+But it provides unnecessary level of details and is sometimes hard to understand: not only developers should understand the model.
+Well-structured, transparent code should not only work correctly, but say what it's doing.
+- The technical model should be strict and minimal. The explanatory model should give more context. 
 
 ## Patterns of Enterprise Application Architecture (ISBN:  978-0-321-12742-6)
 I expect this book to be a good addition to learning DDD, as it is also about designing domain model and infrastructure around it.
