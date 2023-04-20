@@ -6,6 +6,14 @@ I expect this book to help me better organize my knowledge of DDD.
 is a great book, but it's bloated, very descriptive. I expect from Eric Evan's work a narrow, concrete vision.
 The preface say: design of the application, which is an iterative process, should focus on the domain.
 
+Chapter 1: Crunching Knowledge
+- The domain model should be created and should iteratively change with a brainstorming sessions between domain experts and developers.
+- Irrelevant parts of the domain knowledge should be removed from the model.
+- Developers should learn the language and gain knowledge of the domain.
+- Building model with waterfall doesn't ensure required feedback.
+- Building model iteratively without domain experts causes the model to be naive.
+- Discovering the domain model should be more than finding nouns, the interactions between objects and applied business rules are equally important.
+
 ## Patterns of Enterprise Application Architecture (ISBN:  978-0-321-12742-6)
 I expect this book to be a good addition to learning DDD, as it is also about designing domain model and infrastructure around it.
 It's also commonly referenced in [Implementing Domain-Driven Design](https://github.com/marcinciapa/marcinciapa/blob/master/monthly/2023/MAR/README.MD#implementing-domain-driven-design-isbn-978-0-13-303990-0).
