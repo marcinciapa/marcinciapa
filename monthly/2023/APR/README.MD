@@ -299,3 +299,5 @@ Get all Activities API calls were [replaced](https://github.com/marcinciapa/actr
 It was used by UI to implement [switching to activity with selected tag](https://github.com/marcinciapa/actracker-ui/pull/17).
 - Tag sets were introduced in [API](https://github.com/marcinciapa/actracker-api/pull/45) and [UI](https://github.com/marcinciapa/actracker-ui/pull/18). 
 Tag sets group tags and allow quick switch to activity containing multiple tags.
+- [API](https://github.com/marcinciapa/actracker-api/pull/47) for dashboards management was exposed.
+Dashboard management was implemented in [UI](https://github.com/marcinciapa/actracker-ui/pull/19).
