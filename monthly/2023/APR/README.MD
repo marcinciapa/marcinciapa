@@ -284,6 +284,35 @@ A good way to go is contributing to an open source project.
 - It's our own responsibility to practice. We should spend our time and effort for it, it's not employee's responsibility.
 Concert-goers don't pay to listen to musicians practicing scales.
 
+Chapter 7: Acceptance tests
+- As the professional developers we are responsible for development and communications.
+Both should be precise and accurate.
+- Developers and stakeholders communicate via requirements. Both sides want them to be precise. 
+But the certain level of precision is not achievable: When demonstrating features to stakeholders, they often gain a different vision,
+change their minds, so the requirements change. Estimates are not precise by definition. There is a risk of late ambiguity, 
+usually occurring when stakeholders don't agree with each other.
+- To achieve an acceptable level of precision, *Definition of Done* should be created and formalized as a set of *Acceptance Tests*,
+which, when passing, mean all requirements implemented.
+- Acceptance tests describe the purpose of the system. They should not be manual: the cost of executing manual tests
+multiple times is much higher than writing automatic test once.
+- Acceptance tests should be created by stakeholders together with a QA. But stakeholders usually don't have time.
+They are often created by QA alone, Business Analyst or a Developer. QAs tend to focus on the negative cases. 
+BAs tend to focus on the happy path. If it's a developer, it's important it's a different person, than the one
+who implements the feature.
+- The first acceptance tests should be created at the beginning of the sprint, when the implementation starts.
+The implementation should start when they're created. Developer starts implementation with seeing all tests failing
+and watching them passing when the implementation progresses.
+- It's developer's responsibility to negotiate better tests. The passive-aggressive attitude of satisfying bad tests
+is unacceptable. As a team we're all responsible for delivering error-free software.
+- It may seem that writing Unit Tests and Acceptance Tests are redundant, but it's not. Unit tests go low level testing
+interactions between objects. Acceptance tests use API or UI as an entry point. But the main difference is that 
+the primary purpose of acceptance tests is not testing, but documenting business requirements.
+- Testing GUI is hard - GUI is constantly changing. It should be approached as testing GUI as API (testing controls using
+their IDs rather than position on the screen). We should prefer testing only the API, the same as GUI uses. 
+- Sometimes there is a specific need to test GUI. In such case API should be stubbed.
+- Acceptance tests should be run daily as part of Continuous Integration. When the build fails, it should be an emergency
+for the team. They should stop what they're doing and focus on fixing the build.
+
 # Projects
 ## ACTracker
 - Activity comment feature was added to [UI](https://github.com/marcinciapa/actracker-ui/pull/8) and [Backend](https://github.com/marcinciapa/actracker-api/pull/35).
