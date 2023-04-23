@@ -31,6 +31,16 @@ But it provides unnecessary level of details and is sometimes hard to understand
 Well-structured, transparent code should not only work correctly, but say what it's doing.
 - The technical model should be strict and minimal. The explanatory model should give more context. 
 
+Chapter 3: Binding model and implementation.
+- The implementation must not be separated from model. Different situation provides confusion and bugs.
+- When the model is clumsy, we must search for a better one.
+- If the model is impractical for implementation, we must search for a better one.
+- It takes many iteration and refactoring to create a model satisfying both needs.
+- Separating modeling and implementation doesn't work.
+- Every technical person taking part in modeling should touch the code.
+- Every developer taking part in implementation should take part in modeling.
+- Refactoring do harm to the code instead of improving it if done without changing the model.
+
 ## Patterns of Enterprise Application Architecture (ISBN:  978-0-321-12742-6)
 I expect this book to be a good addition to learning DDD, as it is also about designing domain model and infrastructure around it.
 It's also commonly referenced in [Implementing Domain-Driven Design](https://github.com/marcinciapa/marcinciapa/blob/master/monthly/2023/MAR/README.MD#implementing-domain-driven-design-isbn-978-0-13-303990-0).
@@ -54,7 +64,7 @@ Chapter 2: Organizing business logic.
 - In all cases the author encourages creating a Service Layer (a concept similar to Application Layer in terms of DDD),
 which is a facade between clients and logic - handle transaction and security.
 - It's possible to create use-case controllers, containing repeatable logic (a concept similar to Domain Services in terms of DDD). 
- 
+
 Chapter 3: Mapping to relational databases.
 - There are several approaches to interact with relational DBs:
 *Row Data Gateway* assumes single object for a single record in DB.
