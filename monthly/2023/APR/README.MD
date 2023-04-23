@@ -41,6 +41,16 @@ Chapter 3: Binding model and implementation.
 - Every developer taking part in implementation should take part in modeling.
 - Refactoring do harm to the code instead of improving it if done without changing the model.
 
+Chapter 4: Isolating the domain
+- It is impractical and confusing to have the infrastructure objects containing domain logic.
+- Domain should be isolated to cohesive module.
+- Layered architecture allows separation of concerns.
+- Frameworks can get into way, bloating domain objects with infrastructure code. Using only part of framework's functions may be a good choice.
+- Smart UI is an anti-pattern and doesn't support DDD. But it's feasible for simple problems.
+- Not all projects require sophisticated domain modeling.
+- Even domain modeling requires starting simply and iteratively extending.
+- Every architectural pattern allowing separating a domain layer probably supports domain modeling.
+
 ## Patterns of Enterprise Application Architecture (ISBN:  978-0-321-12742-6)
 I expect this book to be a good addition to learning DDD, as it is also about designing domain model and infrastructure around it.
 It's also commonly referenced in [Implementing Domain-Driven Design](https://github.com/marcinciapa/marcinciapa/blob/master/monthly/2023/MAR/README.MD#implementing-domain-driven-design-isbn-978-0-13-303990-0).
