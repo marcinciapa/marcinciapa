@@ -350,3 +350,4 @@ It was used by UI to implement [switching to activity with selected tag](https:/
 Tag sets group tags and allow quick switch to activity containing multiple tags.
 - [API](https://github.com/marcinciapa/actracker-api/pull/47) for dashboards management was exposed.
 Dashboard management was implemented in [UI](https://github.com/marcinciapa/actracker-ui/pull/19).
+- Charts were added to Dashboards in [API](https://github.com/marcinciapa/actracker-api/pull/48) and [UI](https://github.com/marcinciapa/actracker-ui/pull/20)
