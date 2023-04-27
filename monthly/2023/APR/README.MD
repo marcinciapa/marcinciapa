@@ -53,7 +53,7 @@ Chapter 4: Isolating the domain.
 
 Chapter 5: A model expressed in software.
 - Associations between objects should be as constrained as possible. They should be qualified. For example:
-Use `Person president = usa.president(1790) // Abraham Linconl` instead of `Collection<Person> presidents = usa.presidents()`.
+Use `Person president = usa.president(1790) // George Washington` instead of `Collection<Person> presidents = usa.presidents()`.
 - Entities are objects that have its own long-running lifecycle.
 - Entities should be uniquely identified in a system and beyond.
 - Value Object represent characteristics of an object rather than behaviors. They can be reused, shared.
