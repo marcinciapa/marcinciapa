@@ -41,7 +41,7 @@ Chapter 3: Binding model and implementation.
 - Every developer taking part in implementation should take part in modeling.
 - Refactoring do harm to the code instead of improving it if done without changing the model.
 
-Chapter 4: Isolating the domain
+Chapter 4: Isolating the domain.
 - It is impractical and confusing to have the infrastructure objects containing domain logic.
 - Domain should be isolated to cohesive module.
 - Layered architecture allows separation of concerns.
@@ -50,6 +50,21 @@ Chapter 4: Isolating the domain
 - Not all projects require sophisticated domain modeling.
 - Even domain modeling requires starting simply and iteratively extending.
 - Every architectural pattern allowing separating a domain layer probably supports domain modeling.
+
+Chapter 5: A model expressed in software.
+- Associations between objects should be as constrained as possible. They should be qualified. For example:
+Use `Person president = usa.president(1790) // Abraham Linconl` instead of `Collection<Person> presidents = usa.presidents()`.
+- Entities are objects that have its own long-running lifecycle.
+- Entities should be uniquely identified in a system and beyond.
+- Value Object represent characteristics of an object rather than behaviors. They can be reused, shared.
+- They don't have a unique ID.
+- Value Object should be immutable whenever possible. Changing object characteristics should replace them.
+- Service represent operations of the domain, which client can execute and don't belong conceptually to any object.
+- They should be stateless.
+- They should use domain objects as parameters and returned types.
+- Modules in a system should be highly cohesive, barely coupled.
+- They should be named according to ubiquitous language, they're part of the domain.
+- They should group domain concepts, not technical concepts.
 
 ## Patterns of Enterprise Application Architecture (ISBN:  978-0-321-12742-6)
 I expect this book to be a good addition to learning DDD, as it is also about designing domain model and infrastructure around it.
