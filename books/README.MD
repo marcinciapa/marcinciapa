@@ -1,3 +1,6 @@
+### Vaughn Vernon: Implementing Domain-Driven Design (ISBN: 978-0-13-303990-0)
+- [March 2023](../monthly/2023/MAR/README.MD#implementing-domain-driven-design-isbn-978-0-13-303990-0)
+
 ### Robert C. Martin: Clean Coder (ISBN: 978-0-13-708107-3)
 - [March 2023](../monthly/2023/MAR/README.MD#clean-coder-isbn-978-0-13-708107-3)
 - [April 2023](../monthly/2023/APR/README.MD#clean-coder-isbn-978-0-13-708107-3)

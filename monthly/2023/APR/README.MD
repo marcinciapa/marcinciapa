@@ -3,7 +3,7 @@
 ## Domain-Driven Design: Tackling Complexity in the Hearth of Software (ISBN: 978-0-321-12521-5)
 
 I expect this book to help me better organize my knowledge of DDD.
-[Implementing Domain-Driven Design](https://github.com/marcinciapa/marcinciapa/blob/master/monthly/2023/MAR/README.MD#implementing-domain-driven-design-isbn-978-0-13-303990-0)
+[Implementing Domain-Driven Design](../../../books/README.MD#vaughn-vernon-implementing-domain-driven-design-isbn-978-0-13-303990-0)
 is a great book, but it's bloated, very descriptive. I expect from Eric Evan's work a narrow, concrete vision.
 The preface say: design of the application, which is an iterative process, should focus on the domain.
 
@@ -99,7 +99,7 @@ Chapter 6: The life cycle of a domain object
 I expect this book to be a good addition to learning DDD, as it is also about designing domain model and infrastructure
 around it.
 It's also commonly referenced
-in [Implementing Domain-Driven Design](https://github.com/marcinciapa/marcinciapa/blob/master/monthly/2023/MAR/README.MD#implementing-domain-driven-design-isbn-978-0-13-303990-0).
+in [Implementing Domain-Driven Design](../../../books/README.MD#vaughn-vernon-implementing-domain-driven-design-isbn-978-0-13-303990-0).
 From preface: The book contains of two parts.
 First explaining problems and solutions, which is expected to be read from the beginning to the end.
 Second describing solutions in details, with examples, which is expected as a reference in time of need.
