@@ -9,7 +9,7 @@ I want my next steps in mastering DDD be implementing these book's suggestions. 
 
 And that's my plan for practicing DDD. Implement, review with book, understand described patterns, understand them slightly better this time, correct implementation, and again.
 
-## Clean Coder (ISBN:  978-0-13-708107-3)
+## Clean Coder (ISBN: 978-0-13-708107-3)
 Finished the first (Prefesionalism), second (Saying No) and third (Saying Yes) chapters. I'm very positive about this book. It's a game changer. The hints covered in the first chapters should be obvious to anyone wanting to be considered a professional in any area. But I know only a few really representing this kind of attitude. And those are the people to admire, to learn from, true mentors. 
 It's a very accessible book, my approach is to read it fragment by fragment, short, and reflect a bit on it. It's a book to fill time otherwise wasted, in a tram or waiting room at the doctor.
 

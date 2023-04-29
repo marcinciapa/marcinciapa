@@ -94,13 +94,12 @@ Chapter 6: The life cycle of a domain object
 - Repositories should return only aggregate roots.
 - Repository delegates object creation to factory.
 
-## Patterns of Enterprise Application Architecture (ISBN:  978-0-321-12742-6)
+## Patterns of Enterprise Application Architecture (ISBN: 978-0-321-12742-6)
 
 I expect this book to be a good addition to learning DDD, as it is also about designing domain model and infrastructure
 around it.
 It's also commonly referenced
-in [Implementing Domain-Driven Design](https://github.com/marcinciapa/marcinciapa/blob/master/monthly/2023/MAR/README.MD#implementing-domain-driven-design-isbn-978-0-13-303990-0)
-.
+in [Implementing Domain-Driven Design](https://github.com/marcinciapa/marcinciapa/blob/master/monthly/2023/MAR/README.MD#implementing-domain-driven-design-isbn-978-0-13-303990-0).
 From preface: The book contains of two parts.
 First explaining problems and solutions, which is expected to be read from the beginning to the end.
 Second describing solutions in details, with examples, which is expected as a reference in time of need.
@@ -356,7 +355,7 @@ Chapter 9: Domain logic patterns
   Services may be domain facades, simply passing the flow to domain objects, or operational, describing some
   interactions between domain objects.
 
-## Clean Coder (ISBN:  978-0-13-708107-3)
+## Clean Coder (ISBN: 978-0-13-708107-3)
 
 Chapter 4: Coding.
 
