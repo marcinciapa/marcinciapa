@@ -492,3 +492,5 @@ Chapter 7: Acceptance tests
   Dashboard management was implemented in [UI](https://github.com/marcinciapa/actracker-ui/pull/19).
 - Charts were added to Dashboards in [API](https://github.com/marcinciapa/actracker-api/pull/48)
   and [UI](https://github.com/marcinciapa/actracker-ui/pull/20)
+- Dashboard data presentation was implemented in [UI](https://github.com/marcinciapa/actracker-ui/pull/21).
+[API](https://github.com/marcinciapa/actracker-api/pull/46) was exposed.
