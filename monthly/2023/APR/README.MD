@@ -493,3 +493,5 @@ Chapter 7: Acceptance tests
   and [UI](https://github.com/marcinciapa/actracker-ui/pull/20)
 - Dashboard data presentation was implemented in [UI](https://github.com/marcinciapa/actracker-ui/pull/21).
 [API](https://github.com/marcinciapa/actracker-api/pull/46) was exposed.
+- Added user and date range filter in [Dashboard Generation API](https://github.com/marcinciapa/actracker-api/pull/49).
+Date range filter was [added to UI](https://github.com/marcinciapa/actracker-ui/pull/22).
