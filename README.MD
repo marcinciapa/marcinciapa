@@ -86,6 +86,7 @@ And here I am now. Still loving the feeling of joy when 'It works!' after adding
 | Docker          | :green_circle::green_circle::green_circle::white_circle::white_circle: |
 | Linux           | :green_circle::green_circle::green_circle::white_circle::white_circle: |
 | DDD             | :green_circle::green_circle::white_circle::white_circle::white_circle: |
+| Angular         | :green_circle::white_circle::white_circle::white_circle::white_circle: |
 
 ## My projects
 
