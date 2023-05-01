@@ -1,6 +1,6 @@
 # Readings
 
-### Implementing Domain-Driven Design (ISBN: 978-0-13-303990-0)
+## Implementing Domain-Driven Design (ISBN: 978-0-13-303990-0)
 Finished. But I feel a need to periodically go back to individual chapters from time to time. When there will be a need to recall them during implementation. It's an interresting book, worth recommending. But hard to me to catch up without examples. 
 
 The DDD concepts are introduced in an accessible form, easy to understand, with reasonable examples. However, in my oppinion, going all-in into DDD, as author suggests, may be counter productive. I totally support some ideas, like bounded contexts mapping, application services explanation, architectural patterns overview and many more. I find some of the ideas profitable. But not once, nor twice I saw DDD implementations causing code more complex and complicated. Use with caution.
@@ -9,7 +9,7 @@ I want my next steps in mastering DDD be implementing these book's suggestions. 
 
 And that's my plan for practicing DDD. Implement, review with book, understand described patterns, understand them slightly better this time, correct implementation, and again.
 
-### Clean Coder (ISBN:  978-0-13-708107-3)
+## Clean Coder (ISBN: 978-0-13-708107-3)
 Finished the first (Prefesionalism), second (Saying No) and third (Saying Yes) chapters. I'm very positive about this book. It's a game changer. The hints covered in the first chapters should be obvious to anyone wanting to be considered a professional in any area. But I know only a few really representing this kind of attitude. And those are the people to admire, to learn from, true mentors. 
 It's a very accessible book, my approach is to read it fragment by fragment, short, and reflect a bit on it. It's a book to fill time otherwise wasted, in a tram or waiting room at the doctor.
 
@@ -44,7 +44,7 @@ And third chapter:
 - There may be situations, when we have a strong believe something is possible to be done. In such situation it's important to assess the cost: "I can finish that for Monday having some overtime during the weekend, but then I will be out until Wednesday.
 
 # Projects
-### actracker-search-feeder
+## actracker-search-feeder
 I created a new component in the Actracker stack: [actracker-search-feeder](https://github.com/marcinciapa/actracker-search-feeder). Feeder consumes notification messages about entities changes from RabbitMQ and puts them into ElasticSearch cluster. It is conected to it's own database to hold information about the latest version of each entity. Well, it will be. For now the database is an in-memory HashMap and the ElasticSearch cluster is simulated by printing the entity to console. But the asynchronous messages are flying around and are correctly consmed. Hopefully.
 
 As a build tool I used Maven this time, as I don't know it too well. I went strictly the Spring Boot way this time, including involving generated, slightly changed POM from [Spring Initializr](https://start.spring.io/).
@@ -58,7 +58,7 @@ The skeleton of application was [created](https://github.com/marcinciapa/actrack
 - [Application chapter](https://github.com/marcinciapa/actracker-search-feeder/pull/13)
 - Architecture chapter (no changes required, but there is a potential of applying Event Sourcing)
 
-### ACTracker
+## ACTracker
 Delete activity feature added:
 - https://github.com/marcinciapa/actracker-ui/pull/7
 - https://github.com/marcinciapa/actracker-api/pull/32
