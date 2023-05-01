@@ -43,7 +43,7 @@ Half year later, in 2012 I continued my journey in Sabre Rail Team as a Java Dev
 I worked with Java codebase, SOAP web services, OSGi-bundled client application, GWT application. Well, it wasn't a modern technology stack, even for these days.
 But the experience was priceless.
 I learnt how to expose an API and how to consume it.
-I learnt some UI development, struggling a lot with my lack aesthetic sense.
+I learnt some UI development, struggling a lot with my lack of aesthetic sense.
 I learnt logging and processing logs.
 I learnt that I can swirl a tea with a fork.
 I learnt.

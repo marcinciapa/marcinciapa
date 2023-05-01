@@ -21,7 +21,7 @@ Chapter 1: Crunching Knowledge.
 Chapter 2: Communications and the use of language.
 
 - There are four basic elements which define the model: common language, diagrams, written documents, code.
-- The common language should be use by both sides: domain experts and developers. One team - one language.
+- The common language should be used by both sides: domain experts and developers. One team - one language.
   It should evolve: domain experts should point out which phrases are awkward and eliminate them.
   The language is an intersection between experts' jargon and developers' jargon.
   Requirements, features, acceptance tests, code should be written using common language.
@@ -92,7 +92,7 @@ Chapter 6: The life cycle of a domain object
 - The interface should be technology-agnostic, client is not interested in implementation details.
 - Transactions should be handled by application layer.
 - Repositories should return only aggregate roots.
-- Repository delegates object creation to factory.
+- Repository delegates object reconstitution to factory.
 
 ## Patterns of Enterprise Application Architecture (ISBN: 978-0-321-12742-6)
 
@@ -177,7 +177,7 @@ Chapter 4: Web presentation.
   is hard for non-programmers to maintain, or *Server Page*, which does the job of formatting response well.
 - To handle two approaches simultaneously, *Model View Controller* patterns exists, with input controller handling
   requests,
-  hand-off to Domain Model to execute the business logic and pass the result to View to present the screen.
+  hand-off to Domain Model to execute the business logic and pass the result to View to present on the screen.
 - Sometimes there is a need to introduce a separate layer, *Application Controller*, especially where there are multiple
   screens to produce.
 - For view there are two patterns to choose from: *Transform View* (XSLT), which translates the result of Domain Model
@@ -436,14 +436,13 @@ Chapter 7: Acceptance tests
   change their minds, so the requirements change. Estimates are not precise by definition. There is a risk of late
   ambiguity,
   usually occurring when stakeholders don't agree with each other.
-- To achieve an acceptable level of precision, *Definition of Done* should be created and formalized as a set of *
-  Acceptance Tests*,
+- To achieve an acceptable level of precision, *Definition of Done* should be created and formalized as a set of *Acceptance Tests*,
   which, when passing, mean all requirements implemented.
 - Acceptance tests describe the purpose of the system. They should not be manual: the cost of executing manual tests
   multiple times is much higher than writing automatic test once.
 - Acceptance tests should be created by stakeholders together with a QA. But stakeholders usually don't have time.
   They are often created by QA alone, Business Analyst or a Developer. QAs tend to focus on the negative cases.
-  BAs tend to focus on the happy path. If it's a developer, it's important it's a different person, than the one
+  BAs tend to focus on the happy path. If it's a developer, it's important to be a different person, than the one
   who implements the feature.
 - The first acceptance tests should be created at the beginning of the sprint, when the implementation starts.
   The implementation should start when they're created. Developer starts implementation with seeing all tests failing
