@@ -11,3 +11,4 @@
 Start time, descending, was [implemented](https://github.com/marcinciapa/actracker-ui/pull/25) as a default sort option in UI.
 - Daily chart generation was [implemented in Backend](https://github.com/marcinciapa/actracker-api/pull/55).
 - Filtering activities by date range and tags was introduced in [actracker-api](https://github.com/marcinciapa/actracker-api/pull/56) and [actracker-ui](https://github.com/marcinciapa/actracker-ui/pull/26).
+- Filtering dashboard data by tags was added to [API](https://github.com/marcinciapa/actracker-api/pull/57) and [UI](https://github.com/marcinciapa/actracker-ui/pull/27).
