@@ -27,6 +27,17 @@ A service covering specific language of the external system should be created (a
 - Performance problems with interaction with external systems may be optimized using caching.
 But there is a cost: complicated design, refreshing duplicated data.
 
+Chapter 8: Breakthrough
+- Continuous refactoring of the model should be regular and iterative. It usually provides little gains with little effort.
+- Refactoring should be handled with ubiquitous language in mind, it should help changing it, or align the model to it.
+- But continuous refactoring also is preparing a stage for huge breakthroughs, a large change in the model, sometimes
+flipping it around, to better reflect the language.
+- Opportunities for such huge changes require modest refactoring, helping to better understand the domain.
+- Such opportunities are usually scary, as the changes are huge. They also cannot be planned. 
+Sometimes they're performed under the time pressure. But they're worth the effort, as they are eyes-opening.
+They also provide opportunities for further improvements.
+- Sometimes after such breakthroughs other incorrectly modeled areas reveal themselves.
+
 
 # Projects
 
