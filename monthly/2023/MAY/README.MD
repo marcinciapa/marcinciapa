@@ -38,6 +38,25 @@ Sometimes they're performed under the time pressure. But they're worth the effor
 They also provide opportunities for further improvements.
 - Sometimes after such breakthroughs other incorrectly modeled areas reveal themselves.
 
+Chapter 9: Making implicit concepts explicit
+- A deep model is powerful as it contains basic concepts and abstractions, expresses essential knowledge.
+- If domain experts or users use term, which is not present in the design, it should be a warning.
+It's even worse if when both domain experts and developers use terms not present in the design.
+If some vocabulary is missing in the domain, it's time to enhance it.
+- When searching for a place to update the model, the choice should be the most awkward part in the model,
+which is the most complicated one and brings the most trouble when adding new features.
+- Sometimes different domain experts see things differently, use different terms. Even the same person can communicate in inconsistent way.
+To deal with it, to have a better understanding, developers could read a book about the domain.
+But still they should have conversations with domain experts.
+- Designers should not be constrained with their own ideas. Model should evolve.
+They should enhance the model constantly, try things, checking if they work or not.
+Even small refactoring leaves the model in a more understandable shape.
+- Constraints and processes are part of the model, that are not intuitive to discover.
+Domain processes are easy to discover: is it a process specific to a domain, or to a software itself?
+- Rules can be expressed as predicates. Rules sometimes do not fit the concept of entity or value object.
+But defining them outside the domain is even worse.
+- Specifications can be used for several purposes: validation, querying (as a criteria), objects creation (as the definition of shape of the requested object).
+
 
 # Projects
 
