@@ -57,6 +57,27 @@ Domain processes are easy to discover: is it a process specific to a domain, or 
 But defining them outside the domain is even worse.
 - Specifications can be used for several purposes: validation, querying (as a criteria), objects creation (as the definition of shape of the requested object).
 
+## Clean Coder (ISBN: 978-0-13-708107-3)
+
+Chapter 8: Testing strategies
+- Whenever a QA finds a bug, the development team should react with panic and take steps to prevent it in the future.
+- QAs should be part of the team. QAs and developers should work together to ensure the quality of a system.
+- The responsibility of QA should be working with business analysts to create acceptance tests - system specification,
+but also performing exploratory test, to validate actual system behavior and report misbehaviour.
+- Test pyramid:
+  - **Unit tests** are created by programmers for programmers using the language the system is build.
+  The coverage should be close to 100%.
+  - While components encapsulate some business rules, **component test** verify them in isolation from other components.
+  They are part of the acceptance tests, should be created by QAs together with business analysts.
+  They should focus on happy paths with some obvious corner cases.
+  - **Integration tests** verify how well components communicate with each other. They don't test business rules.
+  They should be created by system architect. Testing performance and throughput should not be a surprise here.
+  They are usually excluded from CI builds (run daily, for example).
+  - **System tests** are testing the entire integrated system. They're not testing business rules, but rather system construction.
+  They should be created by system architect. We should expect performance and throughput tests here.
+  Should be run infrequently.
+  - **Exploratory tests** should not be automated. They rely on humans creativity to check how the system withstands interactions with humans.
+
 
 # Projects
 
