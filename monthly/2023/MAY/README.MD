@@ -57,6 +57,29 @@ Domain processes are easy to discover: is it a process specific to a domain, or 
 But defining them outside the domain is even worse.
 - Specifications can be used for several purposes: validation, querying (as a criteria), objects creation (as the definition of shape of the requested object).
 
+Chapter 10: Supple design
+- Before a program serves customers, it should serve developers. The design must be pleasant to work with, inviting to change.
+It should be simple. But making it simple is not easy.
+- If the interface doesn't tell client programmers what it does, he has to check the internals. This reduces encapsulation.
+Names of classes and methods should clearly communicate what they do. They should use the ubiquitous language.
+TDD helps to understand client programmers' perspective.
+- Commands and queries (functions) should be segregated to communicate their purpose. Queries do not change internal state of a system.
+As much logic as possible should be covered by functions. But commands cannot be entirely avoided. Commands should not return the domain information.
+But there are alternative ways, like working on the value objects, which are immutable.
+- Assertions (post-conditions) help predict the side effects. If the programming language doesn't support them, they should be defined as unit tests.
+- When the model contains of large monolithic objects, it's hard to understand and has tendency for duplication.
+On the other hand, too much granularity introduces complexity. The model should contain of cohesive, loosely coupled units of functionality.
+Interface should use meaningful statements in ubiquitous language.
+- Low coupling is fundamental. It's important to eliminate unnecessary dependencies between objects whenever possible.
+- Dependencies in the model are not bad at all. But the concepts should not be mixed in interfaces: returned types should be the same as arguments.
+- Declarative design is concept of generating a program according to specification. It could be achieved e.i. by reflection.
+It's a holy grail of DDD. It has a greatest value, when framework can generate most error-prone logic of the system, like ORM.
+- DSLs: Shipping program may contain cargos and routes. But the implementation could be delivered by a library.
+This is a way to deliver the strongest connection with ubiquitous language. But on the other hand, such code could be hard to refactor.
+- Declarative predicates can be connected with ANDs, ORs, NOTs.
+- When making the design more supple, it's impossible to tackle the entire model at once. 
+Making significant change in part of the system is more valuable than thin change in the entire system.
+
 ## Clean Coder (ISBN: 978-0-13-708107-3)
 
 Chapter 8: Testing strategies
