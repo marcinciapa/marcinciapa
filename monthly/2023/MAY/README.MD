@@ -119,3 +119,5 @@ Start time, descending, was [implemented](https://github.com/marcinciapa/actrack
 - Support for weekly and monthly dashboards was added in [API](https://github.com/marcinciapa/actracker-api/pull/63) and [UI](https://github.com/marcinciapa/actracker-ui/pull/32).
 - Metrics were added to tags. [API](https://github.com/marcinciapa/actracker-api/pull/70) for metrics was exposed,
 adding metrics in [UI](https://github.com/marcinciapa/actracker-ui/pull/38) was implemented.
+- Using metric values in Activities was implemented. 
+[API](https://github.com/marcinciapa/actracker-api/pull/72) was exposed, [UI](https://github.com/marcinciapa/actracker-ui/pull/40) was aligned.
