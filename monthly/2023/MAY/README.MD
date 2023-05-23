@@ -73,7 +73,7 @@ Interface should use meaningful statements in ubiquitous language.
 - Low coupling is fundamental. It's important to eliminate unnecessary dependencies between objects whenever possible.
 - Dependencies in the model are not bad at all. But the concepts should not be mixed in interfaces: returned types should be the same as arguments.
 - Declarative design is concept of generating a program according to specification. It could be achieved e.i. by reflection.
-It's a holy grail of DDD. It has a greatest value, when framework can generate most error-prone logic of the system, like ORM.
+It's a holy grail of DDD. It has the greatest value, when framework can generate most error-prone logic of the system, like ORM.
 - DSLs: Shipping program may contain cargos and routes. But the implementation could be delivered by a library.
 This is a way to deliver the strongest connection with ubiquitous language. But on the other hand, such code could be hard to refactor.
 - Declarative predicates can be connected with ANDs, ORs, NOTs.
@@ -100,6 +100,28 @@ but also performing exploratory test, to validate actual system behavior and rep
   They should be created by system architect. We should expect performance and throughput tests here.
   Should be run infrequently.
   - **Exploratory tests** should not be automated. They rely on humans creativity to check how the system withstands interactions with humans.
+
+Chapter 9: Time management
+- It's required to maintain a strict daily time management discipline to benefit from the working time.
+- Meetings are necessary, but they are a waste of time. Decline the meetings when your presence is not crucial.
+Leave the meeting, when it doesn't go as expected. Each meeting should have an agenda, when it doesn't - decline,
+when the discussion is not going according to the agenda - leave.
+- Daily stand-ups should not take more than 1 minute for a person to answer three questions:
+what I did yesterday, what I will do today, what stands on my way.
+- Iteration planning should not take more than 5% of the entire iteration time. Items should already be estimated, 
+business value should already be assessed, acceptance tests should be created.
+- Retrospective and demo should not take long: 20 minutes for retrospective, 25 minutes for demo.
+- When the argument cannot be solved in 5 minutes, it cannot be solved with arguing. Good argument requires data.
+It should not be solved with a strength of will. Passive aggression is the most unprofessional think: when you agree upon something, you have to be engaged. 
+- You can't stay fully focused for the entire day. Use your focus time for complicated tasks, take less demanding tasks when unfocused.
+Focus requires sleep hygiene. Coffee may help, but it results in disruption. Sometimes you just have to recharge (have a 1-hour walk). 
+Physical activity helps. When unfocused, get inspired by the creativity of other people.
+- Avoidance is a behavior of postponing high-priority tasks. Priority inversion comes in, which
+is a temptation to focus on less important tasks. Such behavior is unprofessional.
+- Tomato technique is a way to divide the working time into blocks. Defend your slots, disruptions may wait until the timeslot is finished.
+After dealing with them, take 5 minutes break and start a new slot.
+- Blind alleys are incorrect technical decisions you are afraid to revert. If you find yourself in a hole, stop digging.
+- Mess comes in when you start developing code without taking proper care of it - there will never be a better moment for cleaning up, than now.
 
 
 # Projects
