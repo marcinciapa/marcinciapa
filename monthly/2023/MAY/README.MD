@@ -80,6 +80,16 @@ This is a way to deliver the strongest connection with ubiquitous language. But 
 - When making the design more supple, it's impossible to tackle the entire model at once. 
 Making significant change in part of the system is more valuable than thin change in the entire system.
 
+Chapter 11: Applying analysis patterns
+- There are some places in the code that don't show the potential to benefit from the domain model. 
+They were created simple and evolved mechanically. They look like a complicated application code rather than domain logic.
+Analysis patterns are particularly helpful here.
+- The dependency logic may seem like a mess. First step to clean it up should be making rules explicit by introducing new objects.
+- The analysis patterns provide new abstract vocabulary to a ubiquitous language and tell about consequences of the implementation.
+- Sometimes the resulting implementation is not using the pattern directly, but is inspired by it.
+- When terms of the well-known pattern is used, the basic concepts it designates should be explicit.
+- A model is a complete working whole. Patterns help in the most difficult decisions.
+
 ## Clean Coder (ISBN: 978-0-13-708107-3)
 
 Chapter 8: Testing strategies
