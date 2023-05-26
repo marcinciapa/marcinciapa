@@ -133,6 +133,22 @@ After dealing with them, take 5 minutes break and start a new slot.
 - Blind alleys are incorrect technical decisions you are afraid to revert. If you find yourself in a hole, stop digging.
 - Mess comes in when you start developing code without taking proper care of it - there will never be a better moment for cleaning up, than now.
 
+Chapter 10: Estimates
+- Estimates are easy, but scary. Business value depends on them. Our reputation depends on them. Failures are caused by them.
+They are fundamental in building relationship between business people and developers.
+- For business estimate is a commitment. For developers, guessing.
+- We should commit only if we are certain. When we are not, we should decline commitment. Other people may make decisions according to our commitments.
+When we commit to something, we should do whatever it takes (including private life) to make it.
+- When we make a commitment to try, we make a commitment to succeed. That's why professionals draw a line between commitment and estimate.
+- We estimate, because we are uncertain. We are bad estimators, because we don't understand its nature correctly.
+Instead of delivering a number, we should deliver a distribution of probability.
+- We should deliver optimistic, nominal, pessimistic estimates. Standard deviation introduces uncertainty.
+Uncertainty makes estimates more realistic.
+- Uncertainty of single task estimate makes it unpredictable. But it reveals a larger value when we want to deliver estimate of the task sets.
+- It's important to estimate as a team. Others may think about things you don't.
+- There are several techniques to do it effectively, but they all should have the same set of rules: discuss, vote, iterate until consensus is achieved.
+- It's better to estimate small tasks, for two reasons: lower tendency to underestimate, better understanding of a task.
+
 
 # Projects
 
