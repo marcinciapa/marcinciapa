@@ -149,6 +149,17 @@ Uncertainty makes estimates more realistic.
 - There are several techniques to do it effectively, but they all should have the same set of rules: discuss, vote, iterate until consensus is achieved.
 - It's better to estimate small tasks, for two reasons: lower tendency to underestimate, better understanding of a task.
 
+Chapter 11: Pressure
+- Professional developers should behave under pleasure similarly to what we would like surgeons to behave:
+Keep calm, communicate clearly, follow training instead of sweating, blaming management and complaining.
+- The best way to handle pressure is avoiding it. We should not commit when we are not certain. We should not change
+our behaviors during crisis, otherwise we don't have belief in our regular behaviors and disciplines. We should avoid mess:
+we should understand that mess slower us down instead of moving faster.
+- Sometimes pressure cannot be avoided despite our best effort. In such situation we should: keep calm, manage our stress,
+(sleepless nights won't help). Communicate that we're in trouble, while surprise magnifies the pressure. 
+Follow our disciplines, as crisis situation is not the best moment to abandon them. Pair, as other person will help you 
+stay calm, show you different perspective, also you should offer help to others when they're under pressure.
+
 
 # Projects
 
