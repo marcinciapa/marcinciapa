@@ -169,6 +169,13 @@ It requires looking at patterns on two level: technical and conceptual.
 Strategy, as a domain pattern expresses a concept, usually a process or a rule.
 - *Composite* pattern represents an object which contains of parts, which are of the same type.
 
+Chapter 13: Refactoring towards deeper insight
+- There are 3 things to consider during the process: you have to live in a domain, look at things different way, be in contact with domain experts.
+- Rather than make changes to the code, you have to search for problems in domain model.
+- A team of several developers may be assembled, going through the knowledge crunching process.
+- Software isn't only for users. It also is for developers. Refactoring the model also leads to a better design.
+- The postponed changes are harder to make. There is a risk in maintaining awkward design.
+
 
 # Projects
 
