@@ -160,6 +160,15 @@ we should understand that mess slower us down instead of moving faster.
 Follow our disciplines, as crisis situation is not the best moment to abandon them. Pair, as other person will help you 
 stay calm, show you different perspective, also you should offer help to others when they're under pressure.
 
+Chapter 12: Relating design patterns to the model
+- Most of the design patterns are strictly technical. But some of them can be applied to design modeling.
+It requires looking at patterns on two level: technical and conceptual.
+- Design patterns in a domain model must represent a meaningful motivation, more than a convenient implementation technique.
+- While applying any design pattern to a domain, the first concern should be if the pattern is a good fit to represent a concept of the domain.
+- *Strategy* can be applied to a domain model when we model a process and there are multiple ways of executing it.
+Strategy, as a domain pattern expresses a concept, usually a process or a rule.
+- *Composite* pattern represents an object which contains of parts, which are of the same type.
+
 
 # Projects
 
