@@ -196,3 +196,4 @@ Start time, descending, was [implemented](https://github.com/marcinciapa/actrack
 adding metrics in [UI](https://github.com/marcinciapa/actracker-ui/pull/38) was implemented.
 - Using metric values in Activities was implemented. 
 [API](https://github.com/marcinciapa/actracker-api/pull/72) was exposed, [UI](https://github.com/marcinciapa/actracker-ui/pull/40) was aligned.
+- Dashboard generation was [refactored](https://github.com/marcinciapa/actracker-api/pull/73).
