@@ -43,7 +43,7 @@ Chapter 9: Making implicit concepts explicit
 - If domain experts or users use term, which is not present in the design, it should be a warning.
 It's even worse if when both domain experts and developers use terms not present in the design.
 If some vocabulary is missing in the domain, it's time to enhance it.
-- When searching for a place to update the model, the choice should be the most awkward part in the model,
+- When searching for a place to update the model, the choice should be the most awkward part of the model,
 which is the most complicated one and brings the most trouble when adding new features.
 - Sometimes different domain experts see things differently, use different terms. Even the same person can communicate in inconsistent way.
 To deal with it, to have a better understanding, developers could read a book about the domain.
@@ -52,7 +52,7 @@ But still they should have conversations with domain experts.
 They should enhance the model constantly, try things, checking if they work or not.
 Even small refactoring leaves the model in a more understandable shape.
 - Constraints and processes are part of the model, that are not intuitive to discover.
-Domain processes are easy to discover: is it a process specific to a domain, or to a software itself?
+Domain processes are easy to identify: is it a process specific to a domain, or to a software itself?
 - Rules can be expressed as predicates. Rules sometimes do not fit the concept of entity or value object.
 But defining them outside the domain is even worse.
 - Specifications can be used for several purposes: validation, querying (as a criteria), objects creation (as the definition of shape of the requested object).
@@ -88,7 +88,23 @@ Analysis patterns are particularly helpful here.
 - The analysis patterns provide new abstract vocabulary to a ubiquitous language and tell about consequences of the implementation.
 - Sometimes the resulting implementation is not using the pattern directly, but is inspired by it.
 - When terms of the well-known pattern is used, the basic concepts it designates should be explicit.
-- A model is a complete working whole. Patterns help in the most difficult decisions.
+- A model is a complete working whole. Patterns help in making the most difficult decisions.
+
+Chapter 12: Relating design patterns to the model
+- Most of the design patterns are strictly technical. But some of them can be applied to design modeling.
+  It requires looking at patterns on two level: technical and conceptual.
+- Design patterns in a domain model must represent a meaningful motivation, more than a convenient implementation technique.
+- While applying any design pattern to a domain, the first concern should be if the pattern is a good fit to represent a concept of the domain.
+- *Strategy* can be applied to a domain model when we model a process and there are multiple ways of executing it.
+  Strategy, as a domain pattern expresses a concept, usually a process or a rule.
+- *Composite* pattern represents an object which contains of parts, which are of the same type.
+
+Chapter 13: Refactoring towards deeper insight
+- There are 3 things to consider during the process: you have to live in a domain, look at things different way, be in contact with domain experts.
+- Rather than make changes to the code, you have to search for problems in domain model.
+- A team of several developers may be assembled, going through the knowledge crunching process.
+- Software isn't only for users. It also is for developers. Refactoring the model also leads to a better design.
+- The postponed changes are harder to make. There is a risk in maintaining awkward design.
 
 ## Clean Coder (ISBN: 978-0-13-708107-3)
 
@@ -150,7 +166,7 @@ Uncertainty makes estimates more realistic.
 - It's better to estimate small tasks, for two reasons: lower tendency to underestimate, better understanding of a task.
 
 Chapter 11: Pressure
-- Professional developers should behave under pleasure similarly to what we would like surgeons to behave:
+- Professional developers should behave under pleasure similarly to how we would like surgeons to behave:
 Keep calm, communicate clearly, follow training instead of sweating, blaming management and complaining.
 - The best way to handle pressure is avoiding it. We should not commit when we are not certain. We should not change
 our behaviors during crisis, otherwise we don't have belief in our regular behaviors and disciplines. We should avoid mess:
@@ -159,22 +175,6 @@ we should understand that mess slower us down instead of moving faster.
 (sleepless nights won't help). Communicate that we're in trouble, while surprise magnifies the pressure. 
 Follow our disciplines, as crisis situation is not the best moment to abandon them. Pair, as other person will help you 
 stay calm, show you different perspective, also you should offer help to others when they're under pressure.
-
-Chapter 12: Relating design patterns to the model
-- Most of the design patterns are strictly technical. But some of them can be applied to design modeling.
-It requires looking at patterns on two level: technical and conceptual.
-- Design patterns in a domain model must represent a meaningful motivation, more than a convenient implementation technique.
-- While applying any design pattern to a domain, the first concern should be if the pattern is a good fit to represent a concept of the domain.
-- *Strategy* can be applied to a domain model when we model a process and there are multiple ways of executing it.
-Strategy, as a domain pattern expresses a concept, usually a process or a rule.
-- *Composite* pattern represents an object which contains of parts, which are of the same type.
-
-Chapter 13: Refactoring towards deeper insight
-- There are 3 things to consider during the process: you have to live in a domain, look at things different way, be in contact with domain experts.
-- Rather than make changes to the code, you have to search for problems in domain model.
-- A team of several developers may be assembled, going through the knowledge crunching process.
-- Software isn't only for users. It also is for developers. Refactoring the model also leads to a better design.
-- The postponed changes are harder to make. There is a risk in maintaining awkward design.
 
 
 # Projects
