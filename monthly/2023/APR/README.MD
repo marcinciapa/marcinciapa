@@ -28,7 +28,7 @@ Chapter 2: Communications and the use of language.
 - Diagrams should be informal, minimal, fragments of domain model which encourage the brainstorming.
   They should not represent the entire domain.
 - Written documents ensure stability and share-ability.
-  They should use be written in the current language and updated if out of date.
+  They should be written using the current language and updated if out of date.
   Documents should help the developer to fill the gaps in knowledge understanding.
   They may lie if outdated, in opposite to the code, which running correctly never lies.
 - The well structure code can be a good documentation.
@@ -311,7 +311,7 @@ Chapter 8: Putting it all together
   However, there are some EJB patterns for each domain logic designs. Providing remote API in EJBs should be avoided.
   Local interfaces should be fine-grained, while remote interfaces should be coarse-grained.
 - .NET supports Table Module pattern pretty well.
-- Stored procedures have a lot of disadvantages, mainly they don't allow good code structure and are vendor-agnostic.
+- Stored procedures have a lot of disadvantages, mainly they don't allow good code structure and are vendor-dependent.
   They should be used to consider for performance improvements of particular operations.
 - Web services should be used for communications between applications. They should not be used to distribute
   computations.
@@ -415,7 +415,7 @@ Chapter 6: Practice.
     - *Kata* is a series of repeatable sequence practices, which allows to train the body to react automatically.
       For software developers it may be a series of repeatable simple tasks, training keystroke, or some discipline (
       like TDD).
-    - *Wasa* is a two-man Kata. For software developers there are prepared training for two people, allowing for example
+    - *Wasa* is a two-man Kata. For software developers there are prepared trainings for two people, allowing for example
       one person to write tests and the second to make them pass.
     - *Randori* is a simulated combat training. These can be some real, short, prepared problems, to solve in a group or
       alone.
