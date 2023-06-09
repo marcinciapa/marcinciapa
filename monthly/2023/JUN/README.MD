@@ -58,3 +58,7 @@ Chapter 14: Maintaining model integrity
 # Projects
 
 ## ACTracker
+
+- Support for metric value chart (dashboard) was added in
+  [actracker-api](https://github.com/marcinciapa/actracker-api/pull/76) and
+  [actracker-ui](https://github.com/marcinciapa/actracker-ui/pull/43).
