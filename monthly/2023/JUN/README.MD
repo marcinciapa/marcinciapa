@@ -53,6 +53,41 @@ Chapter 14: Maintaining model integrity
 - One team can maintain multiple bounded context, but it's hard to maintain one context by multiple teams. Breaking
   contexts is easy, but merging them/changing relations is challenging.
 
+Chapter 15: Distillation
+
+- Distillation means applying a set of techniques to remove distractions from the model and expose the most important
+  parts. When system is hard to understand, it's hard to change. Poor design makes the application not serving any value
+  to users. **Core domain**, the result of distillation, should be small.
+- Most skilled developers tend to work on the technical infrastructure, whilst resources should be pushed to the most
+  crucial part of the domain. Most technically skilled developers should be the knowledge repository about the model.
+- Core domain is the most valuable part of the system, so top talent should work on it.
+  When the refactoring area should be picked, core domain should be the first choice.
+- One application's core domain can be another application's supporting domain. Identifying the core domain should be an
+  iterative process.
+- **Generic subdomains** are components in the domain representing abstract concepts, which can be used in different
+  businesses. They should be identified as part of the domain, which are not the motivation behind the project. Their
+  development should have lower priority, assigning core developers to it should be avoided. Off-shelf solutions should
+  be considered. Reuse of these components should not be the priority.
+- There are projects with more technical risk and projects with more modeling risk. Domain risk is usually
+  underestimated. For that reason, early stage of the system should be based on some core domain components.
+- **Domain vision strategy** should be a short document describing the core domain and its value. Details which don't
+  distinguish the domain from others should not be included. It should be revised after gaining new insights.
+- While vision statement describe the domain very high-level, the **Distillation document** highlights the most
+  important components of the core domain. It should be minimalistic: a set of diagrams, or comments in the code
+  highlighting the key components. It should be a practical indicator of significance of changing the domain.
+- **Cohesive mechanism** should be separated from the domain into a lightweight framework with an intention revealing
+  interface. While the domain model formulates a problem, cohesive mechanism should perform the computation.
+- Both generic subdomains and cohesive mechanisms exist to remove the burden from the model. Generic subdomain is part
+  of the model, solves domain problems, while cohesive mechanism is outside the domain, solving computational problems.
+- Returning to the previous state is a common practice, but the process of returning usually creates a deeper model.
+- There are benefits in having a declarative style of the core domain and economic language in the supporting
+  components.
+- When there are many modules in the model, integrations between them complicate the domain. Polymorphism gives us the
+  ability to abstract common problems in the common domain types. This is valuable only when polymorphism corresponds to
+  the concepts in the domain. This abstract model should be placed in a separate module (many other modules referencing
+  it instead of referencing other specialized modules).
+- Core domain should be continuously refactored to the deeper insight, deep model, supple design.
+
 ## Clean Coder (ISBN: 978-0-13-708107-3)
 
 # Projects
