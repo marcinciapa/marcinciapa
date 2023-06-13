@@ -94,9 +94,12 @@ Chapter 15: Distillation
 
 ## ACTracker
 
-- Support for metric value chart (dashboards) was added in
+- Support for metric value chart (dashboards) was added to
   [actracker-api](https://github.com/marcinciapa/actracker-api/pull/76) and
   [actracker-ui](https://github.com/marcinciapa/actracker-ui/pull/43).
-- Support for Tag duration chart (dashboards) was added in
+- Support for Tag duration chart (dashboards) was added to
   [actracker-api](https://github.com/marcinciapa/actracker-api/pull/77) and
   [actracker-ui](https://github.com/marcinciapa/actracker-ui/pull/44)
+- Sharing dashboards functionality was added to
+  [actracker-api](https://github.com/marcinciapa/actracker-api/pull/78) and
+  [actracker-ui](https://github.com/marcinciapa/actracker-ui/pull/45)
