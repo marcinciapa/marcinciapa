@@ -88,6 +88,33 @@ Chapter 15: Distillation
   it instead of referencing other specialized modules).
 - Core domain should be continuously refactored to the deeper insight, deep model, supple design.
 
+Chapter 16: Large Scale Structure
+
+- In large systems, where elements cannot be interpreted in terms of their roles, it's hard to understand the role of
+  individual elements in the whole. A **large scale** structure is a way to understand the systems in contexts, by
+  defining high level concepts or rules which influence the design and helps with understanding.
+- Architectures can restrict the design and take flexibility out of developers. But if the rules guiding architecture
+  meets the circumstances, it pushes development into right direction
+- Conceptual large scale structure must evolve with the application iteratively. Continuous refactoring is necessary.
+  It should be simple by addressing only most important concerns. Must be understood by the entire team and be part of
+  the ubiquitous language. Continuous distillation should be applied to a model.
+- Large scale structure is optional. It should be applied only if system elements can be classified naturally.
+  Otherwise, implementing it is more an obstacle than help, it artificially constraints developers.
+- **Metaphor** is one of the large scale structure, which helps bring imagination of developers. They make their
+  decisions in consistency with system metaphors. Example: As firewall prevent buildings from catching fire, software
+  firewall protects the network. System metaphors should be consistent with ubiquitous language.
+- **Responsibility layers** helps keep coherence in large models, assign narrow responsibilities to set of elements.
+  Example: in space shuttle simulator there could be separate layers representing electric signals, then manipulators,
+  then intentions of the pilot.
+- **Knowledge level** helps design systems with configurable behavior by separating self-defined aspects of model and
+  making its constraints explicit. While *base level* represents operational concepts, the *meta level* represents the
+  knowledge of the possible structures and behaviors. It should be responsible not only for constraining scenarios
+  available in development, but also available for users in the future.
+- **Pluggable component framework** allows the distilled abstract core interfaces to be substituted in any application.
+  There are downside of applying it: it's hard to implement, because interfaces must be precisely defined. Implementing
+  applications have limited options, because they are restricted with structure. This technique should not be the first
+  choice to be applied to the project.
+
 ## Clean Coder (ISBN: 978-0-13-708107-3)
 
 # Projects
