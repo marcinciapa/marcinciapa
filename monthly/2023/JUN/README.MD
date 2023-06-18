@@ -141,3 +141,4 @@ Chapter 12: Collaboration
 - Sharing dashboards functionality was added to
   [actracker-api](https://github.com/marcinciapa/actracker-api/pull/78) and
   [actracker-ui](https://github.com/marcinciapa/actracker-ui/pull/45)
+- Shared dashboard on grantee's dashboard list was [implemented](https://github.com/marcinciapa/actracker-api/pull/79).
