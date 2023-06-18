@@ -117,6 +117,17 @@ Chapter 16: Large Scale Structure
 
 ## Clean Coder (ISBN: 978-0-13-708107-3)
 
+Chapter 12: Collaboration
+
+- It's unprofessional to be a loner, even though we haven't become programmers because we like working with people.
+- We have to understand problems of people who pay us. It's OK to be passionate about programming, but we should have an
+  understanding of business problems. It's unprofessional to get stuck in the technology, while business crashes and
+  burns.
+- It's a mistake to build code silos where no other programmers are allowed to step in. We should instead welcome the
+  entire team to contribute.
+- Professionals pair with each other. It's the best way to solve problems, share knowledge, review the code.
+- Maybe we are efficient working alone, but the team is not efficient when we work alone.
+
 # Projects
 
 ## ACTracker
