@@ -142,3 +142,6 @@ Chapter 12: Collaboration
   [actracker-api](https://github.com/marcinciapa/actracker-api/pull/78) and
   [actracker-ui](https://github.com/marcinciapa/actracker-ui/pull/45)
 - Shared dashboard on grantee's dashboard list was [implemented](https://github.com/marcinciapa/actracker-api/pull/79).
+- Sharing tags functionality was added to
+  [actracker-api](https://github.com/marcinciapa/actracker-api/pull/80) and
+  [actracker-ui](https://github.com/marcinciapa/actracker-ui/pull/46)
