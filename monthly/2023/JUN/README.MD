@@ -145,3 +145,4 @@ Chapter 12: Collaboration
 - Sharing tags functionality was added to
   [actracker-api](https://github.com/marcinciapa/actracker-api/pull/80) and
   [actracker-ui](https://github.com/marcinciapa/actracker-ui/pull/46)
+- Showing shared tags and activities to grantee was [implemented](https://github.com/marcinciapa/actracker-api/pull/81).
