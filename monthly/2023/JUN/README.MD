@@ -156,6 +156,20 @@ Chapter 12: Collaboration
 - Professionals pair with each other. It's the best way to solve problems, share knowledge, review the code.
 - Maybe we are efficient working alone, but the team is not efficient when we work alone.
 
+Chapter 13: Teams and projects
+
+- It's not a good approach to assign part of developer's time to a multiple projects. Such person will not devote
+  to either of them.
+- It takes time to form a team. Members have to learn how to collaborate, know their strengths and weaknesses, build
+  relationship.
+- When a well-organized team has been built, they start to get things done together effectively. The optimal number of
+  team members is 12.
+- Well-organized teams know their velocity. They're able to effectively switch priorities.
+- It's a mistake to create teams around projects. It's more effective to feed well organized teams with projects.
+- The objection is that project managers lose control over the project: Business switch priorities. But business should
+  not have their hands tied when it comes to deciding about priorities.
+- It's harder to build teams than projects.
+
 # Projects
 
 ## ACTracker
