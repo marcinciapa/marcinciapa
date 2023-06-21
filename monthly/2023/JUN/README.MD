@@ -115,6 +115,34 @@ Chapter 16: Large Scale Structure
   applications have limited options, because they are restricted with structure. This technique should not be the first
   choice to be applied to the project.
 
+Chapter 17: Bringing strategy together
+
+- Three basic structures of strategic design (context, distillation, large-scale structure) are complementary and
+  interact with each other. The challenge is to understand how they fit together.
+- Large-scale structure may be an important part of a core domain.
+- Assessment may be useful when taking strategic design. It's a good starting point.
+    - Draw a context map
+    - Use the ubiquitous language
+    - Identify core domain, create domain vision statement
+    - Make sure that the technology doesn't work against model-driven design
+    - Make sure developers have all necessary skills
+    - Make sure developers are knowledgeable and interested in the domain
+- It doesn't usually work well if the architecture is handed down to the team. It's better to have an informal leader
+  elected spontaneously. But he should be the member of a team.
+- When a strategy is shared between several teams, making centralized architectural decisions is not the only option. A
+  sub-team for architectural decisions can be constituted, containing of collaborators participating in modelling,
+  getting their hands dirty.
+- There are some essentials for strategic design:
+    - Decisions must influence the entire team
+    - Decisions must result in feedback
+    - The plan must support evolution
+    - Most skilled developers must not be assigned to the architecture team
+    - Strategic design must be minimalistic
+    - Responsibilities of objects must be narrow, responsibilities of developers should be general
+    - Technical frameworks should speed up development, not reduce possibilities for expressive implementation of a
+      domain model
+- Master plans fail: they create totalitarian order, don't adopt well to unpredictable changes.
+
 ## Clean Coder (ISBN: 978-0-13-708107-3)
 
 Chapter 12: Collaboration
