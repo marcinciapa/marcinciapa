@@ -143,6 +143,15 @@ Chapter 17: Bringing strategy together
       domain model
 - Master plans fail: they create totalitarian order, don't adopt well to unpredictable changes.
 
+Summary
+
+The book is finished. To be honest I had a different expectations - I expected a more technical approach, while this
+book focuses rather on defining the ubiquitous language and design decisions. However, it also shows a new perspective,
+exposing the importance of designing and modeling process.
+
+My next step in learning DDD will be refactoring [actracker-api](https://github.com/marcinciapa/actracker-api) with
+Vernon's '[Implementing Domain Driven Design](../../../books/README.MD#vaughn-vernon-implementing-domain-driven-design-isbn-978-0-13-303990-0)' book.
+
 ## Clean Coder (ISBN: 978-0-13-708107-3)
 
 Chapter 12: Collaboration
