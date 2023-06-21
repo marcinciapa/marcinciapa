@@ -138,7 +138,7 @@ what I did yesterday, what I will do today, what stands on my way.
 business value should already be assessed, acceptance tests should be created.
 - Retrospective and demo should not take long: 20 minutes for retrospective, 25 minutes for demo.
 - When the argument cannot be solved in 5 minutes, it cannot be solved with arguing. Good argument requires data.
-It should not be solved with a strength of will. Passive aggression is the most unprofessional think: when you agree upon something, you have to be engaged. 
+It should not be solved with a strength of will. Passive aggression is the most unprofessional thing: when you agree upon something, you have to be engaged. 
 - You can't stay fully focused for the entire day. Use your focus time for complicated tasks, take less demanding tasks when unfocused.
 Focus requires sleep hygiene. Coffee may help, but it results in disruption. Sometimes you just have to recharge (have a 1-hour walk). 
 Physical activity helps. When unfocused, get inspired by the creativity of other people.
