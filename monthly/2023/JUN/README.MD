@@ -150,7 +150,19 @@ book focuses rather on defining the ubiquitous language and design decisions. Ho
 exposing the importance of designing and modeling process.
 
 My next step in learning DDD will be refactoring [actracker-api](https://github.com/marcinciapa/actracker-api) with
-Vernon's '[Implementing Domain Driven Design](../../../books/README.MD#vaughn-vernon-implementing-domain-driven-design-isbn-978-0-13-303990-0)' book.
+Vernon's '[Implementing Domain Driven Design](../../../books/README.MD#vaughn-vernon-implementing-domain-driven-design-isbn-978-0-13-303990-0)'
+book.
+
+## Implementing Domain-Driven Design (ISBN: 978-0-13-303990-0)
+
+The goal of going through *Implementing Domain-Driven Design* for the second time is to refactor
+[actracker-api](https://github.com/marcinciapa/actracker-api) according to each chapter, to tactical patterns, if
+applicable.
+
+Chapter 1: Getting started with DDD
+
+- Refactor TagSet entity to support atomic business operations
+  ([PR](https://github.com/marcinciapa/actracker-api/pull/83))
 
 ## Clean Coder (ISBN: 978-0-13-708107-3)
 
