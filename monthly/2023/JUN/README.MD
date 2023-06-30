@@ -166,6 +166,7 @@ Chapter 1: Getting started with DDD
 - [Refactor Tag](https://github.com/marcinciapa/actracker-api/pull/84) to support atomic business operations. 
   [Update UI](https://github.com/marcinciapa/actracker-ui/pull/48) to use them.
 - [Refactor Activity](https://github.com/marcinciapa/actracker-api/pull/86) to support atomic business operations.
+  [Update UI](https://github.com/marcinciapa/actracker-ui/pull/50) to use them.
 
 ## Clean Coder (ISBN: 978-0-13-708107-3)
 
