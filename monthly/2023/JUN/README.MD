@@ -161,10 +161,11 @@ applicable.
 
 Chapter 1: Getting started with DDD
 
-- Refactor TagSet entity to support atomic business operations
-  ([PR](https://github.com/marcinciapa/actracker-api/pull/83))
-- Refactor Tag entity to support atomic business operations
-  ([PR](https://github.com/marcinciapa/actracker-api/pull/84))
+- [Refactor TagSet](https://github.com/marcinciapa/actracker-api/pull/83) to support atomic business operations.
+  [Update UI](https://github.com/marcinciapa/actracker-ui/pull/47) to use them.
+- [Refactor Tag](https://github.com/marcinciapa/actracker-api/pull/84) to support atomic business operations. 
+  [Update UI](https://github.com/marcinciapa/actracker-ui/pull/48) to use them.
+- [Refactor Activity](https://github.com/marcinciapa/actracker-api/pull/86) to support atomic business operations.
 
 ## Clean Coder (ISBN: 978-0-13-708107-3)
 
