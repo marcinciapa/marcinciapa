@@ -1,12 +1,14 @@
 ### Vaughn Vernon: Implementing Domain-Driven Design (ISBN: 978-0-13-303990-0)
 - [March 2023](../monthly/2023/MAR/README.MD#implementing-domain-driven-design-isbn-978-0-13-303990-0)
 - [June 2023](../monthly/2023/JUN/README.MD#implementing-domain-driven-design-isbn-978-0-13-303990-0)
+- [July 2023](../monthly/2023/JUL/README.MD#implementing-domain-driven-design-isbn-978-0-13-303990-0)
 
 ### Robert C. Martin: Clean Coder (ISBN: 978-0-13-708107-3)
 - [March 2023](../monthly/2023/MAR/README.MD#clean-coder-isbn-978-0-13-708107-3)
 - [April 2023](../monthly/2023/APR/README.MD#clean-coder-isbn-978-0-13-708107-3)
 - [May 2023](../monthly/2023/MAY/README.MD#clean-coder-isbn-978-0-13-708107-3)
 - [June 2023](../monthly/2023/JUN/README.MD#clean-coder-isbn-978-0-13-708107-3)
+- [July 2023](../monthly/2023/JUL/README.MD#clean-coder-isbn-978-0-13-708107-3)
 
 ### Eric Evans: Domain-Driven Design: Tackling Complexity in the Hearth of Software (ISBN: 978-0-321-12521-5)
 - [April 2023](../monthly/2023/APR/README.MD#domain-driven-design-tackling-complexity-in-the-hearth-of-software-isbn-978-0-321-12521-5)
