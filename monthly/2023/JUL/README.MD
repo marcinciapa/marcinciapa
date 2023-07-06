@@ -7,6 +7,7 @@ The goal of going through *Implementing Domain-Driven Design* for the second tim
 applicable.
 
 Chapter 1: Getting started with DDD
+- [Executable edit operations](https://github.com/marcinciapa/actracker-api/pull/89) were implemented in actracker-api.
 
 ## Clean Coder (ISBN: 978-0-13-708107-3)
 
