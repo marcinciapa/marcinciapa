@@ -11,6 +11,8 @@ Chapter 1: Getting started with DDD
 - [Executable edit operations](https://github.com/marcinciapa/actracker-api/pull/89) were introduced in actracker-api.
 - [Refactor Tag sharing](https://github.com/marcinciapa/actracker-api/pull/90) to support atomic business operations.
   [Update UI](https://github.com/marcinciapa/actracker-ui/pull/52) to use them.
+- [Refactor Dashboard](https://github.com/marcinciapa/actracker-api/pull/91) to support atomic business operations.
+  [Update UI](https://github.com/marcinciapa/actracker-ui/pull/53) to use them.
 
 ## Clean Coder (ISBN: 978-0-13-708107-3)
 
@@ -24,7 +26,7 @@ Chapter 14: Mentoring, apprenticeship and craftsmanship
 - In our industry we're missing the mindset of training inexperienced juniors.
 - We have to be aware, that shaping a new generation of professionals is our responsibility, not universities'.
 
-The book is finished. I 100% recommend. It's about soft skills and mind set such desirable in our profession. 
+The book is finished. I 100% recommend. It's about soft skills and mind set such desirable in our profession.
 
 # Projects
 
