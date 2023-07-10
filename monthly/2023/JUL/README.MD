@@ -32,6 +32,21 @@ The book is finished. I 100% recommend. It's about soft skills and mind set such
 
 ## Optimizing Java. Practical Techniques for Improving JVM Application Performance (ISBN: 978-1-49-203927-3)
 
+Chapter 1: Optimization and performance defined
+
+- JVM performance is not normally distributed: we can't expect standard deviation, outliers can be significant.
+  Measurement sampling is also problematic, because it's easy to miss irregular occurrences of performance problems.
+- Measurement itself also adds the overhead.
+- Measuring performance should be based on defining and then achieving non-functional requirements.
+- When analyzing performance, there are patterns which can be observed often:
+    - Performance elbow, when there is a point, where performance drastically suffers (like on latency function of
+      requests count).
+    - When the system suffers from unoptimized GC, there are moments, where resources amount allocation drops, because
+      CPU is busy with GC processes.
+    - According to Amdahl's Law, whenever there are serial processes in a program, such software can't scale linearly.
+      The scalability is worse as there are more serial fragments.
+    - Healthy JVM process manifests sawtooth distribution of memory allocation.
+    - Program suffering from resource leaks usually show subtle at first, then significant performance drops.
 
 # Projects
 
