@@ -29,6 +29,7 @@ Chapter 14: Mentoring, apprenticeship and craftsmanship
 - We have to be aware, that shaping a new generation of professionals is our responsibility, not universities'.
 
 The book is finished. I 100% recommend. It's about soft skills and mind set such desirable in our profession.
+Must read to define a code of conduct in the software business.
 
 ## Optimizing Java. Practical Techniques for Improving JVM Application Performance (ISBN: 978-1-49-203927-3)
 
