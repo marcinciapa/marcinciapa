@@ -17,3 +17,6 @@
 
 ### Martin Fowler: Patterns of Enterprise Application Architecture (ISBN:  978-0-321-12742-6)
 - [April 2023](../monthly/2023/APR/README.MD#patterns-of-enterprise-application-architecture-isbn-978-0-321-12742-6)
+
+### Benjamin J Evans, James Gough, Chris Newland: Optimizing Java. Practical Techniques for Improving JVM Application Performance
+- [July 2023](../monthly/2023/JUL/README.MD#optimizing-java-practical-techniques-for-improving-jvm-application-performance-isbn-978-1-49-203927-3)

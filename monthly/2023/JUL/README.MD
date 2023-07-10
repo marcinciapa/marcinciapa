@@ -32,6 +32,9 @@ Chapter 14: Mentoring, apprenticeship and craftsmanship
 
 The book is finished. I 100% recommend. It's about soft skills and mind set such desirable in our profession.
 
+## Optimizing Java. Practical Techniques for Improving JVM Application Performance (ISBN: 978-1-49-203927-3)
+
+
 # Projects
 
 ## ACTracker
