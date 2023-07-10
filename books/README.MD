@@ -15,8 +15,8 @@
 - [May 2023](../monthly/2023/MAY/README.MD#domain-driven-design-tackling-complexity-in-the-hearth-of-software-isbn-978-0-321-12521-5)
 - [June 2023](../monthly/2023/JUN/README.MD#domain-driven-design-tackling-complexity-in-the-hearth-of-software-isbn-978-0-321-12521-5)
 
-### Martin Fowler: Patterns of Enterprise Application Architecture (ISBN:  978-0-321-12742-6)
+### Martin Fowler: Patterns of Enterprise Application Architecture (ISBN: 978-0-321-12742-6)
 - [April 2023](../monthly/2023/APR/README.MD#patterns-of-enterprise-application-architecture-isbn-978-0-321-12742-6)
 
-### Benjamin J Evans, James Gough, Chris Newland: Optimizing Java. Practical Techniques for Improving JVM Application Performance
+### Benjamin J Evans, James Gough, Chris Newland: Optimizing Java. Practical Techniques for Improving JVM Application Performance (ISBN: 978-1-49-203927-3)
 - [July 2023](../monthly/2023/JUL/README.MD#optimizing-java-practical-techniques-for-improving-jvm-application-performance-isbn-978-1-49-203927-3)
