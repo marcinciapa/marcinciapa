@@ -3,10 +3,8 @@
 ## Implementing Domain-Driven Design (ISBN: 978-0-13-303990-0)
 
 The goal of going through *Implementing Domain-Driven Design* for the second time is to refactor
-[actracker-api](https://github.com/marcinciapa/actracker-api) according to each chapter, to tactical patterns, if
+[actracker-api](https://github.com/marcinciapa/actracker-api) according to book, to tactical patterns, if
 applicable.
-
-Chapter 1: Getting started with DDD
 
 - [Executable edit operations](https://github.com/marcinciapa/actracker-api/pull/89) were introduced in actracker-api.
 - [Refactor Tag sharing](https://github.com/marcinciapa/actracker-api/pull/90) to support atomic business operations.
@@ -16,7 +14,7 @@ Chapter 1: Getting started with DDD
 - [Refactor Dashboard](https://github.com/marcinciapa/actracker-api/pull/92) to support charts atomic operations.
   [Update UI](https://github.com/marcinciapa/actracker-ui/pull/54) to use them.
 - [Refactor metric values](https://github.com/marcinciapa/actracker-api/pull/93) to support charts atomic operations.
-  [Update UI]() to use them.
+  [Update UI](https://github.com/marcinciapa/actracker-ui/pull/56) to use them.
 
 ## Clean Coder (ISBN: 978-0-13-708107-3)
 
