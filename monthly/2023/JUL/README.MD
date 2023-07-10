@@ -15,6 +15,8 @@ Chapter 1: Getting started with DDD
   [Update UI](https://github.com/marcinciapa/actracker-ui/pull/53) to use them.
 - [Refactor Dashboard](https://github.com/marcinciapa/actracker-api/pull/92) to support charts atomic operations.
   [Update UI](https://github.com/marcinciapa/actracker-ui/pull/54) to use them.
+- [Refactor metric values](https://github.com/marcinciapa/actracker-api/pull/93) to support charts atomic operations.
+  [Update UI]() to use them.
 
 ## Clean Coder (ISBN: 978-0-13-708107-3)
 
