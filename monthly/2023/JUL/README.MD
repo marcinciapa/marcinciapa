@@ -50,6 +50,40 @@ Chapter 1: Optimization and performance defined
     - Healthy JVM process manifests sawtooth distribution of memory allocation.
     - Program suffering from resource leaks usually show subtle at first, then significant performance drops.
 
+Chapter 2: Overview of the JVM
+
+- JVM is a stack-based interpreted machine. It operates on the top of the stack of operations. Comparing it to the
+  switch operation inside the endless loop is an acceptable simplification.
+- JVM loads classes through classloaders. Whenever a classloader cannot find a class, it delegates to the parent
+  classloader. There are following types of classloaders:
+    - **Bootstrap classloader** is responsible for loading essential core classes: `Class`, `Object`, `Classloader`.
+    - **Extension classloader** loads classes belonging to JVM extensions.
+    - **Application classloader**'s responsibility is to load user classes from defined classpath.
+- Code 'compiled' with `javac` is still pretty readable. It will be executed by JVM's interpreter before converting
+  to the native code. The advantage of such intermediate bytecode is portability. There's little optimization done while
+  transforming to Java bytecode.
+- HotSpot (a reference JVM) contains an interpreter transforming the Java bytecode into native code. It does it for
+  compilation units performing **Just In Time** compilation. Here the optimization is performed: frequently accessible
+  code is monitored cached.
+- **Garbage collection** is a non-deterministic process which reclaims no-longer used memory, whenever JVM needs it. It
+  allows developers not allocating memory by themselves, but it comes with a cost: GC often stops the world, which is a
+  time-consuming process.
+- For each Java thread, a separate operating system thread is being created. There are three multithreading
+  architectural principles:
+    - Threads share a single garbage-collected memory.
+    - Object from one thread may be accessible in another thread.
+    - Objects are mutable by default.
+
+  The OS scheduler can evict threads between CPU cores. That means, that if one thread modifies the object, another
+  thread can see it in incorrect or damaged state. The only defense is using mutual exclusion locks.
+- There are several tools helping to measure JVM behavior:
+    - JMX - responsible for controlling and monitoring JVMs
+    - Java Agents - use `java.lang.instrument` interfaces for modifying the bytecode of methods, contained in jars with
+      metadata, including a class with **premain** method.
+    - JVMTI - created in native code, written to monitor events from JVM
+    - Serviceability Agents - set of APIs and tools that can expose both Java objects and HotSpot data structure.
+    - VisualVM - a graphical tool for live monitoring running JVM processes.
+
 # Projects
 
 ## ACTracker
