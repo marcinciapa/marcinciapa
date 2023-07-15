@@ -16,6 +16,7 @@ applicable.
 - [Refactor metric values](https://github.com/marcinciapa/actracker-api/pull/93) to support charts atomic operations.
   [Update UI](https://github.com/marcinciapa/actracker-ui/pull/56) to use them.
 - Tag set validator was [reimplemented](https://github.com/marcinciapa/actracker-api/pull/94).
+- Tag validator was [reimplemented](https://github.com/marcinciapa/actracker-api/pull/95).
 
 ## Clean Coder (ISBN: 978-0-13-708107-3)
 
