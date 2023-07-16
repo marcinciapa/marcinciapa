@@ -17,6 +17,7 @@ applicable.
   [Update UI](https://github.com/marcinciapa/actracker-ui/pull/56) to use them.
 - Tag set validator was [reimplemented](https://github.com/marcinciapa/actracker-api/pull/94).
 - Tag validator was [reimplemented](https://github.com/marcinciapa/actracker-api/pull/95).
+- Dashboard validator was [reimplemented](https://github.com/marcinciapa/actracker-api/pull/96).
 
 ## Clean Coder (ISBN: 978-0-13-708107-3)
 
