@@ -19,6 +19,8 @@ applicable.
 - Tag validator was [reimplemented](https://github.com/marcinciapa/actracker-api/pull/95).
 - Dashboard validator was [reimplemented](https://github.com/marcinciapa/actracker-api/pull/96).
 - Activity validator was [reimplemented](https://github.com/marcinciapa/actracker-api/pull/97).
+- Tag set Application facade between API and Domain was
+  [introduced](https://github.com/marcinciapa/actracker-api/pull/99)
 
 ## Clean Coder (ISBN: 978-0-13-708107-3)
 
