@@ -93,6 +93,37 @@ Chapter 2: Overview of the JVM
     - Serviceability Agents - set of APIs and tools that can expose both Java objects and HotSpot data structure.
     - VisualVM - a graphical tool for live monitoring running JVM processes.
 
+Chapter 3: Hardware and operating system
+
+- According to Moore's Law, the increase in hardware performance is exponential. This gain results in creating more
+  complex software. Java language and runtime make use of this performance increase. But performance-conscious Java
+  developers should make best use of available resources.
+- x86/x64 processor architecture undergone radical changes.
+- Faster processors require faster access to data. But the memory speed could not catch up with the increase in CPUs
+  evolution. **CPU caches** solve this problem, resulting in copying memory fragment close to CPU cores. L1 and L2
+  caches are usually private to single core, L3 is usually shared between cores. However, the problem of synchronizing
+  data between caches and memory arisen.
+- To solve it, MESI protocol was introduced: Cached data may be in one of state: Shared, Modified, Exclusive Modified.
+  When cache of one CPU transit from Shared to Modified/Exclusive state, it becomes Invalid for remaining CPUs.
+  Processors broadcast cache state change to other processors.
+- Translation Lookaside Buffer (TLB) is a special cache resolving virtual memory addresses to physical memory addresses.
+  Without such cache, resolving may take up to 16 CPU cycles.
+- Branch prediction allows the processor not to wait for conditional branch resolution to proceed with instructions
+  processing. It's a heuristic to guess most probable branches.
+- JIT compiler and CPU allows to change the order of processing instruction. Correct usage of locks allows to ensure
+  that multithreaded code works correctly.
+- Process scheduler of operating system is responsible for handling interruptions and executing threads waiting in a run
+  queue. It assigns a time quantum for a thread, after which it goes back to the end of run queue. Thread may also
+  voluntarily give up (sleep(), wait()). In fact code is waiting more time it is running (10-20% overhead for Unixes).
+- Context switching may be costly, especially switching into kernel mode, which invalidates TLBs and other caches.
+- CPU utilisation is one of the key performance metrics. In healthy environment user space should consume ~100% of CPU.
+  *vmstat* and *iostat* tools help to analyse virtual memory and I/O respectively. If the amount of context switches is
+  high, it may mean that I/O access is not optimal or there is a locking problem. VisualVM helps to analyse thread
+  states.
+- In JVM, memory is allocated at startup. GC process burns out CPU usage. If the CPU usage in user space is constantly
+  100%, we should check if it's consumed by JVM (GC) or code instructions. GC log analysing helps to answer this
+  question.
+
 # Projects
 
 ## ACTracker
