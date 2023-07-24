@@ -23,6 +23,8 @@ applicable.
   [introduced](https://github.com/marcinciapa/actracker-api/pull/99)
 - Tag Application facade between API and Domain was
   [introduced](https://github.com/marcinciapa/actracker-api/pull/100)
+- Activity Application facade between API and Domain was
+  [introduced](https://github.com/marcinciapa/actracker-api/pull/101)
 
 ## Clean Coder (ISBN: 978-0-13-708107-3)
 
