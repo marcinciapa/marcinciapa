@@ -1,5 +1,8 @@
 # Readings
 
+## [Taktyczne Domain-Driven Design | Masterclass](https://www.youtube.com/watch?v=18sjru-OyhE&ab_channel=DevMentors)
+Rewatch and make notes
+
 ## Implementing Domain-Driven Design (ISBN: 978-0-13-303990-0)
 
 The goal of going through *Implementing Domain-Driven Design* for the second time is to refactor
