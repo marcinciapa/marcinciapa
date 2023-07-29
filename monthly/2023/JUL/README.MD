@@ -1,7 +1,8 @@
 # Readings
 
-## [Taktyczne Domain-Driven Design | Masterclass](https://www.youtube.com/watch?v=18sjru-OyhE&ab_channel=DevMentors)
-Rewatch and make notes
+## Webinars and videos
+- [Taktyczne Domain-Driven Design | Masterclass](https://www.youtube.com/watch?v=18sjru-OyhE&ab_channel=DevMentors)
+- [Krzysztof Ślusarski "Porty, adaptery, CQRS, Event Sourcing, DDD… w Springu?](https://www.youtube.com/watch?v=Da42_gVqDKE&ab_channel=WarsawJUG)
 
 ## Implementing Domain-Driven Design (ISBN: 978-0-13-303990-0)
 
