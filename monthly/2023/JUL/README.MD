@@ -3,6 +3,8 @@
 ## Webinars and videos
 - [Taktyczne Domain-Driven Design | Masterclass](https://www.youtube.com/watch?v=18sjru-OyhE&ab_channel=DevMentors)
 - [Krzysztof Ślusarski "Porty, adaptery, CQRS, Event Sourcing, DDD… w Springu?](https://www.youtube.com/watch?v=Da42_gVqDKE&ab_channel=WarsawJUG)
+- [Modularity and hexagonal architecture in real life: Jakub Nabrdalik](https://www.youtube.com/watch?v=ILBX9fa9aJo&ab_channel=WarsawJUG)
+- [Sławomir Sobótka - DDD Q&A](https://www.youtube.com/watch?v=do-xqIbKZ_8)
 
 ## Implementing Domain-Driven Design (ISBN: 978-0-13-303990-0)
 
