@@ -3,3 +3,4 @@
 - [April](2023/APR/README.MD)
 - [May](2023/MAY/README.MD)
 - [June](2023/JUN/README.MD)
+- [July](2023/JUL/README.MD)
