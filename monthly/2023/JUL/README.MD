@@ -81,7 +81,7 @@ Chapter 2: Overview of the JVM
   transforming to Java bytecode.
 - HotSpot (a reference JVM) contains an interpreter transforming the Java bytecode into native code. It does it for
   compilation units performing **Just In Time** compilation. Here the optimization is performed: frequently accessible
-  code is monitored cached.
+  code is monitored and cached.
 - **Garbage collection** is a non-deterministic process which reclaims no-longer used memory, whenever JVM needs it. It
   allows developers not allocating memory by themselves, but it comes with a cost: GC often stops the world, which is a
   time-consuming process.
@@ -111,7 +111,7 @@ Chapter 3: Hardware and operating system
   evolution. **CPU caches** solve this problem, resulting in copying memory fragment close to CPU cores. L1 and L2
   caches are usually private to single core, L3 is usually shared between cores. However, the problem of synchronizing
   data between caches and memory arisen.
-- To solve it, MESI protocol was introduced: Cached data may be in one of state: Shared, Modified, Exclusive Modified.
+- To solve it, MESI protocol was introduced: Cached data may be in one of state: Shared, Modified, Exclusive, Invalid.
   When cache of one CPU transit from Shared to Modified/Exclusive state, it becomes Invalid for remaining CPUs.
   Processors broadcast cache state change to other processors.
 - Translation Lookaside Buffer (TLB) is a special cache resolving virtual memory addresses to physical memory addresses.
