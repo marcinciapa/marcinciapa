@@ -7,7 +7,7 @@ Chapter 4: Performance Testing Patterns and Antipatterns
 - Performance tests often performed for a wrong reason - something is better than nothing.
 - It's a common mistake to talk about performance tests in general - there are multiple different types based on the
   questions they are intended to answer.
-- Large-scale benchmarking of Java applications is usually better than microbenchmarking.
+- Large-scale benchmarking of Java applications is usually more effective than microbenchmarking.
 - Performance of an application is not only dependent on the code but also infrastructure. Metrics must consider system
   as a whole.
 - Particularly important Java-specific performance indicator is related to JIT compilation.
@@ -17,8 +17,10 @@ Chapter 4: Performance Testing Patterns and Antipatterns
 - Competition between teams wanting to be seen as having high development velocity is harmful.
 - Effective applications require being aware of full capacity of tools they use.
 - Performance problems require deep investigations and measurements.
-- Playing to the familiar rather than engaging with a new technology may cause negative impact on performance.
-- Equally harmful is having a single person responsible for performance tuning.
+- Playing to the familiar rather than engaging with a new technology may cause negative impact on performance. However,
+  introducing new tools without investigating current tools' capabilities is also an antipattern. Performance problems
+  solving should start with measuring and understanding.
+- Equally harmful is having a single person responsible for performance tuning (a Performance Wizard).
 - Java performance happens in a specific context with a large number of factors, performance workarounds in one version
   of Java may not work in another.
 - Certain components/libraries (like Hibernate) are commonly identified as performance bottlenecks, which is not always
