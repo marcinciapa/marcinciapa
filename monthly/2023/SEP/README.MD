@@ -10,3 +10,5 @@
   in actracker-search-feeder
 - [Publishing](https://github.com/marcinciapa/actracker-api/pull/106)
   and [consuming](https://github.com/marcinciapa/actracker-search-feeder/pull/22) tag notification was implemented.
+- Publishing TagSetChanged and DashboardChanged notifications
+  was [implemented](https://github.com/marcinciapa/actracker-api/pull/107) in actracker-api.
