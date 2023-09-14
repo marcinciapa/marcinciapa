@@ -14,3 +14,5 @@
   was [implemented](https://github.com/marcinciapa/actracker-api/pull/107) in actracker-api.
 - Consuming dashboard and tag set changed notification
   was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/23).
+- Building entity graphs for indexing was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/25)
+  in actracker-search-feeder.
