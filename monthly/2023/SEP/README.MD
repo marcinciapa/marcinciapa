@@ -47,3 +47,5 @@ Chapter 2: Microbenchmarking and Statistics
   was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/23).
 - Building entity graphs for indexing was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/25)
   in actracker-search-feeder.
+- Entity processing was [separated](https://github.com/marcinciapa/actracker-search-feeder/pull/26) from entity indexing
+  in actracker-search-feeder
