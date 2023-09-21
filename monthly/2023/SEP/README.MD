@@ -49,3 +49,5 @@ Chapter 2: Microbenchmarking and Statistics
   in actracker-search-feeder.
 - Entity processing was [separated](https://github.com/marcinciapa/actracker-search-feeder/pull/26) from entity indexing
   in actracker-search-feeder
+- Children entity notifications on parent refreshed
+  was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/27) in actracker-search-feeder.
