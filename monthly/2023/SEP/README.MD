@@ -53,3 +53,5 @@ Chapter 2: Microbenchmarking and Statistics
   was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/27) in actracker-search-feeder.
 - Children entity reindex on parent refresh
   was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/29) in actracker-search-feeder.
+- Entity processed notification publishing
+  was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/30) in actracker-search-feeder.
