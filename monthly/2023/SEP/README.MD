@@ -25,7 +25,7 @@ Chapter 5: Microbenchmarking and Statistics
   deeper analysis to identify leaking resource type.
 - Random errors are often related to unpredictable changes in the environment. We may expect they are represented as
   normal distribution, which is not usually a case in terms of JVM. In Java performance, the outliers represent unhappy
-  customers, we should put special attention to these points than to the experience of majority. To collect such
+  customers, we should put special attention to these points rather than to the experience of majority. To collect such
   information, we should start representing distributions starting with mean, than 90th percentile, then move out
   logarithmically: 99, 99.9, 99.99, 99.999 etc. Logarithmic percentile are useful for understanding the long tail.
 - Understanding the results of measuring the application is the hardest part. Example: Response times distribution
@@ -48,7 +48,7 @@ Chapter 6: Understanding Garbage Collection
   more fundamental characteristic. GC must balance tradeoffs driven by lifetime and allocation.
 - **Weak Generational Hypothesis** claims that the majority of object are short-lived while another population lives
   much longer. Taking it into consideration heap should be structured to support quick collection of short-lived objects
-  and maintained long-lived objects. To achieve it HotSpot tracks the number of collection each object survived, creates
+  and maintain long-lived objects. To achieve it HotSpot tracks the number of collection each object survived, creates
   new objects in **Eden** space, maintains **Tenured** generation in a separate area of memory for objects which
   survived long enough to be considered long-lived. It also tracks pointers to young generation objects to ensure quick
   GC cycles without traversing the entire objects graph.
@@ -59,7 +59,7 @@ Chapter 6: Understanding Garbage Collection
   equally sized memory areas, one of them is always empty, the second accepts objects coming from Eden space during GC.
   During collection of the young generation, living objects from Eden and non-empty survivor space are moved to the
   empty one, and the collected half is being emptied. Objects are evacuated from Survivor space to Tenured when Survivor
-  free space is not large enough to accept new objects from Eden space. 
+  free space is not large enough to accept new objects from Eden space.
 - VisualGC plugin for VisualVM is a useful initial GC debugging tool. However, GC logs contain more useful information
   and allow a much deeper analysis of GC.
 - **Parallel collectors** are default for JVM in Java 8 and before. After stopping all application threads, they consume
