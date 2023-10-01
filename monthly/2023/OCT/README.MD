@@ -8,4 +8,4 @@
 
 # Tutorials
 
-- 
+- Spring Data Elasticsearch [tutorial](https://github.com/marcinciapa/tutorials/pull/6)
