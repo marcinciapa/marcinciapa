@@ -109,6 +109,8 @@ Chapter 7. Advanced Garbage Collection
 
 - Connecting to Elasticsearch cluster and creating the first index
   was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/33) in actracker-search-feeder.
+- Versioning and aliasing Elasticsearch index
+  was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/34) in actracker-search-feeder.
 
 # Tutorials
 
