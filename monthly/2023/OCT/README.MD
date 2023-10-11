@@ -111,6 +111,8 @@ Chapter 7. Advanced Garbage Collection
   was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/33) in actracker-search-feeder.
 - Versioning and aliasing Elasticsearch index
   was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/34) in actracker-search-feeder.
+- Deleting decommissioned indices was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/35) in
+  actracker-search-feeder.
 
 # Tutorials
 
