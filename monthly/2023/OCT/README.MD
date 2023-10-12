@@ -113,6 +113,8 @@ Chapter 7. Advanced Garbage Collection
   was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/34) in actracker-search-feeder.
 - Deleting decommissioned indices was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/35) in
   actracker-search-feeder.
+- Missing Elasticsearch indices were [added](https://github.com/marcinciapa/actracker-search-feeder/pull/36) to
+  actracker-search-feeder.
 
 # Tutorials
 
