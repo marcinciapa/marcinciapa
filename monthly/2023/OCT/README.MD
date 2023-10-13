@@ -115,6 +115,8 @@ Chapter 7. Advanced Garbage Collection
   actracker-search-feeder.
 - Missing Elasticsearch indices were [added](https://github.com/marcinciapa/actracker-search-feeder/pull/36) to
   actracker-search-feeder.
+- Console indices were [removed](https://github.com/marcinciapa/actracker-search-feeder/pull/37) from
+  actracker-search-feeder in favor of Elasticsearch indices.
 
 # Tutorials
 
