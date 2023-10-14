@@ -121,3 +121,4 @@ Chapter 7. Advanced Garbage Collection
 # Tutorials
 
 - Spring Data Elasticsearch [tutorial](https://github.com/marcinciapa/tutorials/pull/6)
+- Spring Boot Quartz [tutorial](https://github.com/marcinciapa/tutorials/pull/7)
