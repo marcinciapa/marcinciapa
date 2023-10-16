@@ -117,6 +117,8 @@ Chapter 7. Advanced Garbage Collection
   actracker-search-feeder.
 - Console indices were [removed](https://github.com/marcinciapa/actracker-search-feeder/pull/37) from
   actracker-search-feeder in favor of Elasticsearch indices.
+- Indexing and deleting Elasticsearch documents
+  was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/38) in actracker-search-feeder.
 
 # Tutorials
 
