@@ -168,6 +168,8 @@ Chapter 8. GC Logging, Monitoring, Tuning, and Tools
   actracker-search-feeder in favor of Elasticsearch indices.
 - Indexing and deleting Elasticsearch documents
   was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/38) in actracker-search-feeder.
+- Indexing fields of documents to Elasticsearch
+  was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/40) in actracker-search-feeder.
 
 # Tutorials
 
