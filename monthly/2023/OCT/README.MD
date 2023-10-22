@@ -174,6 +174,8 @@ Chapter 8. GC Logging, Monitoring, Tuning, and Tools
   was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/42) in actracker-search-feeder.
 - Indexing activity grantees field was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/43) in
   actracker-search-feeder.
+- Indexing activity metric values was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/44) in
+  actracker-search-feeder.
 
 # Tutorials
 
