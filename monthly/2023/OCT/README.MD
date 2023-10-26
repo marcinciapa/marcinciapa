@@ -176,6 +176,8 @@ Chapter 8. GC Logging, Monitoring, Tuning, and Tools
   actracker-search-feeder.
 - Indexing activity metric values was [implemented](https://github.com/marcinciapa/actracker-search-feeder/pull/44) in
   actracker-search-feeder.
+- Using TagSetDataSource (CQRS) for getting tag set by ID
+  was [implemented](https://github.com/marcinciapa/actracker-api/pull/110) in actracker-api.
 
 # Tutorials
 
