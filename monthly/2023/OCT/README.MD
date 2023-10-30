@@ -180,6 +180,8 @@ Chapter 8. GC Logging, Monitoring, Tuning, and Tools
   was [implemented](https://github.com/marcinciapa/actracker-api/pull/110) in actracker-api.
 - Creating JPA queries as executable objects was [implemented](https://github.com/marcinciapa/actracker-api/pull/112) in
   actracker-api.
+- Using TagSetDataSource (CQRS) for searching for tag sets
+  was [implemented](https://github.com/marcinciapa/actracker-api/pull/113) in actracker-api.
 
 # Tutorials
 
