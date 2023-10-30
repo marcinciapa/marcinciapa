@@ -178,6 +178,8 @@ Chapter 8. GC Logging, Monitoring, Tuning, and Tools
   actracker-search-feeder.
 - Using TagSetDataSource (CQRS) for getting tag set by ID
   was [implemented](https://github.com/marcinciapa/actracker-api/pull/110) in actracker-api.
+- Creating JPA queries as executable objects was [implemented](https://github.com/marcinciapa/actracker-api/pull/112) in
+  actracker-api.
 
 # Tutorials
 
