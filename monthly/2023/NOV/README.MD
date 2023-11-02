@@ -4,13 +4,13 @@
 
 Chapter 8.
 
-- 
+-
 
 # Projects
 
 ## ACTracker
 
-- 
+- JPA basic integration tests were [added](https://github.com/marcinciapa/actracker-api/pull/115) to actracker-api.
 
 # Tutorials
 
