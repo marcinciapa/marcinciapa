@@ -14,7 +14,7 @@ Chapter 8.
 - Docker integration in Jenkins was [added](https://github.com/marcinciapa/equino-kubernetes/pull/3). Integration tests
   were [enabled](https://github.com/marcinciapa/actracker-api/pull/116) in actracker-api CI pipelines.
 - Tag Set JPA data source integration tests were created in two
-  parts: [part1](https://github.com/marcinciapa/actracker-api/pull/117), [part2]().
+  parts: [part1](https://github.com/marcinciapa/actracker-api/pull/117), [part2](https://github.com/marcinciapa/actracker-api/pull/118).
 
 # Tutorials
 
