@@ -21,3 +21,4 @@ Chapter 8.
 
 # Tutorials
 
+- Spring Boot Kafka [tutorial](https://github.com/marcinciapa/tutorials/pull/8)
