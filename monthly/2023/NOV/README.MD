@@ -18,6 +18,7 @@ Chapter 8.
 - ActivityDataSource (CQRS) was [added](https://github.com/marcinciapa/actracker-api/pull/120) to actracker-api.
 - TagDataSource (CQRS) was implemented in actracker-api in two parts:
   [part1](https://github.com/marcinciapa/actracker-api/pull/123), [part2](https://github.com/marcinciapa/actracker-api/pull/125).
+- DashboardDataSource (CQRS) was [implemented](https://github.com/marcinciapa/actracker-api/pull/126)
 
 # Tutorials
 
