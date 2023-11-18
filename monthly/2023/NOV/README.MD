@@ -16,7 +16,8 @@ Chapter 8.
 - Tag Set JPA data source integration tests were created in two
   parts: [part1](https://github.com/marcinciapa/actracker-api/pull/117), [part2](https://github.com/marcinciapa/actracker-api/pull/118).
 - ActivityDataSource (CQRS) was [added](https://github.com/marcinciapa/actracker-api/pull/120) to actracker-api.
-- TagDataSource (CQRS) was [added](https://github.com/marcinciapa/actracker-api/pull/123) to actracker-api.
+- TagDataSource (CQRS) was implemented in actracker-api in two parts:
+  [part1](https://github.com/marcinciapa/actracker-api/pull/123), [part2](https://github.com/marcinciapa/actracker-api/pull/125).
 
 # Tutorials
 
