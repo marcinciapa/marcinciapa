@@ -57,7 +57,7 @@ My learning curve went straight up again. Things looked so different in a small 
 Well, not by themselves, we made them happening.
 It was a great experience to feel how impactful we are, just delivering software and seeing the result. Immediately! On production!
 I joined a team responsible for search, analytics and reporting in the platform.
-My technologies were mostly Java and a lot of databases (Postgres, Oracle, Amazon Redshift, Google BigQuery, Elastic Search, Solr). 
+My technologies were mostly Java and a lot of databases (Postgres, Oracle, Amazon Redshift, Google BigQuery, Elasticsearch, Solr). 
 We worked on the large datasets trying to make them run efficiently.
 The DevOps technologies were Docker, Kubernetes, Jenkins. 
 The data was replicated to secondary data stores using RabbitMQ messaging infrastructure.
@@ -109,7 +109,7 @@ The system contains of following components
 
 Applications and their infrastructure are deployed to [Equino Kubernetes](https://github.com/marcinciapa/equino-kubernetes) cluster.
 
-Except functional part, the application is a sandbox to practice the software engineering techniques and technologies, like: DDD, persistence, messaging, Elastic Search, Kubernetes, Angular.
+Except functional part, the application is a sandbox to practice the software engineering techniques and technologies, like: DDD, persistence, messaging, Elasticsearch, Kubernetes, Angular.
 
 ### tutorials
 The [repository](https://github.com/marcinciapa/tutorials) for exercises related to software engineering field, like practicing concepts learnt from books.
