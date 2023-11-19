@@ -77,7 +77,7 @@ And here I am now. Still loving the feeling of joy when 'It works!' after adding
 | Postgres        | :green_circle::green_circle::green_circle::white_circle::white_circle: |
 | Oracle          | :green_circle::green_circle::white_circle::white_circle::white_circle: |
 | MongoDB         | :green_circle::white_circle::white_circle::white_circle::white_circle: |
-| Elastic Search  | :green_circle::green_circle::white_circle::white_circle::white_circle: |
+| Elasticsearch   | :green_circle::green_circle::white_circle::white_circle::white_circle: |
 | Solr            | :green_circle::green_circle::white_circle::white_circle::white_circle: |
 | Amazon Redshift | :green_circle::green_circle::green_circle::white_circle::white_circle: |
 | Google BigQuery | :green_circle::green_circle::white_circle::white_circle::white_circle: |
