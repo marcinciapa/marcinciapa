@@ -20,6 +20,7 @@ Chapter 8.
   [part1](https://github.com/marcinciapa/actracker-api/pull/123), [part2](https://github.com/marcinciapa/actracker-api/pull/125).
 - DashboardDataSource (CQRS) was implemented in actracker-api in two
   parts: [part1](https://github.com/marcinciapa/actracker-api/pull/126), [part2](https://github.com/marcinciapa/actracker-api/pull/128)
+- Finding tags by IDs was [moved](https://github.com/marcinciapa/actracker-api/pull/132) from Repository to Data Source.
 
 # Tutorials
 
