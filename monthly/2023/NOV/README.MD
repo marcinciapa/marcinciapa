@@ -2,7 +2,7 @@
 
 ## Optimizing Java. Practical Techniques for Improving JVM Application Performance (ISBN: 978-1-49-203927-3)
 
-Chapter 8.
+Chapter 9. Code execution on the JVM
 
 -
 
@@ -14,17 +14,21 @@ Chapter 8.
 - Docker integration in Jenkins was [added](https://github.com/marcinciapa/equino-kubernetes/pull/3). Integration tests
   were [enabled](https://github.com/marcinciapa/actracker-api/pull/116) in actracker-api CI pipelines.
 - Tag Set JPA data source integration tests were created in two
-  parts: [part1](https://github.com/marcinciapa/actracker-api/pull/117), [part2](https://github.com/marcinciapa/actracker-api/pull/118).
+  parts: [part1](https://github.com/marcinciapa/actracker-api/pull/117), [part2](https://github.com/marcinciapa/actracker-api/pull/118)
+  in actracker-api.
 - ActivityDataSource (CQRS) was [added](https://github.com/marcinciapa/actracker-api/pull/120) to actracker-api.
 - TagDataSource (CQRS) was implemented in actracker-api in two parts:
   [part1](https://github.com/marcinciapa/actracker-api/pull/123), [part2](https://github.com/marcinciapa/actracker-api/pull/125).
 - DashboardDataSource (CQRS) was implemented in actracker-api in two
   parts: [part1](https://github.com/marcinciapa/actracker-api/pull/126), [part2](https://github.com/marcinciapa/actracker-api/pull/128)
 - Finding tags by IDs was [moved](https://github.com/marcinciapa/actracker-api/pull/132) from Repository to Data
-  Source (CQRS).
+  Source in actracker-api (CQRS).
 - Finding activities to switch was [moved](https://github.com/marcinciapa/actracker-api/pull/133) from Repository to
-  Data Source (CQRS).
-- Extracting Users was [moved](https://github.com/marcinciapa/actracker-api/pull/136) from Repository to Data Source
+  Data Source in actracker-api (CQRS).
+- Extracting Users was [moved](https://github.com/marcinciapa/actracker-api/pull/136) from Repository to Data Source in
+  actracker-api
+  (CQRS).
+- Notification data source was [introduced](https://github.com/marcinciapa/actracker-api/pull/137) in actracker-api
   (CQRS).
 
 # Tutorials
