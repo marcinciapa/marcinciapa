@@ -57,7 +57,7 @@ My learning curve went straight up again. Things looked so different in a small 
 Well, not by themselves, we made them happening.
 It was a great experience to feel how impactful we are, just delivering software and seeing the result. Immediately! On production!
 I joined a team responsible for search, analytics and reporting in the platform.
-My technologies were mostly Java and a lot of databases (Postgres, Oracle, Amazon Redshift, Google BigQuery, Elastic Search, Solr). 
+My technologies were mostly Java and a lot of databases (Postgres, Oracle, Amazon Redshift, Google BigQuery, Elasticsearch, Solr). 
 We worked on the large datasets trying to make them run efficiently.
 The DevOps technologies were Docker, Kubernetes, Jenkins. 
 The data was replicated to secondary data stores using RabbitMQ messaging infrastructure.
@@ -72,12 +72,12 @@ And here I am now. Still loving the feeling of joy when 'It works!' after adding
 |-----------------|------------------------------------------------------------------------|
 | Java            | :green_circle::green_circle::green_circle::white_circle::white_circle: |
 | Spring          | :green_circle::green_circle::white_circle::white_circle::white_circle: |
-| Hibernate/JPA   | :green_circle::green_circle::white_circle::white_circle::white_circle: |
+| Hibernate/JPA   | :green_circle::green_circle::green_circle::white_circle::white_circle: |
 | Jooq            | :green_circle::green_circle::white_circle::white_circle::white_circle: |
 | Postgres        | :green_circle::green_circle::green_circle::white_circle::white_circle: |
 | Oracle          | :green_circle::green_circle::white_circle::white_circle::white_circle: |
 | MongoDB         | :green_circle::white_circle::white_circle::white_circle::white_circle: |
-| Elastic Search  | :green_circle::green_circle::white_circle::white_circle::white_circle: |
+| Elasticsearch   | :green_circle::green_circle::white_circle::white_circle::white_circle: |
 | Solr            | :green_circle::green_circle::white_circle::white_circle::white_circle: |
 | Amazon Redshift | :green_circle::green_circle::green_circle::white_circle::white_circle: |
 | Google BigQuery | :green_circle::green_circle::white_circle::white_circle::white_circle: |
@@ -109,13 +109,14 @@ The system contains of following components
 
 Applications and their infrastructure are deployed to [Equino Kubernetes](https://github.com/marcinciapa/equino-kubernetes) cluster.
 
-Except functional part, the application is a sandbox to practice the software engineering techniques and technologies, like: DDD, persistence, messaging, Elastic Search, Kubernetes, Angular.
+Except functional part, the application is a sandbox to practice the software engineering techniques and technologies, like: DDD, persistence, messaging, Elasticsearch, Kubernetes, Angular.
 
 ### tutorials
 The [repository](https://github.com/marcinciapa/tutorials) for exercises related to software engineering field, like practicing concepts learnt from books.
 
 ## My learnings
 Here's the log of my learnings, divided by months. Feel free to spy my on my progress.
+- [November 2023](monthly/2023/NOV/README.MD)
 - [October 2023](monthly/2023/OCT/README.MD)
 - [September 2023](monthly/2023/SEP/README.MD)
 - [August 2023](monthly/2023/AUG/README.MD)

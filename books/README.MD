@@ -23,3 +23,4 @@
 - [August 2023](../monthly/2023/AUG/README.MD#optimizing-java-practical-techniques-for-improving-jvm-application-performance-isbn-978-1-49-203927-3)
 - [September 2023](../monthly/2023/SEP/README.MD#optimizing-java-practical-techniques-for-improving-jvm-application-performance-isbn-978-1-49-203927-3)
 - [October 2023](../monthly/2023/OCT/README.MD#optimizing-java-practical-techniques-for-improving-jvm-application-performance-isbn-978-1-49-203927-3)
+- [November 2023](../monthly/2023/NOV/README.MD#optimizing-java-practical-techniques-for-improving-jvm-application-performance-isbn-978-1-49-203927-3)
