@@ -4,15 +4,15 @@
 
 Chapter 9. Code execution on the JVM
 
-- JVM must provide mechanics for memory management and a container for execution of application code. VMSpec specified
+- JVM must provide mechanics for memory management and a container for execution of application code. VMSpec specifies
   execution of Java bytecode in terms of an interpreter. But most production ready JVMs provide dynamic compilation
-  capability. This is known as a **Just-in-Time** compilation (JIT). JVM monitors frequency of methods and determines
+  capability. This is known as **Just-in-Time** compilation (JIT). JVM monitors frequency of methods and determines
   which of them should be compiled to the machine code.
 - JVM operates as a stack machine. It doesn't use registers to store data and perform computation. All values are placed
   on the evaluation stack instead. Other areas to hold data are: local variables and the object heap.
 - Machine operation code in JVM is represented by 1 byte. Instructions are grouped in families: dedicated instructions
   for primitive types and reference type (_dstore_ stores double on top of the stack, while _astore_ stores a reference
-  type). Some opcode families have shortcut forms (aload_0 puts _this_ on top of the stack), allowing reducing class
+  type). Some opcode families have shortcut forms (_aload_0_ puts _this_ on top of the stack), allowing reducing class
   files size.
 - Opcodes are divided into categories:
     - **load and store** category responsible for moving data on and off the stack (like loading from the classes
@@ -30,17 +30,17 @@ Chapter 9. Code execution on the JVM
 - Between bytecodes is a good place to hold an application threads, so it's a good candidate for safepoint. Equivalent
   barriers must be put into machine code.
 - One can think of a simple interpreter as a _switch_ statement inside a _while_ infinite loop, where _case_
-  instructions handle particular opcode.
+  instructions handle particular opcodes.
 - It's easy to think, that final methods should be converted to _invokespecial_ opcode. But the VMSpec says, that making
   a method final should not break compatibility. If _invokespecial_ was used, wrong implementation of the method would
   be called. This violates Liscov Substitution Principle, which states, that instance of a subclass can be used anywhere
   that a superclass is expected. Final methods are then represented as _invokevirtual_ with HotSpot dedicated code for
   dispatching final methods.
 - Ahead of Time compilation (AOT) gives a single opportunity to perform optimization. Compiler produces an executable
-  targeted to a single platform. Only compilation benefits from processor-specific features.
+  targeted for a single platform. Only compilation benefits from processor-specific features.
 - Just in Time compilation (JIT) produces highly optimized machine code at runtime. It recognizes frequently used code
-  to perform compilation (profile-guided optimization, PGO). JIT mechanics uses VM resources, it's a cost of profiling,
-  which is paid ad runtime. PGO results also in JVM warmup.
+  to perform compilation (profile-guided optimization, PGO). JIT mechanics use VM resources, it's a cost of profiling,
+  which is paid at runtime. PGO results also in JVM warmup.
 - If a method is invoked frequently enough, compilation thread is started.
 - AOT has simple and predictable performance characteristics. But it doesn't get access to runtime information, which
   could help making optimization decisions. The result is an executable compatible with only single processor, which is
@@ -54,7 +54,7 @@ Chapter 9. Code execution on the JVM
 - There is a JVM switch allowing gaining access to compilation events log: _PrintCompilation_. Except the application
   code, standard libraries are also eligible for compilation and entries for them will be visible in the compilation
   log.
-- HotSpots uses two compilers: C1 (client compiler) and C2 (server compiler). Both compilers are triggered basing on the
+- HotSpot uses two compilers: C1 (client compiler) and C2 (server compiler). Both compilers are triggered basing on the
   method invocation count. When it's acquired, VM is notified and is allowed to queue the method for compilation.
 - C1 and C2 produce different results: C1 performs simpler and shorter compilation. C1 doesn't optimize as fully as C2.
   There is a concept of **tiered compilation**: code is running in the interpreted mode until the simple C1 compilation
