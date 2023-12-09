@@ -8,7 +8,7 @@
 
 ## ACTracker
 
-- 
+- Domain entity factories were [introduced](https://github.com/marcinciapa/actracker-api/pull/146) in actracker-api.
 
 # Tutorials
 
