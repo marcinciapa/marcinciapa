@@ -60,7 +60,8 @@ Chapter 10. Understanding JIT Compilation
 - Domain entity factories were [introduced](https://github.com/marcinciapa/actracker-api/pull/146) in actracker-api.
 - Domain refactoring was performed in several steps in actracker-api:
   [moving entity edit preconditions validation](https://github.com/marcinciapa/actracker-api/pull/147),
-  [removing entity edit operations](https://github.com/marcinciapa/actracker-api/pull/148)
+  [removing entity edit operations](https://github.com/marcinciapa/actracker-api/pull/148),
+  [Cleanup domain model](https://github.com/marcinciapa/actracker-api/pull/150)
 
 # Tutorials
 
