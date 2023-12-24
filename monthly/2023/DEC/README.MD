@@ -61,7 +61,8 @@ Chapter 10. Understanding JIT Compilation
 - Domain refactoring was performed in several steps in actracker-api:
   [moving entity edit preconditions validation](https://github.com/marcinciapa/actracker-api/pull/147),
   [removing entity edit operations](https://github.com/marcinciapa/actracker-api/pull/148),
-  [Cleanup domain model](https://github.com/marcinciapa/actracker-api/pull/150)
+  [Cleanup domain model](https://github.com/marcinciapa/actracker-api/pull/150), 
+  [Refactoring of entities accessibility](https://github.com/marcinciapa/actracker-api/pull/152)
 
 # Tutorials
 
