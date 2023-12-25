@@ -62,7 +62,8 @@ Chapter 10. Understanding JIT Compilation
   [moving entity edit preconditions validation](https://github.com/marcinciapa/actracker-api/pull/147),
   [removing entity edit operations](https://github.com/marcinciapa/actracker-api/pull/148),
   [Cleanup domain model](https://github.com/marcinciapa/actracker-api/pull/150), 
-  [Refactoring of entities accessibility](https://github.com/marcinciapa/actracker-api/pull/152)
+  [Refactoring of entities accessibility](https://github.com/marcinciapa/actracker-api/pull/152),
+  [Using actor extractor in domain code](https://github.com/marcinciapa/actracker-api/pull/153)
 
 # Tutorials
 
