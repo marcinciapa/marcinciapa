@@ -64,6 +64,7 @@ Chapter 10. Understanding JIT Compilation
   [Cleanup domain model](https://github.com/marcinciapa/actracker-api/pull/150), 
   [Refactoring of entities accessibility](https://github.com/marcinciapa/actracker-api/pull/152),
   [Using actor extractor in domain code](https://github.com/marcinciapa/actracker-api/pull/153)
+- Tag set repository API was [updated](https://github.com/marcinciapa/actracker-api/pull/154) in actracker-api
 
 # Tutorials
 
