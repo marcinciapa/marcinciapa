@@ -66,7 +66,6 @@ Chapter 10. Understanding JIT Compilation
   [Using actor extractor in domain code](https://github.com/marcinciapa/actracker-api/pull/153)
 - Tag set repository API was [updated](https://github.com/marcinciapa/actracker-api/pull/154) in actracker-api.
 - Tag repository APIs was [updated](https://github.com/marcinciapa/actracker-api/pull/155) in actracker-api.
+- Dashboard repository API was [updated](https://github.com/marcinciapa/actracker-api/pull/156) in actracker-api.
+- Activity repository API was [updated](https://github.com/marcinciapa/actracker-api/pull/157) in actracker-api.
 
-# Tutorials
-
-- 
