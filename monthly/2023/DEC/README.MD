@@ -14,7 +14,7 @@ Chapter 10. Understanding JIT Compilation
   monitoring detailed HotSpot compilation log. JITWatch also provides sandbox capability. Sandbox allows quick
   prototyping and observing JIT decisions. It gives a fast feedback of how small changes can affect the optimization
   choices. In sandbox one can experiment with the VM switches controlling JIT. But they should not be introduced on
-  production without extensive testing. But the code run in sandbox may behave differently than in a real application.
+  production without extensive testing. The code run in sandbox may behave differently than in a real application.
   That's because of limited context: small pieces of code can have limited capabilities of further optimization than the
   real code in broad context. JITWatch also allows visualizing how compiled methods are placed in the code cache.
 - Java 8 and earlier stores profiled compiled methods, non-profiled compiled methods, VM native code in a single region.
