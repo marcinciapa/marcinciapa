@@ -116,6 +116,7 @@ The [repository](https://github.com/marcinciapa/tutorials) for exercises related
 
 ## My learnings
 Here's the log of my learnings, divided by months. Feel free to spy my on my progress.
+- [December 2023](monthly/2023/DEC/README.MD)
 - [November 2023](monthly/2023/NOV/README.MD)
 - [October 2023](monthly/2023/OCT/README.MD)
 - [September 2023](monthly/2023/SEP/README.MD)
