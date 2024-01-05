@@ -12,3 +12,4 @@
 
 - Microservices and Distributed Systems: [Bootstrap with Maven](https://github.com/marcinciapa/tutorials/pull/10)
 - Microservices and Distributed Systems: [Your First Microservice](https://github.com/marcinciapa/tutorials/pull/11)
+- Microservices and Distributed Systems: [Microservice Communication via HTTP](https://github.com/marcinciapa/tutorials/pull/12)
