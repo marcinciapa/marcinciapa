@@ -68,3 +68,4 @@ Chapter 11. Java Language Performance Techniques
 - Microservices and Distributed
   Systems: [Microservice Communication via HTTP](https://github.com/marcinciapa/tutorials/pull/12)
 - Microservices and Distributed Systems: [Open Feign](https://github.com/marcinciapa/tutorials/pull/14)
+- Microservices and Distributed Systems: [Exercise](https://github.com/marcinciapa/tutorials/pull/16)
