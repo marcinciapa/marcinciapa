@@ -10,50 +10,62 @@ Chapter 11. Java Language Performance Techniques
   associative, where objects themselves are used to determine where they should be stored in a collection. In either way
   references are stored in containers rather than objects themselves.
 - The main types of list are __ArrayList__ and __LinkedList__.
-    - ArrayList stores objects in the internal array (initially, by default, of size of 10). When it becomes full, new
+    - _ArrayList_ stores objects in the internal array (initially, by default, of size of 10). When it becomes full, new
       larger array must be allocated. It provides a convenience of not knowing ahead what the size of the list will be,
       but also an overhead related to resizing. It's possible and wise to set the capacity upfront, whenever the size of
       list is known.
-    - LinkedList's advantage is O(1) appending.
-    - The decision whether to use ArrayList of LinkedList should depend on the pattern of access. Inserting to both
-      lists is O(1). Adding at an index to ArrayList requires all following elements to be shifted. Getting any element
-      from ArrayList is O(1), while LinkedList requires navigating from the beginning. Usually ArrayList is recommended,
-      unless specific behavior of LinkedList is desired (appending to the beginning/end of the list).
+    - _LinkedList_'s advantage is O(1) appending.
+    - The decision whether to use _ArrayList_ of _LinkedList_ should depend on the pattern of access. Inserting to both
+      lists is O(1). Adding at an index to _ArrayList_ requires all following elements to be shifted. Getting any
+      element from _ArrayList_ is O(1), while _LinkedList_ requires navigating from the beginning. Usually _ArrayList_
+      is recommended, unless specific behavior of _LinkedList_ is desired (appending to the beginning/end of the list).
     - _Collections_ class exposes method _synchronizedList()_, which wraps List method invocations in a _synchronized_
       block.
 - The main types of map are __HashMap__, __LinkedHashMap__ and __TreeMap__.
-    - Two factors impact the performance of HashMap: __initialCapacity__ (current number of buckets, defaults to 16) and
-      __loadFactor__ (how full the hash table is allowed before the capacity is increased, defaults to 0.75). Increasing
+    - Two factors impact the performance of _HashMap_: __initialCapacity__ (current number of buckets, defaults to 16)
+      and __loadFactor__ (how full the hash table is allowed before the capacity is increased, defaults to 0.75).
+      Increasing
       the capacity (twice for JVM) requires rehashing, resulting in performance impact.
     - It's recommended to set the initialCapacity if it's known upfront. It reduces the overhead of automatic rehashing.
       Increasing the loadFactor also reduces rehashing, but makes access slower as map becomes fuller.
-    - HashMap provides O(1) _get()_ and _put()_ times. Iterating may be costly and is impacted by initialCapacity and
+    - _HashMap_ provides O(1) _get()_ and _put()_ times. Iterating may be costly and is impacted by initialCapacity and
       loadFactor.
-    - When buckets become large there is an additional overhead of searching in them: elements are stored as LinkedList.
-      Once buckets extends _TREEIFY_THRESHOLD_ it is converted into _TreeNodes_. The disadvantage of maintaining
-      _TreeNodes_ is that their size is twice the size of a list nodes.
+    - When buckets become large there is an additional overhead of searching in them: elements are stored as
+      _LinkedList_. Once buckets extends _TREEIFY_THRESHOLD_ it is converted into _TreeNodes_. The disadvantage of
+      maintaining _TreeNodes_ is that their size is twice the size of a list nodes.
     - _LinkedHashMap_, a subclass of _HashMap_ maintains the insertion order. It's less costly than using _TreeMap_. The
       need of using _LinkedHashMap_ is low as in Maps order rarely matters.
     - _TreeMap_ is a red-black tree implementation - a binary tree with additional metadata (coloring) preventing trees
-      from becoming unbalanced. TreeMap offers quick access to a submap, it's efficient for partitioning the data. It
+      from becoming unbalanced. _TreeMap_ offers quick access to a submap, it's efficient for partitioning the data. It
       offers log(n) performance for _get()_, _put()_, _containsKey()_ and _remove()_ operations.
 - The main types of set are __HashSet__, __LinkedHashSet__, __TreeSet__. They are implemented on top of Map equivalents,
   storing elements as keys and an object placeholder as value.
-    - HashSet has O(1) insertion, removal and contains operation time, doesn't maintain an ordering of elements.
-    - LinkedHashSet maintains an ordering of elements, performance depends on __initialCapacity__ and __loadFactor__.
-    - TreeSet is implemented in similar way to TreeMap, preserves the natural ordering of elements. It offers log(n)
-      performance for insertion, removal and contains operations. For range-based or ordering operations TreeSet is
+    - _HashSet_ has O(1) insertion, removal and contains operation time, doesn't maintain an ordering of elements.
+    - _LinkedHashSet_ maintains an ordering of elements, performance depends on __initialCapacity__ and __loadFactor__.
+    - _TreeSet_ is implemented in similar way to _TreeMap_, preserves the natural ordering of elements. It offers log(n)
+      performance for insertion, removal and contains operations. For range-based or ordering operations _TreeSet_ is
       efficient.
 - Domain objects often cause problems like memory leaks. `jmap -histo` provides a quick insight into the state of Java
   heap for diagnosing them. If domain objects appear in the top 30 entities generated by _jmap_, it's a possible sign of
-  memory leak. Leaking domain objects also cause _all generations effect_. When leaking, they live long enough to become
-  Tenured and will show up with all possible values for the generational count.
+  memory leak. Leaking domain objects also cause __all generations effect__. When leaking, they live long enough to
+  become Tenured and will show up with all possible values for the generational count.
 - _finalize()_ in Java was provided for automatic cleanup and resources release when an object is destroyed. It's a
   no-op by default and should remain that way. Objects overriding _finalize()_ are treated specially by the garbage
   collector. They require GC to run again to collect the data, persist for one extra GC cycle, which can be particularly
   painful for Tenured objects. Additionally, when exception is thrown in _finalize()_ method, it's ignored. Finalization
   may contain blocking operations. As JVM creates a thread to run _finalize()_, a significant overhead may occur.
-  Oracle's recommendation is to avoid finalization.
+  Finalization has no time guarantee as to when the resource will be released. Oracle's recommendation is to avoid
+  finalization.
+- __try-with-resource__ is a compiler mechanism. At the first glance it generates a lot of boilerplate. However, it's a
+  very useful simplification preventing classes from having to know how to release and clean up. It's a recommended best
+  practice.
+- _invokedynamic_ call site doesn't determine which method is to be called until runtime. __BSM__ (_bootstrap method_)
+  returns an object representing the actual target method. A key concept is the _method handle_, an object representing
+  the method which should be called. _java.lang.invoke.MethodHandle_ represents _directly executable_ references to
+  methods. These objects contain a group of related methods that allow execution of the underlying methods (like
+  _invoke()_). This mechanic is similar in concept to reflection, but contains more advanced features going beyond
+  reflective case. The lookup mechanism looks like additional boilerplate, but corrects the biggest problem with
+  reflection - access control.
 
 # Projects
 
