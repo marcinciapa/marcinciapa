@@ -77,7 +77,10 @@ Chapter 11. Java Language Performance Techniques
 
 - Microservices and Distributed Systems: [Bootstrap with Maven](https://github.com/marcinciapa/tutorials/pull/10)
 - Microservices and Distributed Systems: [Your First Microservice](https://github.com/marcinciapa/tutorials/pull/11)
-- Microservices and Distributed
-  Systems: [Microservice Communication via HTTP](https://github.com/marcinciapa/tutorials/pull/12)
+- Microservices and Distributed Systems:
+  [Microservice Communication via HTTP](https://github.com/marcinciapa/tutorials/pull/12)
 - Microservices and Distributed Systems: [Open Feign](https://github.com/marcinciapa/tutorials/pull/14)
 - Microservices and Distributed Systems: [Exercise](https://github.com/marcinciapa/tutorials/pull/16)
+- Microservices and Distributed Systems: [Distributed Tracing](https://github.com/marcinciapa/tutorials/pull/17)
+- Microservices and Distributed Systems:
+  [Api Gateway With Spring Cloud Gateway](https://github.com/marcinciapa/tutorials/pull/18)
