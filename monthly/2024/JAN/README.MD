@@ -84,3 +84,4 @@ Chapter 11. Java Language Performance Techniques
 - Microservices and Distributed Systems: [Distributed Tracing](https://github.com/marcinciapa/tutorials/pull/17)
 - Microservices and Distributed Systems:
   [Api Gateway With Spring Cloud Gateway](https://github.com/marcinciapa/tutorials/pull/18)
+- Microservices and Distributed Systems: [Message Queues](https://github.com/marcinciapa/tutorials/pull/19)
