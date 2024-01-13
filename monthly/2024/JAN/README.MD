@@ -86,3 +86,4 @@ Chapter 11. Java Language Performance Techniques
 - Microservices and Distributed Systems:
   [Api Gateway With Spring Cloud Gateway](https://github.com/marcinciapa/tutorials/pull/18)
 - Microservices and Distributed Systems: [Message Queues](https://github.com/marcinciapa/tutorials/pull/19)
+- Microservices and Distributed Systems: [RabbitMQ](https://github.com/marcinciapa/tutorials/pull/20)
