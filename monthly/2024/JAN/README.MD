@@ -89,3 +89,5 @@ Chapter 11. Java Language Performance Techniques
 - Microservices and Distributed Systems: [RabbitMQ](https://github.com/marcinciapa/tutorials/pull/20)
 - Microservices and Distributed Systems:
   [Packaging Microservices to Runnable Jar](https://github.com/marcinciapa/tutorials/pull/21)
+- Microservices and Distributed Systems: 
+  [Packaging Jars to Docker Images](https://github.com/marcinciapa/tutorials/pull/22)
