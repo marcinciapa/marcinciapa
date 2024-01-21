@@ -96,3 +96,5 @@ Chapter 11. Java Language Performance Techniques
   [Deploying Postgres RabbitMQ and Zipkin to k8s](https://github.com/marcinciapa/tutorials/pull/24)
 - Microservices and Distributed Systems:
   [Refactoring Microservices for k8s](https://github.com/marcinciapa/tutorials/pull/25)
+- Microservices and Distributed Systems:
+  [Deploying Microservices to k8s](https://github.com/marcinciapa/tutorials/pull/26)
