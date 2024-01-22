@@ -73,6 +73,7 @@ Chapter 11. Java Language Performance Techniques
 
 - GET API for entities was [introduced](https://github.com/marcinciapa/actracker-api/pull/161) in actracker-api.
 - JPA module was [split to smaller modules](https://github.com/marcinciapa/actracker-api/pull/163) in actracker-api.
+- JPA metamodel was [introduced](https://github.com/marcinciapa/actracker-api/pull/166) in actracker-api.
 
 # Tutorials
 
