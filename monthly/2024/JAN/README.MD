@@ -99,3 +99,5 @@ Chapter 11. Java Language Performance Techniques
   [Refactoring Microservices for k8s](https://github.com/marcinciapa/tutorials/pull/25)
 - Microservices and Distributed Systems:
   [Deploying Microservices to k8s](https://github.com/marcinciapa/tutorials/pull/26)
+- Microservices and Distributed Systems:
+  [Managed Kubernetes Cluster with Linode](https://github.com/marcinciapa/tutorials/pull/27)
