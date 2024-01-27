@@ -27,5 +27,5 @@
 - [December 2023](../monthly/2023/DEC/README.MD#optimizing-java-practical-techniques-for-improving-jvm-application-performance-isbn-978-1-49-203927-3)
 - [January 2024](../monthly/2024/JAN/README.MD#optimizing-java-practical-techniques-for-improving-jvm-application-performance-isbn-978-1-49-203927-3)
 
-### David Farley: Modern Software Engineering: Doing What Works to Build Better Software Faster: Doing What Works to Build Better Software Faster (ISBN: 978-0-13-731491-1)
-- [January 2024](../monthly/2024/JAN/README.MD#modern-software-engineering-doing-what-works-to-build-better-software-faster-doing-what-works-to-build-better-software-faster-isbn-978-0-13-731491-1)
+### David Farley: Modern Software Engineering: Doing What Works to Build Better Software Faster (ISBN: 978-0-13-731491-1)
+- [January 2024](../monthly/2024/JAN/README.MD#modern-software-engineering-doing-what-works-to-build-better-software-faster-isbn-978-0-13-731491-1)
