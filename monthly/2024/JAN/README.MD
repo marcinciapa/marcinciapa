@@ -67,6 +67,10 @@ Chapter 11. Java Language Performance Techniques
   reflective case. The lookup mechanism looks like additional boilerplate, but corrects the biggest problem with
   reflection - access control.
 
+## David Farley: Modern Software Engineering: Doing What Works to Build Better Software Faster: Doing What Works to Build Better Software Faster (ISBN: 978-0-13-731491-1)
+
+1 Introduction
+
 # Projects
 
 ## ACTracker
