@@ -104,3 +104,6 @@ Chapter 11. Java Language Performance Techniques
 - Microservices and Distributed Systems: [Kafka](https://github.com/marcinciapa/tutorials/pull/28)
 - Microservices and Distributed Systems: 
   [Bringing Back API Gateway for Security](https://github.com/marcinciapa/tutorials/pull/29)
+- Microservices and Distributed Systems:
+  [Security - API Key Authentication](https://github.com/marcinciapa/tutorials/pull/30)
+- Microservices and Distributed Systems: [Outro](https://github.com/marcinciapa/tutorials/pull/31)
