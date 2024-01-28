@@ -83,7 +83,8 @@ Chapter 11. Java Language Performance Techniques
 - JPA module was [split to smaller modules](https://github.com/marcinciapa/actracker-api/pull/163) in actracker-api.
 - JPA metamodel was [introduced](https://github.com/marcinciapa/actracker-api/pull/166) in actracker-api.
 - Access to actracker-api endpoints was [restricted](https://github.com/marcinciapa/equino-kubernetes/pull/8) in
-  Kubernetes ingress.
+  Kubernetes ingress. New path to actracker-api was [exposed](https://github.com/marcinciapa/actracker-api/pull/167)
+  and [consumed](https://github.com/marcinciapa/actracker-ui/pull/66) by actracker-ui.
 
 # Tutorials
 
