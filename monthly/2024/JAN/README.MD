@@ -71,6 +71,23 @@ Chapter 11. Java Language Performance Techniques
 
 1 Introduction
 
+- Software development is a process of continuous discovery and exploration. And humanity's best approach to learning is
+  science. For this reason we should approach software development the scientific way:
+    - Observe the current state,
+    - Describe and explain observations,
+    - Make predictions,
+    - Test predictions.
+- Software engineering is applying the scientific approach to find efficient solutions to problems in software.
+- We must become expects in learning and complexity management. Our approach to creating complex systems should be
+  evolutionary. We should make progress even when answers or direction is uncertain.
+- Engineering in general means "stuff that works".
+- Software development is one of the more complex activities that we undertake. We have learned and keep learning
+  continuously what works and what doesn't. We should make progress on the shoulder of giants. This approach is science
+  and the scientific way of solving practical problems is engineering.
+- It's important to have the _paradigm shift_ approach, be ready to fundamentally change the perspective on something.
+  It allows us to learn new things, but that also means discarding what was before if it is no longer correct. Such
+  mindset allows us to build more effectively and discard bad ideas more efficiently.
+
 # Projects
 
 ## Equino
