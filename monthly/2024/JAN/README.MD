@@ -73,11 +73,17 @@ Chapter 11. Java Language Performance Techniques
 
 # Projects
 
+## Equino
+
+- Equino Kubernetes cluster monitoring was [set up](https://github.com/marcinciapa/equino-kubernetes/pull/7).
+
 ## ACTracker
 
 - GET API for entities was [introduced](https://github.com/marcinciapa/actracker-api/pull/161) in actracker-api.
 - JPA module was [split to smaller modules](https://github.com/marcinciapa/actracker-api/pull/163) in actracker-api.
 - JPA metamodel was [introduced](https://github.com/marcinciapa/actracker-api/pull/166) in actracker-api.
+- Access to actracker-api endpoints was [restricted](https://github.com/marcinciapa/equino-kubernetes/pull/8) in
+  Kubernetes ingress.
 
 # Tutorials
 
@@ -106,7 +112,7 @@ Chapter 11. Java Language Performance Techniques
 - Microservices and Distributed Systems:
   [Managed Kubernetes Cluster with Linode](https://github.com/marcinciapa/tutorials/pull/27)
 - Microservices and Distributed Systems: [Kafka](https://github.com/marcinciapa/tutorials/pull/28)
-- Microservices and Distributed Systems: 
+- Microservices and Distributed Systems:
   [Bringing Back API Gateway for Security](https://github.com/marcinciapa/tutorials/pull/29)
 - Microservices and Distributed Systems:
   [Security - API Key Authentication](https://github.com/marcinciapa/tutorials/pull/30)
