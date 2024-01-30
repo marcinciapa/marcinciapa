@@ -67,6 +67,84 @@ Chapter 11. Java Language Performance Techniques
   reflective case. The lookup mechanism looks like additional boilerplate, but corrects the biggest problem with
   reflection - access control.
 
+Chapter 12. Concurrent Performance Tuning
+
+- Increase in transistors on a chip, according to Moore's Law, result in more capable processors. But the original
+  momentum is hard to maintain. Currently multicore processors are popular and software developers must take advantage
+  of distributing computation in their applications. In JVM the benefit is out of the box: even in a single-thread
+  applications there are always VM threads, like JIT, running in parallel.
+- Amdahl's Law became the main consideration in the multicore environment: total time taken can never be less than the
+  serial time. If the serial overhead is 5%, the effective speedup will not be greater than 20X. It's a practical limit
+  of software scaling. The usual approach to overcome it is to avoid sharing data between threads. Shared data not only
+  add serial synchronization overhead, but also increases complexity. Shared state requires protection and control,
+  which in JVM is guaranteed by __Java Memory Model__ (JMM).
+- In Java even such a simple operation as incrementing a counter is not a single operation. While analyzing the bytecode
+  we can observe that it contains of multiple instructions, like loading, incrementing and storing the value. If the
+  operation is not protected by an appropriate lock, load could happen before another thread is stored. As the OS
+  scheduler performs context switching at nondeterministic times, different sequences of bytecodes are possible when the
+  counter is shared between multiple threads. Each thread have a private evaluation stack, but the operations on fields
+  can interfere with each other. Counter is located in the heap, which is shared. The popular misconception is that
+  _volatile_ makes the operation safe. But it only forces rereading the value by the cache, any updates will be seen by
+  another thread. It doesn't prevent the lost update problem caused by the composite nature of the increment operation.
+  It must be protected by _synchronized_ or other locks.
+- _synchronized_ keyword can be used to control access to a shared state by multiple threads. However, it requires
+  careful design. Synchronization may slow down the program in certain circumstances. It must be performance tested.
+- There are two possible approaches to a memory model: __String memory model__, when all cores see the same value all
+  the time, or __Weak memory model__, where cores may see different values and there are special cache rules which
+  control when this may occur. The problem with strong memory model is that it requires write back to memory and
+  notifications of cache invalidation could dominate the memory bus. It's unsuitable for multicore environments.
+- JMM has a weak memory model. JMM is also a set of minimal requirements, JVM implementations may implement additional
+  rules.
+- Locking with synchronization is one of the most important techniques. But this approach is not satisfying for
+  developers interested in performance. With synchronization, threads keep their own description of objects' states and
+  changes made by threads must be flushed to memory. The main idea of synchronization is that the local view of the
+  object's state hast to be synchronized with the main memory. To make this approach successful both read and write
+  access must be synchronized. Synchronization only on write operations could lead to lost updates.
+- _synchronized_ lock has its limitations: all synchronized operations are treated equally, synchronization is performed
+  on the method level or _synchronized_ block, lock is acquired or the thread is blocked: no way to continue processing
+  if the lock cannot be obtained.
+- Intrinsic locking approach (described above) is not flexible. Modern versions of Java move away from language-level
+  support in favor of standard library (`java.util.concurrent`). Locks and atomics in this library relay heavily on
+  low-level processor instructions implementing __Compare and Swap__ (CAS) technique. Access to CAS is exposed
+  via `sun.misc.Unsafe` class, which is an internal implementation class and is not part of the standard API. It's
+  design to break the standard behavior of the JVM.
+- Atomics do not inherit from the base type they wrap. These are lock-free classes, resilient to deadlock.
+- Intrinsic locks work by invoking the operation system in user code. OS may add significant overhead when putting a
+  thread in an indefinite wait state until signaled. This may seem like a resource waste if the access to resource
+  happens in a short period of time. Sometimes it could be more efficient to keep the waiting thread active on a CPU
+  instead of performing the context switching. Such technique is called a __spinlock__. Spinlocks are usually
+  implemented with CAS.
+- The implementations of `java.util.concurrent.locks.Lock` give more possibilities and are more flexible than intrinsic
+  locks, for example they can be acquired in one method and unlocked in another. They allow creating _re-entrant locks_
+  preventing a thread from blocking itself.
+- Usually we can observe a disproportion between number of read and write operations. `ReadLock` and `WriteLock` can be
+  used in such cases. Using them allows multiple reading threads not causing other reading threads to block. But the
+  write operation will block.
+- Semaphores allow X objects to access a specific resource. The interface is `Semaphore::acquire()`
+  and `Semaphore::release()`. A one-permit semaphore is equivalent to a mutex. The difference is that the semaphore can
+  only be released by a thread that holds the lock, while semaphore can be released by other thread.
+- `ConcurrentHashMap` is split into segments, each having its own locking policy and read/write lock access. Iterators
+  are acquired on a snapshot, they will not throw a _ConcurrentModificationException_.
+- _CopyOnWriteArrayList_ and _CopyOnWriteArraySet_ were introduced in Java 5 ensuring that any mutation of the data
+  structure result in a fresh copy. Existing iterators can continue iterating over the old array, there is no
+  _ConcurrentModificationException_ thrown.
+- __Latches__ ensure that when their count will reach 0 and all threads held on the _await()_ will be released to
+  continue processing. Latches cannot be reused, their countdown value cannot be re-set.
+- _Runnable_ doesn't return a result and doesn't throw exceptions. If an exception is thrown from _Runnable_ it is
+  propagated up the stack and the executing thread stops running.
+- _ExecutionService_ defines a mechanism for executing tasks on a pool of threads. There are factory methods to create
+  them in _Executors_ class. Using managed threads helps to avoid costly thread creation for each task. The _submit()_
+  call to ExecutorService returns a _Future<V>_, which allows blocking _get()_ operation. Threads in ExecutorServices
+  can be customized with _ThreadFactory_.
+- _Fork/Join framework_ allows developer not to manage their threads. To use the framework there is a new
+  implementation (since Java 7) of ExecutorService, called _ForkJoinPool_. _ForkJoinTask_ is more lightweight than a
+  Thread. It can be subdivided into smaller tasks. Fork/Join framework is suitable only for certain types of tasks.
+  Fork/Join framework also uses the __work stealing__ approach, which can be used independently of tasks subdivision.
+  Usually the sizing pool is __availableProcessor - 1__, but it not always uses the expected value: it's OS and hardware
+  dependent. The parallelism factor can also be changed using a JVM flag.
+- One of the modern approaches to multithreading is the use of _parallelStream()_. It's tempting but the benefit should
+  be measured, as in some circumstances (smaller collections) serial computation can be faster.
+
 ## Modern Software Engineering: Doing What Works to Build Better Software Faster (ISBN: 978-0-13-731491-1)
 
 1 Introduction
