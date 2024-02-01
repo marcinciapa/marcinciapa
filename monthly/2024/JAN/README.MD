@@ -89,7 +89,7 @@ Chapter 12. Concurrent Performance Tuning
   It must be protected by _synchronized_ or other locks.
 - _synchronized_ keyword can be used to control access to a shared state by multiple threads. However, it requires
   careful design. Synchronization may slow down the program in certain circumstances. It must be performance tested.
-- There are two possible approaches to a memory model: __String memory model__, when all cores see the same value all
+- There are two possible approaches to a memory model: __Strong memory model__, when all cores see the same value all
   the time, or __Weak memory model__, where cores may see different values and there are special cache rules which
   control when this may occur. The problem with strong memory model is that it requires write back to memory and
   notifications of cache invalidation could dominate the memory bus. It's unsuitable for multicore environments.
@@ -98,7 +98,7 @@ Chapter 12. Concurrent Performance Tuning
 - Locking with synchronization is one of the most important techniques. But this approach is not satisfying for
   developers interested in performance. With synchronization, threads keep their own description of objects' states and
   changes made by threads must be flushed to memory. The main idea of synchronization is that the local view of the
-  object's state hast to be synchronized with the main memory. To make this approach successful both read and write
+  object's state has to be synchronized with the main memory. To make this approach successful both read and write
   access must be synchronized. Synchronization only on write operations could lead to lost updates.
 - _synchronized_ lock has its limitations: all synchronized operations are treated equally, synchronization is performed
   on the method level or _synchronized_ block, lock is acquired or the thread is blocked: no way to continue processing
@@ -156,7 +156,7 @@ Chapter 12. Concurrent Performance Tuning
     - Make predictions,
     - Test predictions.
 - Software engineering is applying the scientific approach to find efficient solutions to problems in software.
-- We must become expects in learning and complexity management. Our approach to creating complex systems should be
+- We must become experts in learning and complexity management. Our approach to creating complex systems should be
   evolutionary. We should make progress even when answers or direction is uncertain.
 - Engineering in general means "stuff that works".
 - Software development is one of the more complex activities that we undertake. We have learned and keep learning
