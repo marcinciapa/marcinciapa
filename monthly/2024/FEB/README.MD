@@ -17,7 +17,7 @@
 - Formal methods are not practical in the area of software development. Creating software is complex enough, creating
   code which proves itself correct is even harder. Mathematical approach is limiting. Math doesn't replace testing and
   experimentation. We should apply mathematical thinking when suitable, but take data-driven, pragmatic, experimental
-  approach to learning. In comparison to other engineering areas, testing software is testing our product itself, not 
+  approach to learning. In comparison to other engineering areas, testing software is testing our product itself, not
   the simulation of it.
 - If our engineering practices don't allow us to move faster, they don't qualify as engineering. We should use our
   experience, empirical learning, discovery and imagining how things could possibly go wrong. While creating a system,
@@ -42,6 +42,31 @@
   communications.
 - In the era of serverless computing we should probably focus on denormalized data stores and eventual consistency
   rather than minimizing storage with normalized data. Such approach improves modularity.
+
+3 Fundamentals of an Engineering Approach
+
+- Engineering is grounded in science and taking a pragmatic, empirical approach. Sometimes we get excited about new
+  technologies, but they usually don't make things much different. We have problems with learning new ideas, we have
+  bigger problem with discarding old ideas. And this should be our primary focus.
+- It's important to measure performance of software development, but we struggle with measuring it effectively.
+  Effective measurements don't track productivity but evaluate effectiveness in terms of __stability__ and
+  __throughput__. Stability can be tracked by __Change Failure Rate__ (introducing defects) and
+  __Recovery Failure Time__. Throughput can be tracked by __Lead Time__ (how long does it take to change an idea into
+  working software) and __Frequency__ (how often changed are deployed to production). These measurements don't say if we
+  are building the right things, but if we are building things right. When making any decision, we should ask ourselves
+  how they influence the quality of our software (stability) and the efficiency we create it (throughput).
+- Speed of delivery doesn't clash with quality. High-quality software leads to speed. Feedback leads to high quality
+  software. Good engineering leads to both: speed and quality.
+- Introducing Change Advisory Boards sounds like a good idea. But the experience teaches us that they don't work. The
+  way to discovery it was measurement.
+- We need to make hard decisions. Sometimes ideas reduce throughput but increase stability.
+- Our discipline should focus on two competencies: we should be __experts at learning__, and we should be
+  __experts at managing complexity__. We should improve our skills in managing complexity, focusing on both: technical
+  and organizational level. Technically difficult things, like concurrency and coupling, are difficult in the world of
+  people too. It's important to manage complexity of the organizational information systems as well as technical
+  software information system. As engineers, we pay too little attention to it.
+- We tend to overestimate our abilities to solve problems in code. We should assume our ideas are wrong. We should have
+  in mind the potential growth of complexity in systems we create and manage it with care.
 
 # Projects
 
