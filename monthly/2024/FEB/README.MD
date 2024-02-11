@@ -72,6 +72,8 @@
 
 ## ACTracker
 
+- Application services instrumentation was [introduced](https://github.com/marcinciapa/actracker-api/pull/169).
+
 # Tutorials
 
 [Spring Security tutorial](https://github.com/marcinciapa/tutorials/pull/32)
