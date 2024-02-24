@@ -2,6 +2,33 @@
 
 ## Optimizing Java. Practical Techniques for Improving JVM Application Performance (ISBN: 978-1-49-203927-3)
 
+Chapter 13. Profiling
+
+- There are two different approaches to profiling: execution and allocation. Profilers should be used to identify code
+  which is a candidate for refactoring and performance optimization.
+- Using profilers provide a risk of incorrect interpretation of application's behavior and exhibit biases. To reduce
+  the risk it's recommended to use multiple profiling tools.
+- Profilers work by using low-level instrumentation, usually as a JVM agent or a component which dynamically attaches to
+  a running JVM. Agents may be used for different purposes: monitoring (observing the current state), alerting
+  (detecting anomalies), profilers (detailed information about running applications).
+- Before starting using profiling, it should be confirmed that the application is consuming close to 100% of CPU.
+  Otherwise, other techniques should be explored. It should also be confirmed that the CPU consumption is not caused by
+  Stop the World phases of GC (GC log).
+- Profiling usually use sampling to get data, there is a cost related to measurements. The sampling interval is a
+  tradeoff between cost and accuracy. Sampling mostly is only performed at safepoints.
+- A complementary approach to monitoring state is using operational monitoring tools, visualising the current state of
+  the system and validating if the system is operating normally.
+- Allocation profiling (memory profiling) verifies the allocation behavior of the application. A simple instrumentation
+  approach is inserting a call to a static method which logs the allocation next to all identified allocation opcodes. It
+  requires bytecode manipulation, which can be done using ASM library. A __class rewriter__ is a bridge between the
+  instrumentation API and ASM. Per-thread counts of how much memory has been allocated is maintained. Such approach
+  leads to a large amount of extra calls, which has a significant effect on performance. An alternative approach is
+  __TLAB exhaustion__. This approach monitors TLAB allocations using HotSpot-specific callbacks. This approach is based
+  on sampling, which means it may not be accurate. The intent is identifying the top allocation sources.
+- Heap dump analysis is a technique related to allocation profiling. The examples of data points are numbers and types
+  of objects, structure of the object graph. It allows identifying live objects and dead objects not yet collected. The
+  size of heap dumps may have 300-400% of the dumped memory size. Creating a heap dump requires STW event.
+
 ## Modern Software Engineering: Doing What Works to Build Better Software Faster (ISBN: 978-0-13-731491-1)
 
 2 What is Engineering?
