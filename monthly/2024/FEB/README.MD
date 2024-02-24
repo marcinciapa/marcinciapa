@@ -19,8 +19,8 @@ Chapter 13. Profiling
 - A complementary approach to monitoring state is using operational monitoring tools, visualising the current state of
   the system and validating if the system is operating normally.
 - Allocation profiling (memory profiling) verifies the allocation behavior of the application. A simple instrumentation
-  approach is inserting a call to a static method which logs the allocation next to all identified allocation opcodes. It
-  requires bytecode manipulation, which can be done using ASM library. A __class rewriter__ is a bridge between the
+  approach is inserting a call to a static method which logs the allocation next to all identified allocation opcodes.
+  It requires bytecode manipulation, which can be done using ASM library. A __class rewriter__ is a bridge between the
   instrumentation API and ASM. Per-thread counts of how much memory has been allocated is maintained. Such approach
   leads to a large amount of extra calls, which has a significant effect on performance. An alternative approach is
   __TLAB exhaustion__. This approach monitors TLAB allocations using HotSpot-specific callbacks. This approach is based
