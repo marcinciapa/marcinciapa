@@ -122,5 +122,5 @@ Chapter 13. Profiling
 
 # Tutorials
 
-[Spring Security tutorial](https://github.com/marcinciapa/tutorials/pull/32)
-[Spring Boot 3 + Spring Security 6 tutorial](https://github.com/marcinciapa/tutorials/pull/33)
+- [Spring Security tutorial](https://github.com/marcinciapa/tutorials/pull/32)
+- [Spring Boot 3 + Spring Security 6 tutorial](https://github.com/marcinciapa/tutorials/pull/33)
