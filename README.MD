@@ -1,15 +1,8 @@
 # Hello, :wave: I'm Marcin
 
-Welcome to my profile. I hope you will enjoy and benefit from being here, as much as I do.
-The purpose of this profile is to help to grow.
-And growing together is growing fast. 
-This profile is created for learning and sharing knowledge.
-I use it to gather my side projects, which I use to learn implementing new methodologies and technologies.
-It exists to be a structured summary of my learning effort.
-It's here for passion, having fun, and share this passion with others.
-And it exists for you to find out what do I focus on as a passionate software developer, if you're only interested.
-Because I believe that only practicing regularly makes you strong and confident of your future.
-Let's share the passion to grow together!
+I'm a Software Engineer with a need to learn and grow. And this profile exists to track and share my learning effort.
+I use it to gather my side projects, which help me to practice new methodologies and technologies.
+It's here for having fun and sharing fun with others.
 
 > The difference between ordinary and extraordinary is practice
 >
@@ -20,7 +13,7 @@ Let's share the passion to grow together!
 
 My journey as a software engineer started when I was a teenager.
 I was in high school, [Upper-Secondary Schools of Communications](https://tl.krakow.pl/) and attended a course about programming AVR microcontrollers.
-And I totally loved it since the first class. It was the moment when I realized what do I want to do for living and for fun.
+And I totally loved it since the first class. It was the moment when I realized what do I want to do for living and fun.
 When I started college, [Cracow University of Technology](https://www.pk.edu.pl), Computer Science, I was sure I'll stay close to the hardware, programming low level (I loved Assembly!) and will never be a web developer.
 When I graduated, I already worked full time as a web developer.
 
@@ -65,15 +58,15 @@ I had a chance to work directly with customers, researching solutions, projects,
 I liked a lot the culture of promoting contract tests for API-exposing microservices.
 This job gave me the opportunity to wear different hats: Java developer, QA, DevOps, PM, coffee machine maintainer.
 
-And here I am now. Still loving the feeling of joy when 'It works!' after adding yet another line of code.
+And here I am now. Still loving this feeling of joy when 'It works!' after adding yet another line of code.
 
 ## My skill set
 | Skill           | Rate                                                                   |
 |-----------------|------------------------------------------------------------------------|
 | Java            | :green_circle::green_circle::green_circle::white_circle::white_circle: |
-| Spring          | :green_circle::green_circle::white_circle::white_circle::white_circle: |
+| Spring          | :green_circle::green_circle::green_circle::white_circle::white_circle: |
 | Hibernate/JPA   | :green_circle::green_circle::green_circle::white_circle::white_circle: |
-| Jooq            | :green_circle::green_circle::white_circle::white_circle::white_circle: |
+| jOOQ            | :green_circle::green_circle::white_circle::white_circle::white_circle: |
 | Postgres        | :green_circle::green_circle::green_circle::white_circle::white_circle: |
 | Oracle          | :green_circle::green_circle::white_circle::white_circle::white_circle: |
 | MongoDB         | :green_circle::white_circle::white_circle::white_circle::white_circle: |
@@ -105,7 +98,7 @@ Screenshots below come from a simple spreadsheet doing more or less the same thi
 The system contains of following components
 - [actracker-ui](https://github.com/marcinciapa/actracker-ui) - a frontend application responsible for presentation layer
 - [actracker-api](https://github.com/marcinciapa/actracker-api) - a CRUD backend application responsible for handling clients' requests
-- [actracker-search-feeder](https://github.com/marcinciapa/actracker-search-feeder) - an event listener responsible for ingesting data to the search engine after they change
+- [actracker-search-feeder](https://github.com/marcinciapa/actracker-search-feeder) - an event consumer responsible for ingesting data to the search engine after they change
 
 Applications and their infrastructure are deployed to [Equino Kubernetes](https://github.com/marcinciapa/equino-kubernetes) cluster.
 
@@ -115,7 +108,8 @@ Except functional part, the application is a sandbox to practice the software en
 The [repository](https://github.com/marcinciapa/tutorials) for exercises related to software engineering field, like practicing concepts learnt from books.
 
 ## My learnings
-Here's the log of my learnings, divided by months. Feel free to spy my on my progress.
+Here's the log of my learnings, divided by months. Feel free to spy me on my progress.
+- [February 2024](monthly/2024/FEB/README.MD)
 - [January 2024](monthly/2024/JAN/README.MD)
 - [December 2023](monthly/2023/DEC/README.MD)
 - [November 2023](monthly/2023/NOV/README.MD)
