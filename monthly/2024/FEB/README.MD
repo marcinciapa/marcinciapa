@@ -95,6 +95,25 @@ Chapter 13. Profiling
 - We tend to overestimate our abilities to solve problems in code. We should assume our ideas are wrong. We should have
   in mind the potential growth of complexity in systems we create and manage it with care.
 
+4 Working Iteratively
+
+- __Iteration__ is a procedure in which repetition for a sequence of operations yields results successively closer to a
+  desired result. Iteration drives learning and requires collecting feedback constantly. In iterative approach we make
+  mistakes and correct them. We approach our goals progressively even if we don't know how to approach them.
+- Software engineering is a learning exercise rather than a production problem. For that reason iterative approach fits
+  it well. Software development never begins with full understanding of effort and scope.
+- Each change is finished when it's releasable. Finished means delivers a value to users. We should iterate on the
+  products we create and improve them based on feedback from customers.
+- The cost of change in waterfall approach raises proportionally to time. Iterative approach flattens the cost of
+  change. That gives opportunity to change our minds, experiment, discover and fix errors with the same cost, whenever
+  it happens.
+- We are terrible with guessing what our customers want. Even when we ask them, they don't know it either. We must take
+  chances, take a risk, process in small steps and limited scope. We have to work precisely when we don't yet know the
+  answers and how much work will be involved. Working iteratively is the only effective strategy for changing situation.
+- Projects fail not only because of bad ideas. Sometimes the idea is good, but execution is poor. There is a need to try
+  ideas with minimum cost. If the idea is bad, there is less work lost.
+- Practices such as TDD and CI support iterative process.
+
 # Projects
 
 ## ACTracker
