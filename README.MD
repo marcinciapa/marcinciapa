@@ -66,7 +66,7 @@ And here I am now. Still loving this feeling of joy when 'It works!' after addin
 | Java            | :green_circle::green_circle::green_circle::white_circle::white_circle: |
 | Spring          | :green_circle::green_circle::green_circle::white_circle::white_circle: |
 | Hibernate/JPA   | :green_circle::green_circle::green_circle::white_circle::white_circle: |
-| Jooq            | :green_circle::green_circle::white_circle::white_circle::white_circle: |
+| jOOQ            | :green_circle::green_circle::white_circle::white_circle::white_circle: |
 | Postgres        | :green_circle::green_circle::green_circle::white_circle::white_circle: |
 | Oracle          | :green_circle::green_circle::white_circle::white_circle::white_circle: |
 | MongoDB         | :green_circle::white_circle::white_circle::white_circle::white_circle: |
