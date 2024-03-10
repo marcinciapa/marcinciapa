@@ -23,6 +23,16 @@ Chapter 14. High-Performance Logging and Messaging
   ThreadLocal objects, however, are problematic in web containers. For that reason Log4j doesn't use ThreadLocal when
   running within a web container. Also, SLF4J requires not using a garbage-free approach.
 
+Chapter 15. Java 9 and the Future
+
+- Java 9 introduced such changes as code modularisation, updated G1 as a default Garbage Collector. A significant change
+  was introducing separate regions of code cache. Access to _Unsafe_ was constrained.
+- The most prominent changes in Java ecosystem in the future should be related to value types (project Valhalla) and
+  multithreading (project Loom).
+- With __Graal__ as C2 compiler and __Truffle__ as a framework for developing interpreters for JVM, it's possible to
+  achieve Ahead of Time compilation.
+- In Java 21 ZGC was significantly improved, currently offering generational approach to garbage collection.
+
 ## Modern Software Engineering: Doing What Works to Build Better Software Faster (ISBN: 978-0-13-731491-1)
 
 5 Feedback
