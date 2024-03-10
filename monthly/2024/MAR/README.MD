@@ -67,6 +67,36 @@ Chapter 15. Java 9 and the Future
 - Speed and quality of feedback matters. If the feedback is late, it may be useless. If it is misleading or wrong, our
   decisions will also be wrong.
 
+6 Incrementalism
+
+- Incrementalism means that components can be replaced when improved to ensure better performance. It's building value
+  progressively, making use of modularity. As working iteratively means refining and improving over a series of
+  iterations, working incrementally means building piece by piece. Creating complex systems requires both approaches. An
+  incremental approach allows decomposing work and delivering step-by-step.
+- Incrementalism is closely related to modularity. It's easier to divide problem into independently developed pieces,
+  when each component of the system is simpler than a whole. Each component is easier to test, faster to deploy,
+  sometimes independently on the others. Such mindset is required to operate on microservices, but microservices is not
+  the only way. When dividing, boundaries are important, as they represent the key points of coupling in the system.
+- Isolation is the most important value of modularity: internal details of one module are hidden from other modules.
+  Teams work more independently, they make small steps forward without a need for coordination. A common, not
+  necessarily good, way to manage teams is to try to standardize processes across an organization. But creative work
+  depends on human creativity. To leverage it, organizations need to leave room in processes and policies. It's
+  important to define characteristics of high-performing teams and leave them space to make progress and change their
+  minds without asking for permission. The most effective strategy is to create many small, independent teams and give
+  them freedom to make their own changes. Distributed, incremental change is the key.
+- The tools enabling incrementalism are __feedback__ and __experimentation__. It also requires focusing on
+  __modularity__ and __separation of concerns__. It's necessary to design system in a way allowing limiting the scope of
+  changes. __Refactoring__ helps to make changes in often, tiny increments. __Version control__ allows to always
+  withdraw to a position of stability. __Testing__ ensures protection to move forward incrementally. It is also an
+  ability to create mini executable specifications for changes.
+- The goal is to manage complexity with these techniques by making progress in small, frequent steps rather than large,
+  riskier steps. We can improve the speed and quality of feedback using __Continuous Integration__ and __Continuous
+  Delivery__. It allows resolving problems we created maybe before it was even noticed. Another powerful technique is
+  __Ports and Adapters__ pattern. All of these strategies limit the impact of change.
+- Working incrementally is fundamental to build complex systems. Such approach questions the mindset that systems can
+  be fully designed in minds of experts. A good design is the result of work and gradual apply of knowledge and
+  understanding, as we make progress.
+
 # Projects
 
 ## ACTracker
