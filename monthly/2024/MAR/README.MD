@@ -97,6 +97,33 @@ Chapter 15. Java 9 and the Future
   be fully designed in minds of experts. A good design is the result of work and gradual apply of knowledge and
   understanding, as we make progress.
 
+## SQL Performance Explained (ISBN: 978-3-95-030782-5)
+
+Chapter 1: Anatomy of an Index
+
+- An index is a distinct structure, which requires its own disk space to hold a copy of the indexed table data. Entities
+  are arranged in a well-defined order and refer to the table. It undergoes constant changes during each update of
+  indexed data. In the most popular form (B-Tree) it combines two data structures: a doubly linked list and a search
+  tree. Each node contain links to two neighboring entities. Each branch node entry corresponds to the biggest value in
+  the respective leaf node. The branch layer is built up until all leaf nodes are covered by a branch node. The
+  procedure repeats until all keys fit into a single node, the root.
+- The primary purpose of an index is providing ordered representation of the indexed data. The table data is stored in a
+  heap structure and is not sorted.
+- Comparing to the number of leaf nodes, the tree depth grows slowly. A tree of depth four or five is sufficient to
+  index millions of records. Databases try to put as many entries into a single node as possible.
+- The possible causes of slow indexes are:
+    - When a value is found in a leaf node, next leaf node can contain another entries with the same value. It's than
+      required to follow the next leaf in the chain to check.
+    - Even a single leaf may contain many hits. That means that for each hit, table access may be required. Table access
+      is a slow operation comparing to searching the index.
+- It's possible to retrieve an information how the database uses the index. The possibilities (for Oracle) are:
+    - _INDEX UNIQUE SCAN_ performs the tree traversal only. A unique constraint ensures that only one entry will mach
+      the search criteria.
+    - _INDEX RANGE SCAN_ follows the leaf node chain to find all matching entries, if multiple entries could possibly
+      match.
+    - _TABLE ACCESS BY INDEX ROWID_ retrieves the row from the table for every matching record. Table access, especially
+      for multiple rows, can become slow.
+
 # Projects
 
 ## ACTracker
