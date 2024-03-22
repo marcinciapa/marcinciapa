@@ -129,3 +129,5 @@ Chapter 1: Anatomy of an Index
 ## ACTracker
 
 # Tutorials
+
+- Getting Started With Python: [Getting Started](https://github.com/marcinciapa/tutorials/pull/34)
