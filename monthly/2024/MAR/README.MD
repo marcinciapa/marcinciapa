@@ -120,6 +120,38 @@ Chapter 15. Java 9 and the Future
   the only way to make a real progress. It's safer to assume that what we know and think is wrong and prove how it is
   wrong.
 
+8 Being Experimental
+
+- Experimentation is a procedure taken to validate a hypothesis. Experiments demonstrate how an outcome changes when a
+  particular factor is manipulated. Software development tends to be based on guesses (what users may like? what design?
+  what technology? are there bugs? is the software useful and makes money?). It's a craft-based approach. We should use
+  guesses where they are appropriate, but conduct experiments to test the guesses. It's an additional wok, but it's not
+  about working harder, but rather working smarter.
+- Experimenting discourages decisions made by authorities, no mather how charismatic or famous they are. Our decisions
+  should be based upon evidence. What made you pick the programming language or a framework? We should stop having
+  religious wars about such things. When disagreeing with results, we should do experiments and share results.
+- Following characteristics define an experimental approach:
+    - __Feedback__ Understand how you will collect results. Improve the speed of feedback (have fast commit tests and
+      more extensive tests suite providing more extensive feedback).
+    - __Hypothesis__ Have an idea in mind. Science is based on guessing, science calls it hypothesis. The difference
+      between science and less effective approaches is that science doesn't stop here. Science makes predictions based
+      on hypotheses and checks these predictions. _If your guess disagrees with experiment, then your guess is wrong_.
+    - __Measurement__ Have a clear idea how to evaluate predictions. What does "success" or "failure" mean? It's easy to
+      be fooled by fitting the facts to the data. It's easy to measure wrong things.
+    - __Control the variables__ Eliminate as many variables as possible. Understand the signals. Version control,
+      automated testing, infrastructure as a code, these techniques help to make sure when we put the software to
+      production, it will do what is intended. Continuous delivery helps to make progress with more confidence, it is a
+      perfect platform for learning about changes we want to make by having software which is always in a releasable
+      state.
+- In software, we have an advantage of having a platform supporting extensive experiments: a computer. We can run
+  millions experiments every second. One of the most flexible form of experiment is an automated test. The clearest form
+  of such experiment is __TDD approach__. We can begin with creating user-centered specifications and continue with more
+  fine-grained unit tests.
+- In other than software forms of science and engineering, experiments are hard for ethical or practical reasons. We
+  have an opportunity of conducting experiments at scale. With our tests we can get results in minutes.
+- Experiments may come as tiny or big and complicated. The essence is to demonstrate what happens when a particular
+  factor is manipulated. We should care about results of our experiments being reliable and repeatable.
+
 ## SQL Performance Explained (ISBN: 978-3-95-030782-5)
 
 Chapter 1: Anatomy of an Index
