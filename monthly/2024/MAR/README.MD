@@ -97,6 +97,29 @@ Chapter 15. Java 9 and the Future
   be fully designed in minds of experts. A good design is the result of work and gradual apply of knowledge and
   understanding, as we make progress.
 
+7 Empiricism
+
+- Empiricism means emphasizing evidence discovered in experiments. It's an important part of scientific method, that
+  theories must be tested against observations rather than based on reasoning, intuition, revelation. It's related to
+  experiments.
+- Engineers test their solutions, often to destruction, to learn how accurate their simulations are. As engineering
+  means applying ideas to solve real-world problems, if software doesn't deliver any new value, it's irrelevant, no
+  mater how many experiments were conducted. Most ideas fail to improve metrics, usually only one third of them improve
+  metrics. Without analysing how software provides value, organizations proceed basing on guessing.
+- Releasing applications to production will always surprise us, but releasing software to production is also an
+  opportunity to learn.
+- Being empirical requires us to rethink how we interpret signals from reality and assemble them into theories which
+  should be tested by experimenting. It's important, because our perception of reality is not reality. Even biology
+  tricks us to make our perception look seamless. For example, our visual sampling rate is very low. Empiricism allows
+  us to sense-check the validity of our experiments.
+- Science is a problem-solving technique. We create a model of a problem and we test it. Engineering adds the
+  requirement of practicality and this is where empiricism comes into play.
+- __Mechanical sympathy__ is helpful while designing ideas, for example designing the code based on understanding how
+  hardware works to take advantage of it.
+- Without scientific methods we use guesses to solve problems. Validating our ideas is an additional work, but this is
+  the only way to make a real progress. It's safer to assume that what we know and think is wrong and prove how it is
+  wrong.
+
 ## SQL Performance Explained (ISBN: 978-3-95-030782-5)
 
 Chapter 1: Anatomy of an Index
