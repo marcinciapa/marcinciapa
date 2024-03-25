@@ -188,3 +188,4 @@ Chapter 1: Anatomy of an Index
 - Getting Started With Python: [Getting Started](https://github.com/marcinciapa/tutorials/pull/34)
 - Getting Started With Python: [The Basics](https://github.com/marcinciapa/tutorials/pull/35)
 - Getting Started With Python: [Operators](https://github.com/marcinciapa/tutorials/pull/36)
+- Getting Started With Python: [Control Flow](https://github.com/marcinciapa/tutorials/pull/37)
