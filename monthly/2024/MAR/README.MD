@@ -125,7 +125,7 @@ Chapter 15. Java 9 and the Future
 - Experimentation is a procedure taken to validate a hypothesis. Experiments demonstrate how an outcome changes when a
   particular factor is manipulated. Software development tends to be based on guesses (what users may like? what design?
   what technology? are there bugs? is the software useful and makes money?). It's a craft-based approach. We should use
-  guesses where they are appropriate, but conduct experiments to test the guesses. It's an additional wok, but it's not
+  guesses where they are appropriate, but conduct experiments to test the guesses. It's an additional work, but it's not
   about working harder, but rather working smarter.
 - Experimenting discourages decisions made by authorities, no mather how charismatic or famous they are. Our decisions
   should be based upon evidence. What made you pick the programming language or a framework? We should stop having
@@ -178,10 +178,6 @@ Chapter 1: Anatomy of an Index
       match.
     - _TABLE ACCESS BY INDEX ROWID_ retrieves the row from the table for every matching record. Table access, especially
       for multiple rows, can become slow.
-
-# Projects
-
-## ACTracker
 
 # Tutorials
 
