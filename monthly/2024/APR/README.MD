@@ -6,3 +6,4 @@
 
 # Tutorials
 
+- Getting Started With Python: [Data Structures](https://github.com/marcinciapa/tutorials/pull/38)
