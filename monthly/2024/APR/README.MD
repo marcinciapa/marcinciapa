@@ -48,6 +48,37 @@
   efficiently creating high-quality work is limiting coupling. We need modular organizations as well as modular
   software.
 
+10 Cohesion
+
+- Cohesion is the degree to which the elements inside a module belong together. Cost of change is the key measure of
+  cohesion.
+- _Put all unrelated things further apart, put related things closer together_. We should build our systems out of
+  small, understandable, testable pieces. Throwing a collection of unrelated things into a single file doesn't make the
+  code modular. Modularity hides information from other components. If the code within modules is not cohesive, it won't
+  work. Skill and experience of developer is really important.
+- The naive view of cohesion is that everything is together and easy to use.
+- Optimising code to reduce typing is a mistake. Code is a communication tool, it's primary purpose is to communicate
+  ideas to humans. Making code readable is a professional duty and one of the most important principles in managing
+  complexity. We should optimise to reduce thinking rather than to reduce typing.
+- Cohesion is contextual. It's tightly related to modularity and separation of concerns, because these techniques help
+  to define what cohesion means in the context of particular design.
+- DDD is a powerful tool in creating better design. Another important tool is separation of concerns (one class, one
+  thing; one method, one thing). Yet another tool is testability: encourages modularity, separation of concerns and
+  other attributes. Achieving a testable design forces the code to be cohesive.
+- High performance systems demand simple, well-designed code. the route to fast code is writing simple, easy to
+  understand code. Modern compilers can optimize code for better performance (methods inlining and other more
+  sophisticated techniques). They benefit from simple, predictable code.
+- Coupling results in cost which we should consider. Code A and B is coupled when B must be changed only because A
+  changed. Code A and B is cohesive when a change to A allows B to change so that both add new value. It's impossible to
+  create code without coupling, modules communicate with each other, so they are coupled to some degree. Coupling is the
+  cost of cohesion.
+- Cohesion is also an attribute of an organisation, it works at the level of information. It's a leading predictor of
+  high performing teams. Cohesive teams have the ability to make their own decisions without the need to ask for
+  permissions, they have all they need within their bounds to make decisions.
+- Code which randomly combines ideas in this way is not cohesive, it is unstructured. Cohesion means putting related
+  concepts, which change together. It can't mean _together_ by accident. Cohesion makes sense when combined with
+  modularity.
+
 ## SQL Performance Explained (ISBN: 978-3-95-030782-5)
 
 # Projects
