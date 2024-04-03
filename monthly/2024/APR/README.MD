@@ -50,6 +50,14 @@
 
 ## SQL Performance Explained (ISBN: 978-3-95-030782-5)
 
+# Projects
+
+## Equino
+
+- Equino Kubernetes cluster monitoring was [set up](https://github.com/marcinciapa/equino-kubernetes/pull/7).
+
+## ACTracker
+
 # Tutorials
 
 - Getting Started With Python: [Data Structures](https://github.com/marcinciapa/tutorials/pull/38)
