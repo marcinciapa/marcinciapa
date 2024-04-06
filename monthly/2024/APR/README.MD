@@ -93,3 +93,5 @@
 
 - Getting Started With Python: [Data Structures](https://github.com/marcinciapa/tutorials/pull/38)
 - Getting Started With Python: [Loops](https://github.com/marcinciapa/tutorials/pull/39)
+- Getting Started With Python: [Functions](https://github.com/marcinciapa/tutorials/pull/40)
+- 
