@@ -85,8 +85,6 @@
 
 ## Equino
 
-- Equino Kubernetes cluster monitoring was [set up](https://github.com/marcinciapa/equino-kubernetes/pull/7).
-
 ## ACTracker
 
 # Tutorials
