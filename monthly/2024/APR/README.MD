@@ -22,7 +22,7 @@
   same materials and techniques and compare them. These small pieces are modules. Such experiments will give only a
   partially true picture. But modularity provides a possibility to measure things we couldn't measure without it, a
   single module is more testable than the whole. Modularity provides greater control and precision of measurement.
-- The software systems are complex and testing them as the whole is complex and lacks precision, reproducibility,
+- The software systems are complex and testing them as a whole is complex and lacks precision, reproducibility,
   control, visibility. We need to be sure what is the objective of test (what do we want to demonstrate). Modular
   testing strategy is detailed, demonstrates the correct working of separate parts. To do this we need to define points
   of measurement, places in the whole system where we can insert probes. To relay upon them, the measurements must be
