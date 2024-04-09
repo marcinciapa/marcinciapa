@@ -93,3 +93,4 @@
 - Getting Started With Python: [Loops](https://github.com/marcinciapa/tutorials/pull/39)
 - Getting Started With Python: [Functions](https://github.com/marcinciapa/tutorials/pull/40)
 - Getting Started With Python: [Classes](https://github.com/marcinciapa/tutorials/pull/41)
+- Getting Started With Python: [Working with Dates](https://github.com/marcinciapa/tutorials/pull/42)
