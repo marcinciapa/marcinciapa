@@ -81,6 +81,29 @@
 
 ## SQL Performance Explained (ISBN: 978-3-95-030782-5)
 
+Chapter 2: The Where Clause
+
+- _where_ utilizes the most important role of an index: finding data quickly. Condition, when specified without proper
+  care, may have significant index on performance and causes query slowness, when a large part of index must be scanned.
+- An index for the primary key is created automatically. A condition supported by such index can be met by only one
+  entry, there is no need to follow the index nodes, it's enough to traverse the index tree (_INDEX UNIQUE SCAN_
+  operation) with logarithmic scalability and the cost is independent of the table size. If additional data needs to be
+  fetched from the table, there may be a performance impact, but there can be only one table access. Using this
+  operation does not cause slow query problem.
+- In case of composite key (multi-column primary key) an index is created containing all PK columns (__concatenated
+  index__). Column order is very important. When filtering on the full primary key, _INDEX UNIQUE SCAN_ is performed.
+  Index cannot be used when filtering by second column only, _FULL TABLE SCAN_ operation is performed and the condition
+  is checked against every row (cost is dependent on table size). It can be quick on development environments, but cause
+  performance problems on production. However, _FULL TABLE SCAN_ is sometimes more effective, as it allows retrieving
+  large portions of the table of the same time without an overhead of the index lookup. Each column in an index is a
+  sort criterion according to its position (like last, first name in a phone book), second column determines order only
+  for the same value of the first column. Searching index is not possible with the second column only (it's like
+  searching the phone book by first name). We can reverse the index column order. Searching by the first column only is
+  still supported by the index. Such results are not unique anymore, database must follow the leaf nodes in such case
+  (_INDEX RANGE SCAN_). Still creating a single index is usually more optimal, it saves storage and maintenance overhead
+  on updates. An optimal index can be created knowing the access path to data, which usually developers know the best.
+- 
+
 # Projects
 
 ## Equino
