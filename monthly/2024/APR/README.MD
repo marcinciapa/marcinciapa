@@ -143,3 +143,4 @@ Chapter 2: The Where Clause
 - Getting Started With Python: [Working with Dates](https://github.com/marcinciapa/tutorials/pull/42)
 - Getting Started With Python: [Working with Files](https://github.com/marcinciapa/tutorials/pull/43)
 - Getting Started With Python: [Fetching Data from Internet](https://github.com/marcinciapa/tutorials/pull/44)
+- Getting Started With Python: [Modules](https://github.com/marcinciapa/tutorials/pull/45)
