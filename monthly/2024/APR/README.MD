@@ -127,6 +127,14 @@ Chapter 2: The Where Clause
   covering this search term, we need __function-based index__, which applies the function and puts the result into the
   index (`CREATE INDEX em_name ON employee (UPPER(last_name))`). When a database doesn't support function-base indexes,
   we can add a computed column to the table and create an index on this column.
+- It's possible to index expression like `X + Y` and user-defined functions. But functions must be deterministic (return
+  consistent result for the same parameters). Database calls the function and stores the result in the index, index is
+  not updated periodically (age can be updated only if the date of birth is updated). Functions __must be marked as
+  deterministic__ (`DETERMINISTIC` in Oracle, `IMMUTABLE` in PostgreSQL). Functions like current time, random number
+  generators, functions depending on environment variables cannot be indexed.
+- Indexes cause ongoing maintenance. We should aim to define universal indexes which suffice several access paths. To
+  achieve that we should use the same function (`UPPER`/`LOWER`) consequently. We should aim to index the original data,
+  as this is often the most useful information.
 
 # Projects
 
