@@ -117,7 +117,16 @@ Chapter 2: The Where Clause
   possible way.
 - Most statistics are maintained on the column level: number of distinct values, number of NULLs, columns histogram,
   table size (in rows and blocks). Index statistics contain tree depth, number of leaf nodes, number of distinct keys,
-  clustering factor. Optimizers use this values to estimate the query cost.
+  clustering factor. Optimizers use this values to estimate the query cost. Incorrect query plan cost estimation is an
+  indicator of problems with statistics (index scan returns 40 rows, fetching 100 rows from the table). Some databases
+  don't update statistics on index creation. Updating statistics help to check optimizer's estimates, but don't improve
+  execution performance.
+- Index on _LAST_NAME_ requires us to search using the same case (upper/lower). It's easily achievable by converting
+  both sides of where clause: `WHERE UPPER(last_name) = UPPER('smith')`. However, such query results in full table scan.
+  Index on _LAST_NAME_ is not usable, because the search is not on _LAST_NAME_, but _UPPER(LAST_NAME)_. To have an index
+  covering this search term, we need __function-based index__, which applies the function and puts the result into the
+  index (`CREATE INDEX em_name ON employee (UPPER(last_name))`). When a database doesn't support function-base indexes,
+  we can add a computed column to the table and create an index on this column.
 
 # Projects
 
