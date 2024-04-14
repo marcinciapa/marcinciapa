@@ -94,15 +94,30 @@ Chapter 2: The Where Clause
   index__). Column order is very important. When filtering on the full primary key, _INDEX UNIQUE SCAN_ is performed.
   Index cannot be used when filtering by second column only, _FULL TABLE SCAN_ operation is performed and the condition
   is checked against every row (cost is dependent on table size). It can be quick on development environments, but cause
-  performance problems on production. However, _FULL TABLE SCAN_ is sometimes more effective, as it allows retrieving
-  large portions of the table in the same time without an overhead of the index lookup. Each column in an index is a
-  sort criterion according to its position (like last, first name in a phone book), second column determines order only
-  for the same value of the first column. Searching index is not possible with the second column only (it's like
-  searching the phone book by first name). We can reverse the index column order. Searching by the first column only is
-  still supported by the index. Such results are not unique anymore, database must follow the leaf nodes in such case
-  (_INDEX RANGE SCAN_). Still creating a single index is usually more optimal, it saves storage and maintenance overhead
-  on updates. An optimal index can be created knowing the access path to data, which usually developers know the best.
--
+  performance problems on production. Each column in an index is a sort criterion according to its position (like last,
+  first name in a phone book), second column determines order only for the same value of the first column. Searching
+  index is not possible with the second column only (it's like searching the phone book by first name). We can reverse
+  the index column order. Searching by the first column only is still supported by the index. Such results are not
+  unique anymore, database must follow the leaf nodes in such case (_INDEX RANGE SCAN_). Still creating a single index
+  is usually more optimal, it saves storage and maintenance overhead on updates. An optimal index can be created knowing
+  the access path to data, which usually developers know the best.
+- The __query optimizer__ or __query planner__ transforms an SQL query into an execution plan. There are two types of
+  planners: __cost-based__, which generate multiple plans and pick the best, and __rule-based__ which use hardcoded
+  rules to generate plans.
+- When concatenated index exists, it can be used to filter by the first column, no matter what other search criteria
+  are. In such case the rest of conditions can be applied as 'filter' condition on rows fetched from the table. If the
+  amount of rows fetched by _INDEX RANGE SCAN_ operation is large, each of them must be fetched individually. Sometimes
+  it's slower than _FULL TABLE SCAN_, as the second one fetches large chunks of data in a single call. If searching by
+  first column in the index is more selective, _INDEX RANGE SCAN_ performs better. Best execution plan depends on data
+  distribution in the table, optimizer uses statistics, like histograms containing the data distribution in a column,
+  which allow the optimizer to estimate the number of rows returned from the index lookup, which is used for the cost
+  calculation. If statistics are not available, default values are used: small index with medium selectivity. When
+  correct statistics are provided, optimizer does a better job (like decision if index lookup is better). Correctly
+  defined index is better than full table scan. Using an index doesn't guarantee the statement is executed the best
+  possible way.
+- Most statistics are maintained on the column level: number of distinct values, number of NULLs, columns histogram,
+  table size (in rows and blocks). Index statistics contain tree depth, number of leaf nodes, number of distinct keys,
+  clustering factor. Optimizers use this values to estimate the query cost.
 
 # Projects
 
