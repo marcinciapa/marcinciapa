@@ -152,3 +152,5 @@ Chapter 2: The Where Clause
 - Getting Started With Python: [Working with Files](https://github.com/marcinciapa/tutorials/pull/43)
 - Getting Started With Python: [Fetching Data from Internet](https://github.com/marcinciapa/tutorials/pull/44)
 - Getting Started With Python: [Modules](https://github.com/marcinciapa/tutorials/pull/45)
+
+- Professional Full Stack Developer: [Project and Environment Setup](https://github.com/marcinciapa/tutorials/pull/46)
