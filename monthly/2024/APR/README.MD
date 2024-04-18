@@ -157,3 +157,4 @@ Chapter 2: The Where Clause
 - Professional Full Stack Developer: [Getting Started With Spring Boot 3](https://github.com/marcinciapa/tutorials/pull/47)
 - Professional Full Stack Developer: [HTTP, REST and APIs](https://github.com/marcinciapa/tutorials/pull/48)
 - Professional Full Stack Developer: [Developer Tools](https://github.com/marcinciapa/tutorials/pull/49)
+- Professional Full Stack Developer: [CRUD - Read](https://github.com/marcinciapa/tutorials/pull/50)
