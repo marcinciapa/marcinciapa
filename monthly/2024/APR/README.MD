@@ -158,3 +158,4 @@ Chapter 2: The Where Clause
 - Professional Full Stack Developer: [HTTP, REST and APIs](https://github.com/marcinciapa/tutorials/pull/48)
 - Professional Full Stack Developer: [Developer Tools](https://github.com/marcinciapa/tutorials/pull/49)
 - Professional Full Stack Developer: [CRUD - Read](https://github.com/marcinciapa/tutorials/pull/50)
+- Professional Full Stack Developer: [Structure the backend](https://github.com/marcinciapa/tutorials/pull/51)
