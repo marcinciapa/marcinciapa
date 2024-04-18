@@ -154,3 +154,5 @@ Chapter 2: The Where Clause
 - Getting Started With Python: [Modules](https://github.com/marcinciapa/tutorials/pull/45)
 
 - Professional Full Stack Developer: [Project and Environment Setup](https://github.com/marcinciapa/tutorials/pull/46)
+- Professional Full Stack Developer: [Getting Started With Spring Boot 3](https://github.com/marcinciapa/tutorials/pull/47)
+- Professional Full Stack Developer: [HTTP, REST and APIs](https://github.com/marcinciapa/tutorials/pull/48)
