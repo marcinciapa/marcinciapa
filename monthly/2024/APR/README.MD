@@ -122,6 +122,68 @@
   achieve that testability. Tests are more difficult to write if the concerns are mixed. Faster feedback allows spotting
   design problems much sooner that any other technique.
 
+12 Information Hiding and Abstraction
+
+- Information hiding and abstraction is a process of removing details or attributes of objects or systems to focus on
+  details of greater importance. They are two different, but related topics and are best considered together.
+- Looking from the outside at our code we don't care about what is behind it. As consumers, we shouldn't care about how
+  it works, but how to use it. Behavior of the code, implementation details, data it uses should be hidden from other
+  parts of the code.
+- Some code is fragile to change, change in one place affects other parts of the code. The only way to make progress is
+  understand how most of the system works, which is not a scalable approach. Such code, which people are scared to
+  change is called __big balls of mud__.
+- Complaints that organization doesn't allow us to refactor/test/design better are usually not true and are excuses. We
+  should not ask for permission to do a good job, this should be our duty. Our code should solve problems and fulfill
+  the needs of users __repeatable and reliably__. An ability to change the code is crucial. It's obvious that cleaning
+  between preparing meals and sharpening knifes should be part of chef's work. Any other approach may speed up preparing
+  one or two meals, but the third meal may be slower. In software our duty should be responsibility for the quality in
+  practical and pragmatic way. It's in the best interest of our employer, customers and ourselves. We will be able to
+  change the code, software is not a short-term game. Dropping quality makes us working slower, not faster. There is no
+  trade-off between speed and quality. When a manager asks for an estimate, all benefit from providing one without
+  sacrificing quality. And usually developers rule out quality, not managers or organizations, when there is a pressure
+  on them. Organizations want __better software faster__, not __worse software faster__ (__worse software slower__ over
+  time). Better goes hand in hand with faster. Of course good quality requires a cost (refactoring, testing, improving
+  designs in software, cleaning up and maintaining tools in cooking). But these are foundations of professional
+  approach, not nice to haves.
+- We should have a mindset that it's a good thing to change existing code/design. Some measure the quality of software
+  as the time required to rewrite half of it. When we learn new things we should be open to make changes in code or
+  design to reflect our deeper understanding. Learning is an important part of software development, designs must be
+  adopted to the new knowledge.
+- Software engineers are often blamed for over-engineering. The reason for that is that we're chasing shiny ideas,
+  whereas we should be pragmatic and consider economic constraints. We should chase the simplest solutions, not the
+  coolest. Always evaluate in the context of the problem, even if that means discarding what doesn't work. Such approach
+  often ends up doing something cool. Over-engineering is often caused by searching future-proof solutions. It's an
+  engineering immaturity, fear from having to change the code in the future. Go __YAGNI__. In fact, we should fix
+  problems preventing us from changing the code in the future, the problem of fragility. There are three approaches to
+  it: __hero-programmer__, who is called to save the day, stupid idea, the effort should be better spent to share their
+  knowledge. The real solutions are __abstraction__ and __testing__. Hiding complexity allows code changes in one part
+  of the system with more confidence. The value of testing is not that simple.
+- Effective regression testing (automated strategy) is required to have flat Cost of Change curve. Continuous delivery
+  is a good starting point (_releasability_ assessed by automated testing). Testing have positive impact on design
+  (small specifications of behaviors), which are needed before we start. Such specification should not consider
+  implementation, it should be abstracted.
+- Abstraction is powerful. We can change the video card in PC, there are abstractions which make such change safe. An
+  API of AWS S3 is simple, abstracting some complex things. Abstractions are fundamental in working with computers.
+- Leaky abstractions are leaked details, which should be abstracted away. "If all abstractions are leaky, why bother?"
+  There are different kinds of leaks, some impossible to avoid. But authorization service returning HTML errors,
+  business logic throwing NullPointerException, these should be avoided. We should focus on the second type of leak by
+  maintaining a consistent level of abstractions. The goal is not to achieve perfection, but useful models we could use
+  to solve problems.
+- An example could be maps, which abstract the world. The distance between two points are spheres, but map provides a
+  simplified, practical model we could use. Another example is underground map: allowing better orientation on transit,
+  but don't work for walking between stations. It's OK to have different abstractions targeted to solve particular
+  problem.
+- Techniques like __event storming__ provide separation of concern natural for the problem we try to solve. It can
+  highlight bounded context and natural lines of abstractions. The best way to create effective test case is to describe
+  it using __domain specific language__ (DSL).
+- The way that computers work introduces specific abstractions and concerns, these abstractions will inevitably leak. We
+  have to make engineering trade-offs depending on the context of our system. Third-party code (like sqlite3) should be
+  isolated with abstractions, otherwise we are coupled to it. It should be accessed by our own facades or adapters with
+  interfaces. Such approach makes our systems more composable and flexible. We can test our code to this abstraction.
+- We should use more general representations rather than more specific in functions signatures: usually it's better to
+  inform that a function returns a `List` than `ArrayList`. It's abstract enough and specific enough to be helpful (more
+  than returning `Object`).
+
 ## SQL Performance Explained (ISBN: 978-3-95-030782-5)
 
 Chapter 2: The Where Clause
