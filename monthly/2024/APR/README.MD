@@ -79,6 +79,49 @@
   concepts, which change together. It can't mean _together_ by accident. Cohesion makes sense when combined with
   modularity.
 
+11 Separation of Concerns
+
+- Separation of concerns is a design principle for separating a computer program into distinct sections, where each
+  addresses a separate concern. It provides better focus and clarity in code and system, improves modularity, cohesion
+  and abstraction, helps to reduce coupling. It's useful at the scale of whole system as well as at individual
+  functions. It allows keeping focus small, understanding a single part without thinking too hard about it.
+- From the e-commerce perspective, how we store something is irrelevant from point of view of shopping cart behavior.
+  Separation improves testability: if persistence is included, tests are slow. When separated, both concepts can be
+  tested easily with fakes.
+- Dependency Injection is a useful tool: dependencies are supplied as parameters instead of creating them. DI is often
+  incorrectly understood as a function of a framework, while it can be achieved in the majority of programming
+  languages.
+- It's important to distinguish essential and accidental complexity in a system. Essential complexity is important to
+  solve a problem. Accidental complexity is related to solving side effect problem (persistence, displaying on the
+  screen etc.). The logic responsible for driving a car should be separated from logic displaying information on a
+  screen.
+- When _and_ is part of responsibilities of a class or method it's a warning sign, that there are two concerns instead
+  of one. Problems that we are solving often help to define bounded contexts. It is the essence of separation of
+  concerns. Bounded contexts help to identify course-grained modules. The key aspect is a very low tolerance for
+  complexity. Code should be simple, as soon as it becomes complex we should pause and look for ways to simplify it.
+- Such approach is reinforced through testing. Ensuring that the code is testable enforces separating concerns.
+- For code that wants to store something in Amazon S3 it's a bad practice to process something and invoking the storage.
+  There must be a setup somewhere for the S3 client, there are different ways that it may arrive. Such approach
+  represents two different focuses, different levels of abstraction. It increases accidental complexity. The level of
+  abstraction should remain consistent. The concept of storing should be abstracted and represented as a __port__ -
+  improved separation of concerns, cohesion by maintaining consistent level of abstraction. __Adapter__ is an
+  implementation of a port - translating ideas to the context of AWS S3 Storage.
+- It's almost never the case that the code should care about details of API it consumes. Port is a simplified version of
+  API. When Amazon upgrades S3 interface we don't have to change the entire code, but we can completely rewrite the
+  adapter if we want to change the approach for using this technology.
+- Port and Adapter approach represents a translation layer at the boundaries between contexts (Eric Evans suggests to
+  always do it), help to align services with a bounded context, which minimizes coupling and improves modularity and
+  cohesion. Each service or module should have its own view of the world.
+- API (application programming interface) is all information exposed to consumer of a service. Any means of
+  communication meant to support programming is an API (not only REST). The level of interaction defines the degree to
+  which it is coupled. The more that the code knows of the content of API parameters the more coupled it is: data
+  structures in its input that their code understands is a part of the API.
+- Designing to improve testability help us to improve quality improving maintenance of development, not only checking
+  the correctness. Separation of concerns supported by testing leaves the door open to incremental change. We should
+  take more evolutionary approach to design, building systems step by step as our understanding deepens. TDD helps to
+  achieve that testability. Tests are more difficult to write if the concerns are mixed. Faster feedback allows spotting
+  design problems much sooner that any other technique.
+
 ## SQL Performance Explained (ISBN: 978-3-95-030782-5)
 
 Chapter 2: The Where Clause
@@ -154,7 +197,8 @@ Chapter 2: The Where Clause
 - Getting Started With Python: [Modules](https://github.com/marcinciapa/tutorials/pull/45)
 
 - Professional Full Stack Developer: [Project and Environment Setup](https://github.com/marcinciapa/tutorials/pull/46)
-- Professional Full Stack Developer: [Getting Started With Spring Boot 3](https://github.com/marcinciapa/tutorials/pull/47)
+- Professional Full Stack
+  Developer: [Getting Started With Spring Boot 3](https://github.com/marcinciapa/tutorials/pull/47)
 - Professional Full Stack Developer: [HTTP, REST and APIs](https://github.com/marcinciapa/tutorials/pull/48)
 - Professional Full Stack Developer: [Developer Tools](https://github.com/marcinciapa/tutorials/pull/49)
 - Professional Full Stack Developer: [CRUD - Read](https://github.com/marcinciapa/tutorials/pull/50)
