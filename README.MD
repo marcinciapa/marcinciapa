@@ -1,6 +1,6 @@
 # Hello, :wave: I'm Marcin
 
-I'm a Software Engineer eager to learn and grow. And this profile exists to track and share my learning effort.
+I'm a Software Engineer eager to learn and grow. This profile exists to track and share my learning effort.
 I use it to gather my side projects, which help me to practice new methodologies and technologies.
 It's here for having fun and sharing fun with others.
 
