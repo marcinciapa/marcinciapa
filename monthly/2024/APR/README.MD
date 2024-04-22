@@ -250,6 +250,15 @@ Chapter 2: The Where Clause
   for status _TODO_ probably returns much more results than _DONE_, so index makes sense only while searching for
   _TODO_). Accessing a correct partition by attribute is another example. _LIKE_ queries can also suffer from bind
   parameters. When in doubt, bind parameters should be used.
+- `<`, `>`, `between` operators and `LIKE` in some circumstances can use indexes. The biggest performance risk of _INDEX
+  RANGE SCAN_ is the leaf node traversal. If second column is involved in `where`, stop conditions are less obvious.
+  Perfect index should cover both columns, but in which order? We should index for equality first, then for ranges. It's
+  a myth that the most selective column should be at the most significant position. Even if selectivity is of no use,
+  some column orders are better than another. _Predicate information_ of _INDEX RANGE SCAN_ identifies `where`
+  conditions as access or as filter. Access predicates columns limit the scanned index range. Database can use all
+  conditions as access predicates when we turn the index definition around. Access predicates are start and stop
+  conditions for an index lookup, they define the scanned range. Filter predicates don't narrow the range, they're only
+  applied during leaf node traversal.
 
 # Projects
 
