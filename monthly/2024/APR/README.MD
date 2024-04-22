@@ -240,6 +240,16 @@ Chapter 2: The Where Clause
 - Indexes cause ongoing maintenance. We should aim to define universal indexes which suffice several access paths. To
   achieve that we should use the same function (`UPPER`/`LOWER`) consequently. We should aim to index the original data,
   as this is often the most useful information.
+- There are two reasons to use __bind parameters__: security (prevent SQL injection) and performance (execution plan is
+  reused when only parameters change). When bind parameters are not used, changing parameters result in recalculating
+  the query plan, the plan cannot be cached. Also using bind parameters the optimizer __assumes__ equal distribution and
+  the estimate for such query is always the same regardless of parameters values. Optimizer doesn't use the statistics.
+  It may cause the query to be created in not the optimal way, but recalculating the execution every time is a
+  significant effort. It's accepting the risk. Databases try to solve this problem with heuristics, but with limited
+  success. Bind parameters are recommended except cases when values __should__ influence the execution plan (searching
+  for status _TODO_ probably returns much more results than _DONE_, so index makes sense only while searching for
+  _TODO_). Accessing a correct partition by attribute is another example. _LIKE_ queries can also suffer from bind
+  parameters. When in doubt, bind parameters should be used.
 
 # Projects
 
