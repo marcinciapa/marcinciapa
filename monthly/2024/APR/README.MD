@@ -134,7 +134,7 @@
   change is called __big balls of mud__.
 - Complaints that organization doesn't allow us to refactor/test/design better are usually not true and are excuses. We
   should not ask for permission to do a good job, this should be our duty. Our code should solve problems and fulfill
-  the needs of users __repeatable and reliably__. An ability to change the code is crucial. It's obvious that cleaning
+  the needs of users __repeatably and reliably__. An ability to change the code is crucial. It's obvious that cleaning
   between preparing meals and sharpening knifes should be part of chef's work. Any other approach may speed up preparing
   one or two meals, but the third meal may be slower. In software our duty should be responsibility for the quality in
   practical and pragmatic way. It's in the best interest of our employer, customers and ourselves. We will be able to
