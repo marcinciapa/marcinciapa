@@ -259,6 +259,14 @@ Chapter 2: The Where Clause
   conditions as access predicates when we turn the index definition around. Access predicates are start and stop
   conditions for an index lookup, they define the scanned range. Filter predicates don't narrow the range, they're only
   applied during leaf node traversal.
+- `LIKE` operator causes unexpected performance behavior and in some cases prevents efficient index usage. For access
+  predicates only characters __before the first wildcard__ can be used, remaining characters are filter predicates on
+  rows fetched from table. PostgreSQL may require an operator class (_varchar_pattern_ops) to use _LIKE_ as access
+  predicate. The scanned index range is influenced by the selectivity of the prefix. When _LIKE_ expression starts with
+  a wildcard, database performs full table scan, these should be avoided. When search term is delivered as bind
+  parameter, database has to guess if there are leading wildcards. Most databases assumes there is no leading wildcard,
+  except PostgreSQL (does not use index). Specifying the search term without bind parameters solves the problem, but
+  there is optimization overhead.
 
 # Projects
 
