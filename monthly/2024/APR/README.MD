@@ -278,7 +278,13 @@ Chapter 2: The Where Clause
   (OLTP). Some database offer a hybrid solution between B-tree and bitmap, converting the results of several B-tree
   scans into in-memory bitmap structure. They are not stored persistently, discarded after each statement execution,
   which reduces the problem of the poor write scalability. Such approach requires a lot of memory and CPU.
-- 
+- With __partial (filtered) index__ it's possible to specify indexed rows. It's useful when where conditions contain
+  constant values (status codes). Such search can be optimized with two-column index, but it includes rows which are
+  never searched, queries are fast but index wastes disk space. Index can be limited to 'unprocessed' message only (with
+  __where__ clause in index definition). Such index only contains rows matching where clause, indexing this column is no
+  longer necessary. Size is reduced vertically (has fewer rows) and horizontally (less indexed columns). For queues, it
+  means the index size doesn't change even if table grows. Only deterministic functions may be used in where clause.
+  Partial index is used when where clause matching index definition appears in a query.
 
 # Projects
 
