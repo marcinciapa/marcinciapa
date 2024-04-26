@@ -267,6 +267,18 @@ Chapter 2: The Where Clause
   parameter, database has to guess if there are leading wildcards. Most databases assumes there is no leading wildcard,
   except PostgreSQL (does not use index). Specifying the search term without bind parameters solves the problem, but
   there is optimization overhead.
+- Creating one index with multiple columns is better than separate indexes with single column. But there are cases when
+  single index is useless (two independent range conditions). Only one range condition is used as access predicate,
+  other are filter predicates. Accepting the filter predicate is the best solution in many cases, in such scenario more
+  selective column should be used first. Another option is to use two separate indexes, both must be scanned by the
+  database and results must be combined. It causes more effort related to traversing two index trees, one index scan is
+  faster than two. Results are combined in two ways: __index join__ or __bitmap index__. The second approach means
+  indexing each column separately in a single index (multi-column B-tree index is faster than bitmap index). Bitmap
+  index behaves poorly during insert, update, delete, which makes it almost unusable for online transaction processing
+  (OLTP). Some database offer a hybrid solution between B-tree and bitmap, converting the results of several B-tree
+  scans into in-memory bitmap structure. They are not stored persistently, discarded after each statement execution,
+  which reduces the problem of the poor write scalability. Such approach requires a lot of memory and CPU.
+- 
 
 # Projects
 
