@@ -313,3 +313,4 @@ Chapter 2: The Where Clause
 - Professional Full Stack Developer: [Application Context and Beans](https://github.com/marcinciapa/tutorials/pull/52)
 - Professional Full Stack Developer: [Error Handling](https://github.com/marcinciapa/tutorials/pull/53)
 - Professional Full Stack Developer: [Databases](https://github.com/marcinciapa/tutorials/pull/54)
+- Professional Full Stack Developer: [Spring Data JPA](https://github.com/marcinciapa/tutorials/pull/55)
