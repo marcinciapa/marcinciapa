@@ -298,7 +298,11 @@ Chapter 2: The Where Clause
   only rows which are indexed are queried. Similar result can be achieved with moving function call to a virtual column
   with NOT NULL constraint. Database recognises that some functions return NULL only if NULL is provided _UPPER_
   function preserves NOT NULL constraint of the column, but removing the constraint from the column makes the index
-  unusable.
+  unusable. The way Oracle indexes NULLs can be used to emulate partial index, NULLs should be used for rows that
+  shouldn't be indexed. To emulate `create index MESSAGES_TODO on MESSAGES (RECEIVER) where PROCESSED = 'N'` we need a
+  function returning _RECEIVER_ value only if _PROCESSED_ is 'N'. Function must be deterministic: 
+  `create index MESSAGES_TODO on MESSAGES (IS_PROCESSED(PROCESSED, RECEIVER))`. Same expression must be used in query:
+  `select MESSAGE from MESSAGES where IS_PROCESSED(PROCESSED, RECEIVER) = ?`.
 
 # Projects
 
