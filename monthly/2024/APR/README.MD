@@ -289,7 +289,16 @@ Chapter 2: The Where Clause
   missing data. Oracle doesn't index rows if all indexed columns are NULL - every index is partial index (_where A is
   not null or B is not null_). At least one indexed column must be not null. It can be mitigated by indexing additional
   column that can never be NULL. Alternatively, constant expression can be added as indexed column (_create index
-  EMP_IDX on EMPLOYEE (DATE_OF_BIRTH, __'1'__);_).
+  EMP_IDX on EMPLOYEE (DATE_OF_BIRTH, __'1'__);_). It's also possible to create a partial index with _IS NULL_
+  condition, but the database must be sure that other column may never be null (_NOT NULL_ constraint). Removing the
+  constraint on the column makes the index unusable, database must assume there may be NULLs and performs the full table
+  scan. User-defined function does not impose a NOT NULL constraint, optimizer doesn't know what the function does. To
+  mitigate it the query should be changed:
+  `select * from EMPLOYEE where DATE_OF_BIRTH is null and BLACKBOX(EMPLOYEE_ID) IS NOT NULL`. Oracle recognises that
+  only rows which are indexed are queried. Similar result can be achieved with moving function call to a virtual column
+  with NOT NULL constraint. Database recognises that some functions return NULL only if NULL is provided _UPPER_
+  function preserves NOT NULL constraint of the column, but removing the constraint from the column makes the index
+  unusable.
 
 # Projects
 
