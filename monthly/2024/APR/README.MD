@@ -286,7 +286,10 @@ Chapter 2: The Where Clause
   means the index size doesn't change even if table grows. Only deterministic functions may be used in where clause.
   Partial index is used when where clause matching index definition appears in a query.
 - _NULL_ is handled specifically in index: SQL standard does not define NULL as a value, but as a placeholder for
-  missing data.
+  missing data. Oracle doesn't index rows if all indexed columns are NULL - every index is partial index (_where A is
+  not null or B is not null_). At least one indexed column must be not null. It can be mitigated by indexing additional
+  column that can never be NULL. Alternatively, constant expression can be added as indexed column (_create index
+  EMP_IDX on EMPLOYEE (DATE_OF_BIRTH, __'1'__);_).
 
 # Projects
 
