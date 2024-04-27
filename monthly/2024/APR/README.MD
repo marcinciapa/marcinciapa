@@ -285,6 +285,8 @@ Chapter 2: The Where Clause
   longer necessary. Size is reduced vertically (has fewer rows) and horizontally (less indexed columns). For queues, it
   means the index size doesn't change even if table grows. Only deterministic functions may be used in where clause.
   Partial index is used when where clause matching index definition appears in a query.
+- _NULL_ is handled specifically in index: SQL standard does not define NULL as a value, but as a placeholder for
+  missing data.
 
 # Projects
 
