@@ -363,3 +363,4 @@ Chapter 2: The Where Clause
 - Professional Full Stack Developer: [Databases](https://github.com/marcinciapa/tutorials/pull/54)
 - Professional Full Stack Developer: [Spring Data JPA](https://github.com/marcinciapa/tutorials/pull/55)
 - Professional Full Stack Developer: [Get Customer By Id Exercise](https://github.com/marcinciapa/tutorials/pull/56)
+- Professional Full Stack Developer: [CRUD - Create](https://github.com/marcinciapa/tutorials/pull/57)
