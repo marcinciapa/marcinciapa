@@ -315,6 +315,11 @@ Chapter 2: The Where Clause
       time. In such case use range condition:
       `WHERE dob >= TO_DATE('1980-01-01', 'YYYY-MM-DD') AND dob < TO_DATE('1980-01-01', 'YYYY-MM-DD') + INTERVAL '1' DAY`.
       Using range condition should be always considered when comparing dates.
+    - Numbers stored in text columns is a very bad practice, but it doesn't make the index useless. Many databases
+      implicitly convert types. Also, columns should not be converted, instead search term should be converted. Implicit
+      type conversion may cause performance problems. There is also a risk of conversion error if there is one invalid
+      number. When database automatically transforms the string into a number, regular index on numeric column can be
+      used.
 
 # Projects
 
