@@ -330,7 +330,12 @@ Chapter 2: The Where Clause
       filter on _date_col_ which can be used as access predicate providing good enough approximation (redundant
       condition must be used on the most significant column). This technique can also be used on dates stored as texts,
       but the date format must maintain chronological order (ISO 8601).
-    - 
+    - Database are optimised for dynamic SQL, using them should not be avoided. There is a myth that "dynamic SQL is
+      slow", which does more harm that good if the database uses shared execution plan:
+      `WHERE sub_id = :sub_id OR :sub_id IS NULL`. This is an antipattern. Database cannot optimise the execution plan
+      for a particular filter, index cannot be used, full table scan is performed, because of bind parameters (database
+      assumes that all filters are disabled). If not using the bind parameters, the correct index is used, but this is
+      not the solution. Solution is using dynamic queries (removing unnecessary conditions) still using bind parameters.
 
 # Projects
 
