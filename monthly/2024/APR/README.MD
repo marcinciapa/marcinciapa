@@ -336,6 +336,9 @@ Chapter 2: The Where Clause
       for a particular filter, index cannot be used, full table scan is performed, because of bind parameters (database
       assumes that all filters are disabled). If not using the bind parameters, the correct index is used, but this is
       not the solution. Solution is using dynamic queries (removing unnecessary conditions) still using bind parameters.
+    - Another way to obfuscate is using calculation: `WHERE number - 20 > ?`. Index is not used in such case. We can
+      even obfuscate index intentionally adding _0_: `WHERE number + 0 = ?`. We can index these expressions with
+      function-based index: `CREATE INDEX calculated ON table (number - 10)`.
 
 # Projects
 
