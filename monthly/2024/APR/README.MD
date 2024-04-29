@@ -340,12 +340,6 @@ Chapter 2: The Where Clause
       even obfuscate index intentionally adding _0_: `WHERE number + 0 = ?`. We can index these expressions with
       function-based index: `CREATE INDEX calculated ON table (number - 10)`.
 
-# Projects
-
-## Equino
-
-## ACTracker
-
 # Tutorials
 
 - Getting Started With Python: [Data Structures](https://github.com/marcinciapa/tutorials/pull/38)
