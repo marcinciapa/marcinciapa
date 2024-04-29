@@ -300,9 +300,21 @@ Chapter 2: The Where Clause
   function preserves NOT NULL constraint of the column, but removing the constraint from the column makes the index
   unusable. The way Oracle indexes NULLs can be used to emulate partial index, NULLs should be used for rows that
   shouldn't be indexed. To emulate `create index MESSAGES_TODO on MESSAGES (RECEIVER) where PROCESSED = 'N'` we need a
-  function returning _RECEIVER_ value only if _PROCESSED_ is 'N'. Function must be deterministic: 
+  function returning _RECEIVER_ value only if _PROCESSED_ is 'N'. Function must be deterministic:
   `create index MESSAGES_TODO on MESSAGES (IS_PROCESSED(PROCESSED, RECEIVER))`. Same expression must be used in query:
   `select MESSAGE from MESSAGES where IS_PROCESSED(PROCESSED, RECEIVER) = ?`.
+- Obfuscated conditions are _where_ clauses which prevent correct index usage. Usually it's a bad practice.
+    - Often date types cause obfuscation. It's a common practice to use `TRUNC` function to remove time on both sides of
+      comparison: `WHERE TRUNC(dob) = TRUNC(sysdate - '1' day)`. It prevents use of index on `dob` as `dob` and
+      `TRUNC(dob)` are different things. Simple solution: function based index on `TRUNC(dob)`. The same function must
+      be used every time in condition. When date in condition contains only year and month, the solution is using
+      explicit range conditions (`QUARTER_BEGIN(dob)`). Simple index on `dob` is sufficient to optimize this query.
+      Another common case is comparing dates as strings: (`WHERE TO_CHAR(dob, 'YYYY-MM-DD') = '1980-01-01'`). Bind
+      parameters solve this problem, they support date types. Alternative solution is to convert the search term instead
+      of column: `WHERE dob = TO_DATE('1980-01-01', 'YYYY-MM-DD')`. Be careful not to introduce a bug if the column has
+      time. In such case use range condition:
+      `WHERE dob >= TO_DATE('1980-01-01', 'YYYY-MM-DD') AND dob < TO_DATE('1980-01-01', 'YYYY-MM-DD') + INTERVAL '1' DAY`.
+      Using range condition should be always considered when comparing dates.
 
 # Projects
 
