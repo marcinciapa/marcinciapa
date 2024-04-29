@@ -303,7 +303,9 @@ Chapter 2: The Where Clause
   function returning _RECEIVER_ value only if _PROCESSED_ is 'N'. Function must be deterministic:
   `create index MESSAGES_TODO on MESSAGES (IS_PROCESSED(PROCESSED, RECEIVER))`. Same expression must be used in query:
   `select MESSAGE from MESSAGES where IS_PROCESSED(PROCESSED, RECEIVER) = ?`.
-- Obfuscated conditions are _where_ clauses which prevent correct index usage. Usually it's a bad practice.
+- Obfuscated conditions are _where_ clauses which prevent correct index usage. Usually it's a bad practice. However,
+  sometimes we intentionally want to avoid access predicate, for example when we know the _LIKE_ predicate contains
+  leading wildcard, and we want to spare unnecessary optimisation.
     - Often date types cause obfuscation. It's a common practice to use `TRUNC` function to remove time on both sides of
       comparison: `WHERE TRUNC(dob) = TRUNC(sysdate - '1' day)`. It prevents use of index on `dob` as `dob` and
       `TRUNC(dob)` are different things. Simple solution: function based index on `TRUNC(dob)`. The same function must
@@ -320,6 +322,15 @@ Chapter 2: The Where Clause
       type conversion may cause performance problems. There is also a risk of conversion error if there is one invalid
       number. When database automatically transforms the string into a number, regular index on numeric column can be
       used.
+    - Obfuscations often affects concatenated indexes, like combining date and time columns to apply a range filter
+      `WHERE ADDTIME(date_col, time_col) > ...`. Index on (_date_col_, _time_col_) cannot be used, because the search is
+      done on derived data. Use columns containing both, date and time. If this is not possible, use a function-based
+      index. It's still possible to use the concatenated index on _date_col_ and _time_col_ partially by adding
+      redundant extra condition: `WHERE ADDTIME(date_col, time_col > ... AND date_col >= ...`. This condition adds
+      filter on _date_col_ which can be used as access predicate providing good enough approximation (redundant
+      condition must be used on the most significant column). This technique can also be used on dates stored as texts,
+      but the date format must maintain chronological order (ISO 8601).
+    - 
 
 # Projects
 
