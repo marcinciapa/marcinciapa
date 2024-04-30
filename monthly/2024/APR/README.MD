@@ -261,7 +261,7 @@ Chapter 2: The Where Clause
   applied during leaf node traversal.
 - `LIKE` operator causes unexpected performance behavior and in some cases prevents efficient index usage. For access
   predicates only characters __before the first wildcard__ can be used, remaining characters are filter predicates on
-  rows fetched from table. PostgreSQL may require an operator class (_varchar_pattern_ops) to use _LIKE_ as access
+  rows fetched from table. PostgreSQL may require an operator class (_varchar_pattern_ops_) to use _LIKE_ as access
   predicate. The scanned index range is influenced by the selectivity of the prefix. When _LIKE_ expression starts with
   a wildcard, database performs full table scan, these should be avoided. When search term is delivered as bind
   parameter, database has to guess if there are leading wildcards. Most databases assumes there is no leading wildcard,
@@ -296,7 +296,7 @@ Chapter 2: The Where Clause
   mitigate it the query should be changed:
   `select * from EMPLOYEE where DATE_OF_BIRTH is null and BLACKBOX(EMPLOYEE_ID) IS NOT NULL`. Oracle recognises that
   only rows which are indexed are queried. Similar result can be achieved with moving function call to a virtual column
-  with NOT NULL constraint. Database recognises that some functions return NULL only if NULL is provided _UPPER_
+  with NOT NULL constraint. Database recognises that some functions return NULL only if NULL is provided: _UPPER_
   function preserves NOT NULL constraint of the column, but removing the constraint from the column makes the index
   unusable. The way Oracle indexes NULLs can be used to emulate partial index, NULLs should be used for rows that
   shouldn't be indexed. To emulate `create index MESSAGES_TODO on MESSAGES (RECEIVER) where PROCESSED = 'N'` we need a
