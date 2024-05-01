@@ -294,15 +294,15 @@ Chapter 2: The Where Clause
   constraint on the column makes the index unusable, database must assume there may be NULLs and performs the full table
   scan. User-defined function does not impose a NOT NULL constraint, optimizer doesn't know what the function does. To
   mitigate it the query should be changed:
-  `select * from EMPLOYEE where DATE_OF_BIRTH is null and BLACKBOX(EMPLOYEE_ID) IS NOT NULL`. Oracle recognises that
+  `SELECT * FROM employee WHERE date_of_birth IS NULL AND BLACKBOX(employee_id) IS NOT NULL`. Oracle recognises that
   only rows which are indexed are queried. Similar result can be achieved with moving function call to a virtual column
   with NOT NULL constraint. Database recognises that some functions return NULL only if NULL is provided: _UPPER_
   function preserves NOT NULL constraint of the column, but removing the constraint from the column makes the index
   unusable. The way Oracle indexes NULLs can be used to emulate partial index, NULLs should be used for rows that
-  shouldn't be indexed. To emulate `create index MESSAGES_TODO on MESSAGES (RECEIVER) where PROCESSED = 'N'` we need a
+  shouldn't be indexed. To emulate `CREATE INDEX messages_todo ON messages (receiver) WHERE processed = 'N'` we need a
   function returning _RECEIVER_ value only if _PROCESSED_ is 'N'. Function must be deterministic:
-  `create index MESSAGES_TODO on MESSAGES (IS_PROCESSED(PROCESSED, RECEIVER))`. Same expression must be used in query:
-  `select MESSAGE from MESSAGES where IS_PROCESSED(PROCESSED, RECEIVER) = ?`.
+  `CREATE INDEX messages_todo ON messages (IS_PROCESSED(processed, receiver))`. Same expression must be used in query:
+  `SELECT message FROM messages WHERE IS_PROCESSED(processed, receiver) = ?`.
 - Obfuscated conditions are _where_ clauses which prevent correct index usage. Usually it's a bad practice. However,
   sometimes we intentionally want to avoid access predicate, for example when we know the _LIKE_ predicate contains
   leading wildcard, and we want to spare unnecessary optimisation.
@@ -323,10 +323,10 @@ Chapter 2: The Where Clause
       number. When database automatically transforms the string into a number, regular index on numeric column can be
       used.
     - Obfuscations often affects concatenated indexes, like combining date and time columns to apply a range filter
-      `WHERE ADDTIME(date_col, time_col) > ...`. Index on (_date_col_, _time_col_) cannot be used, because the search is
+      `WHERE ADDTIME(date_col, time_col) > ?`. Index on (_date_col_, _time_col_) cannot be used, because the search is
       done on derived data. Use columns containing both, date and time. If this is not possible, use a function-based
       index. It's still possible to use the concatenated index on _date_col_ and _time_col_ partially by adding
-      redundant extra condition: `WHERE ADDTIME(date_col, time_col > ... AND date_col >= ...`. This condition adds
+      redundant extra condition: `WHERE ADDTIME(date_col, time_col > ? AND date_col >= ?`. This condition adds
       filter on _date_col_ which can be used as access predicate providing good enough approximation (redundant
       condition must be used on the most significant column). This technique can also be used on dates stored as texts,
       but the date format must maintain chronological order (ISO 8601).
