@@ -1,6 +1,6 @@
 # Hello, :wave: I'm Marcin
 
-I'm a Software Engineer with a need to learn and grow. And this profile exists to track and share my learning effort.
+I'm a Software Engineer eager to learn and grow. This profile exists to track and share my learning effort.
 I use it to gather my side projects, which help me to practice new methodologies and technologies.
 It's here for having fun and sharing fun with others.
 
@@ -109,6 +109,7 @@ The [repository](https://github.com/marcinciapa/tutorials) for exercises related
 
 ## My learnings
 Here's the log of my learnings, divided by months. Feel free to spy me on my progress.
+- [April 2024](monthly/2024/APR/README.MD)
 - [March 2024](monthly/2024/MAR/README.MD)
 - [February 2024](monthly/2024/FEB/README.MD)
 - [January 2024](monthly/2024/JAN/README.MD)
