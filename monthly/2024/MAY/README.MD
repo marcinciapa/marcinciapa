@@ -40,6 +40,33 @@
 
 ## SQL Performance Explained (ISBN: 978-3-95-030782-5)
 
+Chapter 2: Performance and Scalability
+
+- In the context of databases, scalability is the ability to handle growing amount of work, or its ability to be
+  enlarged. These are two separate definitions. But both are about performance impact of environmental changes.
+- The amount of data stored has impact on database's performance: with more data, queries become slower. When comparing
+  performance of two indexes, the reason may not be visible in the execution plan. Index may be slow for two
+  reasons: table access and scanning a wide index range. Execution plans show the scanned index range in the predicate
+  information. Without it, an execution plan is incomplete. Such situation may occur when two columns used in conditions
+  are not the first column in the index. Only when condition columns are on the first indexed positions, both can be
+  used as access predicates.
+- Optimizer uses an index because it's more efficient than a full table scan, it doesn't mean it is the best index for
+  query. Access rate also has impact on scalability: even a full copy of production database in dev environment may not
+  simulate production conditions because of the production background load. More capable production hardware usually
+  doesn't provide better performance. Bigger hardware is more like a wider highway than a faster car, it doesn't
+  automatically improve slow queries. Multicore computing doesn't improve the performance of a single task. The best way
+  to speed up queries (both in relational and non-relational databases) is proper indexing. It allows using the
+  logarithmic scalability of the B-tree index. NoSQL systems target to solve performance problems with horizontal
+  scalability, usually limited to write operations, using eventual consistency model.
+- Strict consistency requires synchronous communication during write operations, which increases response times and
+  reduces availability (all members must be available on write). In a distributed environment consistency is achieved
+  with tho-phase commits (global transactions), which is possible only if all members are available. Using eventual
+  consistency leads to handling conflicts rather than preventing them.
+- Performance problems may also be caused by disc access. In case of HDD the access time is long (caching reduces this
+  problem). SSD improves performance, but joins are still causing slow querying. SSDs, due to the cost and reduced
+  lifetime are not commonly used in databases. But databases cache frequently accessed data in memory, like index root
+  nodes or entire indexes, when they are frequently used.
+
 # Tutorials
 
 - Professional Full Stack Developer: [CRUD - Update (Exercise)](https://github.com/marcinciapa/tutorials/pull/59)
