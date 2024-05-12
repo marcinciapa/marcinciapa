@@ -72,3 +72,4 @@ Chapter 2: Performance and Scalability
 - Professional Full Stack Developer: [CRUD - Update (Exercise)](https://github.com/marcinciapa/tutorials/pull/59)
 - Professional Full Stack Developer: [Datasources, JDBC & Flyway](https://github.com/marcinciapa/tutorials/pull/60)
 - Professional Full Stack Developer: [Flyway](https://github.com/marcinciapa/tutorials/pull/61)
+- Professional Full Stack Developer: [JDBC Template](https://github.com/marcinciapa/tutorials/pull/62)
