@@ -38,6 +38,34 @@
   the process reduces organisational coupling. Organisations which take microservices approach loose control
   consciously, otherwise microservices don't make sense.
 
+14 The Tools of an Engineering Discipline
+
+- We should not think too much about specific tools, rather thinking about outcomes. Our main focus should be on
+  learning, exploring, experimenting. These are intellectual tools which significantly improve our chances to succeed.
+- Due to biological limitations we tend to see what we expect to see. We need to focus on testing, attempt to get
+  feedback. Low quality work comes with commercial cost. People are too slow, we need to have automated approach to
+  gathering feedback.
+- It's hard to imagine testable code, which is not modular, cohesive, have good separation of concerns. Dependency
+  injection plays significant role in testing, allows accessing test result without breaking encapsulation. It helps to
+  improve modularity and cohesion.
+- We should carefully introduce measurement points to be able to control variables. Measurement points should not break
+  integrity.
+- The hard point in achieving high testability is that systems are difficult to test at the edges, where systems
+  interact with the real world. Interactions should be well abstracted. Another difficulty is peoples' mindset. Many
+  tried TDD without success, but they didn't do it right. TDD is essential for an engineering approach, it's a good
+  habit to keep us out of trouble. TDD gives clear feedback on the quality of design.
+- Deployment pipeline determines releasability. Releasable and deployable are two different aspects of a system.
+  Deployability must fulfil all properties of releasability: system should be fast enough, secure enough, resilient
+  enough, working etc. It doesn't have to be deployed into production, but if the change was approved by the pipeline
+  it's ready, doesn't require additional work. A good practice is to have production-ready deployable unit of software
+  multiple times per day, shorter is better.
+- We should have the same results every time we deploy our software, so we need automated deployment and automated
+  configuration. Concurrent code is difficult to test because it's not deterministic. We should have no multithreaded
+  code within the scope of a test.
+- Continuous deliver brings these ideas together. It requires applying high level of automation, especially in testing.
+
+
+
 ## SQL Performance Explained (ISBN: 978-3-95-030782-5)
 
 Chapter 2: Performance and Scalability
