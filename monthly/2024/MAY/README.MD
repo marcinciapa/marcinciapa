@@ -75,3 +75,4 @@ Chapter 2: Performance and Scalability
 - Professional Full Stack Developer: [JDBC Template](https://github.com/marcinciapa/tutorials/pull/62)
 - Professional Full Stack Developer: [Testing - Setup](https://github.com/marcinciapa/tutorials/pull/63)
 - Professional Full Stack Developer: [Testing JDBC Template](https://github.com/marcinciapa/tutorials/pull/64)
+- Professional Full Stack Developer: [Testing JPA Repositories](https://github.com/marcinciapa/tutorials/pull/65)
