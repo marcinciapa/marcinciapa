@@ -40,3 +40,5 @@
 - [March 2024](../monthly/2024/MAR/README.MD#sql-performance-explained-isbn-978-3-95-030782-5)
 - [April 2024](../monthly/2024/APR/README.MD#sql-performance-explained-isbn-978-3-95-030782-5)
 - [May 2024](../monthly/2024/MAY/README.MD#sql-performance-explained-isbn-978-3-95-030782-5)
+- [June 2024](../monthly/2024/JUN/README.MD#sql-performance-explained-isbn-978-3-95-030782-5)
+- 
