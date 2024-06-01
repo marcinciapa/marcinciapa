@@ -34,7 +34,9 @@
 - [February 2024](../monthly/2024/FEB/README.MD#modern-software-engineering-doing-what-works-to-build-better-software-faster-isbn-978-0-13-731491-1)
 - [March 2024](../monthly/2024/MAR/README.MD#modern-software-engineering-doing-what-works-to-build-better-software-faster-isbn-978-0-13-731491-1)
 - [April 2024](../monthly/2024/APR/README.MD#modern-software-engineering-doing-what-works-to-build-better-software-faster-isbn-978-0-13-731491-1)
+- [May 2024](../monthly/2024/MAY/README.MD#modern-software-engineering-doing-what-works-to-build-better-software-faster-isbn-978-0-13-731491-1)
 
 ### Markus Winand: SQL Performance Explained (ISBN: 978-3-95-030782-5)
 - [March 2024](../monthly/2024/MAR/README.MD#sql-performance-explained-isbn-978-3-95-030782-5)
 - [April 2024](../monthly/2024/APR/README.MD#sql-performance-explained-isbn-978-3-95-030782-5)
+- [May 2024](../monthly/2024/MAY/README.MD#sql-performance-explained-isbn-978-3-95-030782-5)
