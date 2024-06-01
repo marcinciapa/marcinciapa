@@ -62,17 +62,17 @@
 - We should have the same results every time we deploy our software, so we need automated deployment and automated
   configuration. Concurrent code is difficult to test because it's not deterministic. We should have no multithreaded
   code within the scope of a test.
-- Continuous deliver brings these ideas together. It requires applying high level of automation, especially in testing.
+- Continuous delivery brings these ideas together. It requires applying high level of automation, especially in testing.
 
 15 Modern Software Engineering
 
-- There is crossover and redundancy between all concepts introduced in the book: modularity, cohesion, separation of
-  concerns enhance ability to gather feedback, facilitate experimentation etc.
+- There is crossover and redundancy between all concepts introduced in this book: modularity, cohesion, separation of
+  concerns, all enhance ability to gather feedback, facilitate experimentation etc.
 - Software is difficult, we should approach it thoughtfully. Finding solutions to problems we don't know how to solve
   requires us to apply and adapt mental tools.
 - Software development is not a cost center or a support functionality, it is "the business" (see engineering-centered
   companies like Tesla).
-- Managing coupling within organization is necessary to success. Modular, cohesive organizations with separation of
+- Managing coupling within organization is necessary to succeed. Modular, cohesive organizations with separation of
   concerns, abstracted teams with information hiding are scalable and more effective. When organizations grow, the cost
   of coupling increase.
 - Applying mental tools provide useful ways to approach problems, even if we don't know their nature. These ideas are
