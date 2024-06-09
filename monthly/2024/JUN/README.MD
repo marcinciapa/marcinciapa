@@ -4,3 +4,4 @@
 
 # Tutorials
 
+- Professional Full Stack Developer: [Integration Testing](https://github.com/marcinciapa/tutorials/pull/68)
