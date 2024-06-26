@@ -11,7 +11,7 @@ Chapter 1: The problem with passion
   things which happen to us in life
 - It's OK to follow passions, but broadening them open many new opportunities
 - Learning new things we don't know may be interesting is an adventure
-- Brain is a toolkit we learn how to use in our lives, as we learn not to use hammer to turn a screw
+- Brain is a toolkit, we learn how to use in our lives, as we learn not to use hammer to turn a screw
 - Reading a new chapter should start with _picture walking_ through it, visiting sections headings, bold text, summary,
   trying to answer questions at the end of chapters; it gives the brain an idea of what's coming, like checking a map
   before starting a journey
