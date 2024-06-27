@@ -80,7 +80,7 @@
 
 ## SQL Performance Explained (ISBN: 978-3-95-030782-5)
 
-Chapter 2: Performance and Scalability
+Chapter 3: Performance and Scalability
 
 - In the context of databases, scalability is the ability to handle growing amount of work, or its ability to be
   enlarged. These are two separate definitions. But both are about performance impact of environmental changes.
