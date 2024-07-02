@@ -41,7 +41,7 @@ Chapter 4: The Join Operation
   table fits into memory. Optimizer uses the smaller side of the join for the hash table. Execution plan shows estimated
   memory requirement.
 - It's possible to reduce the hash table size by changing the query: adding extra conditions to limit candidate records.
-  Condition on a single column improves performance event if there is no index for this column: unnecessary rows don't
+  Condition on a single column improves performance even if there is no index for this column: unnecessary rows don't
   have to be stored in the hash table. Constraints help to guard assumptions.
 - The goal of minimizing the hash table size is not reducing number of rows, but the memory footprint. Selecting fewer
   columns improves hash join performance. It's not always easy when using ORM. JPA defines _FetchType.LAZY_ in the
