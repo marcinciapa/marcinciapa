@@ -21,4 +21,4 @@ Chapter 3: I'll do it later, honest!
 
 # Tutorials
 
-- Professional Full Stack Developer: [XXX](XXX)
+- Professional Full Stack Developer: [The Jar file](https://github.com/marcinciapa/tutorials/pull/69)
