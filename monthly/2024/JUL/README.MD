@@ -19,6 +19,18 @@ Chapter 3: I'll do it later, honest!
 - Active recall is another learning technique - go back to learned content trying to recall the key ideas, ideally out
   of memory.
 
+Chapter 4: Brain-links and fun with space aliens
+
+- Neurons use _Axons_ to send signals to other neurons' _dendritic spine_. The connection is called _synapse_. The more
+  often neurons exchange signals, the more strong the connection is.
+- When we start learning something, the link is weak. When we practice, the link becomes stronger and there are
+  more neurons participating.
+- Using metaphors helps to reuse existing connections to understand different concepts. Once metaphors become not
+  sufficient, we should throw them away and replace with others.
+- It's possible to retrain the brain learning something intensively. _Neuroplasticity_ means that the brain can change
+  through learning.
+- Common excuses exist which prevent us from learning new things. All have counter-arguments and can be challenged.
+
 # Tutorials
 
 - Professional Full Stack Developer: [The Jar file](https://github.com/marcinciapa/tutorials/pull/69)
