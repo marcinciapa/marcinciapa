@@ -22,3 +22,4 @@ Chapter 3: I'll do it later, honest!
 # Tutorials
 
 - Professional Full Stack Developer: [The Jar file](https://github.com/marcinciapa/tutorials/pull/69)
+- Professional Full Stack Developer: [Maven & Tests](https://github.com/marcinciapa/tutorials/pull/70)
