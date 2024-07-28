@@ -28,6 +28,20 @@ Chapter 5: Clustering Data. The Second Power of Indexing
   additional columns make indexes bigger, it's usually an acceptable compromise. However, we should be aware of it, use
   index filter predicates intentionally. New indexes for this purpose should not be introduced, existing indexes should
   be extended. Decision about column order should not be left to chance.
+- Index-only scan avoids accessing the table completely if all data can be found in index itself: index must contain all
+  columns from the SQL statement. (for _SELECT SUM(eur_val)_ _eur_val_ column must be added to index). Index preventing
+  table access is called __covering index__. Such index is helpful especially when prevents accessing many rows from
+  different table blocks. Such indexing strategy is aggressive and __should not be a default solution based on suspicion
+  only__. Also, existing indexes should be extended instead of creating new indexes.
+- Another advantage of indexes created on a field like _create_date_ is that they have a good clustering factor:
+  probably new rows are always appended to the end of the table, table order corresponds to the index order. When using
+  indexes with good clustering factor, table rows are stored closely together.
+- Problem of using function based indexes together with index-only scan is that they cannot be used for selecting
+  original data. We should always aim to index the original data and avoid function-based indexes for expressions that
+  cannot be used as access predicates. Aggregating queries are good candidates for index-only scans.
+- PostgreSQL support so-called non-key columns in B-tree indexes, which are only stored in leaf nodes, cannot be used
+  for access predicates. They are specified in the __INCLUDE__ clause.
+- 
 
 ## Learning How to Learn (ISBN: 978-0-52-550446-7)
 
