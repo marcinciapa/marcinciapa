@@ -22,12 +22,12 @@ Chapter 5: Clustering Data. The Second Power of Indexing
   the same table block. Optimizer takes this probability into account.
 - It's possible to add many columns to an index to ensure they are automatically stored in a well-defined order. It
   means extending the index to cover all columns from the _where_ clause, not only those which narrow the scanned
-  range (_first_name_ to cover _LIKE %A_ condition). First columns can be used as access predicates, other columns as
-  filter predicate. Rows not fulfilling the _LIKE_ condition are automatically discarded - table access does not have
-  any filter predicates, unnecessary rows are not fetched, _TABLE ACCESS BY INDEX ROWID_ operations are reduced. But
-  additional columns make indexes bigger, it's usually an acceptable compromise. However, we should be aware of it, use
-  index filter predicates intentionally. New indexes for this purpose should not be introduced, existing indexes should
-  be extended. Decision about column order should not be left to chance.
+  range (_first_name_ to cover _first_name LIKE '%'_ condition). First columns can be used as access predicates, other
+  columns as filter predicate. Rows not fulfilling the _LIKE_ condition are automatically discarded - table access does
+  not have any filter predicates, unnecessary rows are not fetched, _TABLE ACCESS BY INDEX ROWID_ operations are
+  reduced. But additional columns make indexes bigger, it's usually an acceptable compromise. However, we should be
+  aware of it, use index filter predicates intentionally. New indexes for this purpose should not be introduced,
+  existing indexes should be extended. Decision about column order should not be left to chance.
 - Index-only scan avoids accessing the table completely if all data can be found in index itself: index must contain all
   columns from the SQL statement. (for _SELECT SUM(eur_val)_ _eur_val_ column must be added to index). Index preventing
   table access is called __covering index__. Such index is helpful especially when prevents accessing many rows from
@@ -49,9 +49,9 @@ Chapter 5: Clustering Data. The Second Power of Indexing
   be a bottleneck, but it's limited to one read operation per row. Index has its exact position, so database can
   immediately load the row from the heap table. But when using index-organized tables, accessing a table via a secondary
   index searches two indexes: the secondary index once (_INDEX RANGE SCAN_), then the clustered index __for each
-  row__found in the secondary index (_INDEX UNIQUE SCAN_). It's a very inefficient approach, but it can be prevented the
-  same way that prevents table access - using index-only scans, or rather "secondary-index-only scans". In practice,
-  performance improvements on the clustered index are easily lost on when using a secondary index: secondary indexes are
+  row__ found in the secondary index (_INDEX UNIQUE SCAN_). It's a very inefficient approach, but it can be prevented
+  the same way that prevents table access - using index-only scans, or rather "secondary-index-only scans". In practice,
+  performance improvements on the clustered index are easily lost when using a secondary index: secondary indexes are
   large, clustering key is usually longer than ROWID. Benefits of index-organized tables is mostly limited to tables
   that do not need a secondary index.
 - In MySQL MyISAM engine only uses heap tables, InnoDB engine always uses clustered indexes. PostgreSQL only uses heap
