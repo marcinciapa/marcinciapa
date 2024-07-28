@@ -2,7 +2,32 @@
 
 ## SQL Performance Explained (ISBN: 978-3-95-030782-5)
 
-Chapter 5: XXX
+Chapter 5: Clustering Data. The Second Power of Indexing
+
+- Clusters are related things that appear together. Clustering data means storing consecutively accessed data together,
+  so accessing it requires fewer IO operations. In SQL database the simplest cluster is __the row__: all columns in the
+  same database block.
+- Indexes allow clustering data. Indexes build clusters of rows with similar values: leaf nodes store ordered, similar
+  columns close to each other.
+- Index filter predicates may be used to group consecutively accessed data together, not only to improve range scan.
+  Example: _LIKE_ expressions with leading wildcards cannot be used to traverse the tree. Columns indexed for such
+  condition don't narrow the scanned index range. But the most expensive parts of execution time of a query is table
+  access. It's not necessarily the bottleneck if rows are stored in a single table block, they are fetched in a single
+  read operation. Rows spread across multiple blocks may cause serious performance problem - database must fetch many
+  blocks. Performance depends on the distribution of accessed data, depends on __clustering__.
+- The correlation between index order and table order is a performance benchmark - __index clustering factor__.
+- It's possible to improve performance by aligning rows in a table, so they correspond the index order. It's rarely
+  applicable: it's possible to store rows only in one sequence - it's possible to optimize only for one index. Row
+  sequencing is impractical approach. Index clustering factor is probability that two succeeding index entries refer to
+  the same table block. Optimizer takes this probability into account.
+- It's possible to add many columns to an index to ensure they are automatically stored in a well-defined order. It
+  means extending the index to cover all columns from the _where_ clause, not only those which narrow the scanned
+  range (_first_name_ to cover _LIKE %A_ condition). First columns can be used as access predicates, other columns as
+  filter predicate. Rows not fulfilling the _LIKE_ condition are automatically discarded - table access does not have
+  any filter predicates, unnecessary rows are not fetched, _TABLE ACCESS BY INDEX ROWID_ operations are reduced. But
+  additional columns make indexes bigger, it's usually an acceptable compromise. However, we should be aware of it, use
+  index filter predicates intentionally. New indexes for this purpose should not be introduced, existing indexes should
+  be extended. Decision about column order should not be left to chance.
 
 ## Learning How to Learn (ISBN: 978-0-52-550446-7)
 
