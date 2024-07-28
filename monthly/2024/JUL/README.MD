@@ -41,7 +41,21 @@ Chapter 5: Clustering Data. The Second Power of Indexing
   cannot be used as access predicates. Aggregating queries are good candidates for index-only scans.
 - PostgreSQL support so-called non-key columns in B-tree indexes, which are only stored in leaf nodes, cannot be used
   for access predicates. They are specified in the __INCLUDE__ clause.
-- 
+- If we put all columns into the index, we don't need the heap table. Such concept is called by Oracle __index-organized
+  tables__ (IOT), other databases call it __clustered index__. It's a B-tree index without a heap table. Such approach
+  saves the space for heap structure and access is automatically index-only scan. It's hardly achievable in practice.
+- The problem begins when creating another index on the same table, secondary index refers to the original index.
+  Secondary index stores logical key from the first index instead of the reference to the heap table. Table access may
+  be a bottleneck, but it's limited to one read operation per row. Index has its exact position, so database can
+  immediately load the row from the heap table. But when using index-organized tables, accessing a table via a secondary
+  index searches two indexes: the secondary index once (_INDEX RANGE SCAN_), then the clustered index __for each
+  row__found in the secondary index (_INDEX UNIQUE SCAN_). It's a very inefficient approach, but it can be prevented the
+  same way that prevents table access - using index-only scans, or rather "secondary-index-only scans". In practice,
+  performance improvements on the clustered index are easily lost on when using a secondary index: secondary indexes are
+  large, clustering key is usually longer than ROWID. Benefits of index-organized tables is mostly limited to tables
+  that do not need a secondary index.
+- In MySQL MyISAM engine only uses heap tables, InnoDB engine always uses clustered indexes. PostgreSQL only uses heap
+  tables. Using _CLUSTER_ clause aligns the content of the heap table with an index.
 
 ## Learning How to Learn (ISBN: 978-0-52-550446-7)
 
