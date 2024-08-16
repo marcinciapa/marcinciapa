@@ -16,4 +16,15 @@ Chapter 5: The other side of the teacher's desk
 - If you get stuck, ask somebody else.
 - Use your imagination to remember difficult things.
 
+Chapter 6: Learning while you sleep
+
+- While you learn something, dendritic spines begin to grow. But they grow very fast during sleep, synapses become
+  stronger. While sleeping you get like a brain software upgrade.
+- Ideas not practiced regularly are removed: unused synapses are cleaned-out.
+- Sleeping is like cementing learnt ideas.
+- Reverse procrastination is doing all homeworks early in advance to forget about them. But it has negative consequences
+  if we don't regularly get back to them to solidify. Synapses will be cleaned-out if not revisited.
+- It's normal that some people need more, some less time to learn particular new things.
+- Explain ideas to others, make flash cards to learn more effective.
+
 # Tutorials
