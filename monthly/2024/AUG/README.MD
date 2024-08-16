@@ -2,7 +2,15 @@
 
 ## SQL Performance Explained (ISBN: 978-3-95-030782-5)
 
-Chapter 5: XXX
+Chapter 5: Sorting and Grouping
+
+- Sorting is a resource intensive operation, database must store the temporary results first.
+- Index delivers sorted representation of the data. __Using index allows avoiding sort__ operation, when data is
+  presorted.
+- If followed by a table access, _INDEX RANGE SCAN_ can be inefficient, which removes benefits of avoiding sort
+  operation. Sometimes _FULL TABLE SCAN_ is faster. It's optimizer's job to evaluate.
+- Indexed _ORDER BY_ execution allows returning first results without processing all data, it's executed __in pipeline
+  manner__, and it's the third power of indexing.
 
 ## Learning How to Learn (ISBN: 978-0-52-550446-7)
 
