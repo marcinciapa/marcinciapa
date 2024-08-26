@@ -6,11 +6,27 @@ Chapter 5: Sorting and Grouping
 
 - Sorting is a resource intensive operation, database must store the temporary results first.
 - Index delivers sorted representation of the data. __Using index allows avoiding sort__ operation, when data is
-  presorted.
+  presorted. But the same index needs to be used to cover _WHERE_ and _ORDER BY_ clauses.
+  `SELECT * FROM sales WHERE sales_date=TRUNC(sysdate)-INTERVAL '1' DAY ORDER BY sale_date, product_id;`:
+  `CREATE INDEX sales_dt_pr ON sales (sale_date, product_id)`
+  Optimisation also works when sorting by _PRODUCT_ID_ only.
 - If followed by a table access, _INDEX RANGE SCAN_ can be inefficient, which removes benefits of avoiding sort
   operation. Sometimes _FULL TABLE SCAN_ is faster. It's optimizer's job to evaluate.
 - Indexed _ORDER BY_ execution allows returning first results without processing all data, it's executed __in pipeline
   manner__, and it's the third power of indexing.
+- `SORT ORDER BY` operation disappears from the query plan when index is used. Surprisingly, the cost value may increase
+  because the clustering factor of the new index may be worse. But cost value is not always good indicator of the
+  execution effort.
+- In the considered example, when the scanned index range is
+  extended (`WHERE sale_date>=TRUNC(sysdate)-INTERVAL '1' DAY`) explicit sort must be performed. Index range is not
+  sorted by _PRODUCT_ID_. To find a reason of explicit sorting, use the full index definition in _ORDER BY_ clause.
+- Optimizer is searching for an execution plan which gets the last record fastest. If database detects that only first
+  few rows are fetched, it may prefer an indexed _ORDER BY_.
+- Databases read indexes in both direction, pipelined _ORDER BY_ is also possible if scanning index in opposite order.
+  This is why databases uses doubly linked list. But the problem begins when _ASC_ and _DESC_ modifiers are mixed,
+  database would have to make an impossible index jump. `ORDER BY sales_date ASC, product_id DESC`. Previously created
+  index cannot be used. However, it's possible to use _ASC_ and _DESC_ modifiers in the index
+  declaration: `CREATE INDEX sales_dt_pr ON sales (sale_date ASC, product_id DESC);`.
 
 ## Learning How to Learn (ISBN: 978-0-52-550446-7)
 
