@@ -27,6 +27,26 @@ Chapter 5: Sorting and Grouping
   database would have to make an impossible index jump. `ORDER BY sales_date ASC, product_id DESC`. Previously created
   index cannot be used. However, it's possible to use _ASC_ and _DESC_ modifiers in the index
   declaration: `CREATE INDEX sales_dt_pr ON sales (sale_date ASC, product_id DESC);`.
+- The SQL standard doesn't define the sort order of _NULL_. It only tells that _NULL_s must appear together after
+  sorting. To get a well-defined behavior, null sorting of all columns should be specified in _order by_. Only
+  PostgreSQL supports _NULLS_ modifier in both _order by_ and index definition.
+- There are __two different group by algorithms__: __hash algorithm__ and __sort/group__. Hash algorithm aggregates
+  records in a temporary hash table, which is returned as a result. Sort/group first sorts the input data by the
+  grouping key and aggregates them afterward. Both algorithms need to materialize an intermediate state, cannot be
+  executed in a pipelined manner. But sort/group algorithm can use index to avoid sort, so it allows __pipelined group
+  by__.
+- Sort/group is more effective when _INDEX RANGE SCAN_ delivers rows in the required order. Database avoids
+  materialization, because it doesn't require explicit sort operation. In the query plan it can appear as _SORT GROUP BY
+  NOSORT_ operation (Oracle). Other databases may not mention any sort operation at all.
+- Defining index with _ASC/DESC_ modifiers should not affect pipelined group by execution, the same for _NULLS
+  FIRST/LAST_. PostgreSQL doesn't automatically do a pipelined group by if the index threats NULL value as the smallest.
+  Adding order by clause with the index order bypasses this problem. Oracle cannot read index backwards to execute a
+  pipelined group by followed by order by.
+- If _INDEX RANGE SCAN_ doesn't deliver rows ordered by the grouping key (sales since yesterday), database doesn't
+  execute pipelined group by. Instead, Oracle uses _HASH GROUP BY_ operation as it has an advantage of only needing to
+  materialize aggregated results, while sort/group materializes complete input set: hash algorithm requires less memory.
+- Fast execution is not the most important advantage of pipelined order by or pipelined group by, but the fact that
+  database can deliver first result before reading the entire input.
 
 ## Learning How to Learn (ISBN: 978-0-52-550446-7)
 
