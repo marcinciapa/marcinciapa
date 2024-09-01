@@ -72,3 +72,5 @@ Chapter 6: Learning while you sleep
 - __Explain ideas to others__, make __flash cards__ to learn more effective.
 
 # Tutorials
+
+- [Spring Boot and GraphQL tutorial](https://github.com/marcinciapa/tutorials/pull/74)
