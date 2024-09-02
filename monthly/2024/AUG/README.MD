@@ -22,8 +22,8 @@ Chapter 5: Sorting and Grouping
   sorted by _PRODUCT_ID_. To find a reason of explicit sorting, use the full index definition in _ORDER BY_ clause.
 - Optimizer is searching for an execution plan which gets the last record fastest. If database detects that only first
   few rows are fetched, it may prefer an indexed _ORDER BY_.
-- Databases read indexes in both direction, pipelined _ORDER BY_ is also possible if scanning index in opposite order.
-  This is why databases uses doubly linked list. But the problem begins when _ASC_ and _DESC_ modifiers are mixed,
+- Databases read indexes in both directions, pipelined _ORDER BY_ is also possible if scanning index in opposite order.
+  This is why databases use doubly linked list. But the problem begins when _ASC_ and _DESC_ modifiers are mixed,
   database would have to make an impossible index jump. `ORDER BY sales_date ASC, product_id DESC`. Previously created
   index cannot be used. However, it's possible to use _ASC_ and _DESC_ modifiers in the index
   declaration: `CREATE INDEX sales_dt_pr ON sales (sale_date ASC, product_id DESC);`.
@@ -53,8 +53,8 @@ Chapter 5: Sorting and Grouping
 Chapter 5: The other side of the teacher's desk
 
 - If we limit our learning only to what we like, we may feel one day that there is something missing in our education.
-  We should not be limited to what comes easy to us. Learning new things may be satisfying. But for the beginner
-  everything seems difficult.
+  We should not be limited to what comes easy to us. 
+- Learning new things may be satisfying. But for the beginner everything seems difficult.
 - One of the best ways to learn is to __teach others__.
 - If you don't understand the explanation, search for another one: in other sources, in the Internet.
 - If you get stuck, ask somebody else.
