@@ -63,21 +63,21 @@ Chapter 1: The problem with passion
 - It's OK to follow passions, but broadening them open many new opportunities
 - Learning new things we don't know may be interesting is an adventure
 - Brain is a toolkit, we learn how to use in our lives, as we learn not to use hammer to turn a screw
-- Reading a new chapter should start with _picture walking_ through it, visiting sections headings, bold text, summary,
-  trying to answer questions at the end of chapters; it gives the brain an idea of what's coming, like checking a map
-  before starting a journey
+- Reading a new chapter should start with __picture walking__ through it, visiting sections headings, bold text,
+  summary, trying to answer questions at the end of chapters; it gives the brain an idea of what's coming, like checking
+  a map before starting a journey
 
 Chapter 2: Easy does it
 
 - Sometimes we have to be less focused to be better learners.
-- The brain can be in one of two states: __focused__ and __diffused__. Diffused modes helps build better connections
+- The brain can be in one of two states: _focused_ and _diffused_. Diffused modes helps build better connections
   between ideas, it leverages creativity. To learn effectively, brain has to go back and forth between these two states.
 - We can switch to diffused mode by letting go, not thinking about anything: going for a walk, looking out a window,
   taking a shower, going to sleep. Focusing on something else can take us into diffused mode.
 - There are two ways we can get stuck on solving a problem: not focussing on catching initial explanation and being in
   focused mode for too long.
 - If we didn't focus first, we have to go back to the beginning and focus on understanding a problem again.
-- When the brain is tired of being focused, it's good to take a break and switch to diffused mode (5-10 minutes).
+- When the brain is tired of being focused, it's good to __take a break__ and switch to diffused mode (5-10 minutes).
 
 # Tutorials
 

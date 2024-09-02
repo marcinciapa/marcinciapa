@@ -66,11 +66,11 @@ Chapter 3: I'll do it later, honest!
 - While doing a pomodoro don't focus on finishing a task. The goal is to be focused during ~25min time.
 - Multitasking is a bad idea. Human can effectively work on only single task in the same time.
 - Postponing procrastination for later can be a useful mental trick.
-- Create good habits to eliminate bad habits: if you have a habit to check vibrating phone, create a habit to turn on
-  'don't disturb' mode when starting working.
+- __Create good habits__ to eliminate bad habits: if you have a habit to check vibrating phone, create a habit to turn
+  on 'don't disturb' mode when starting working.
 - Little procrastinations seem innocent, but if they become habit, they have overall damaging effect on our efficiency.
-- Active recall is another learning technique - go back to learned content trying to recall the key ideas, ideally out
-  of memory.
+- __Active recall__ is another learning technique - go back to learned content trying to recall the key ideas, ideally
+  out of memory.
 
 Chapter 4: Brain-links and fun with space aliens
 
@@ -78,7 +78,7 @@ Chapter 4: Brain-links and fun with space aliens
   often neurons exchange signals, the more strong the connection is.
 - When we start learning something, the link is weak. When we practice, the link becomes stronger and there are
   more neurons participating.
-- Using metaphors helps to reuse existing connections to understand different concepts. Once metaphors become not
+- Using __metaphors__ helps to reuse existing connections to understand different concepts. Once metaphors become not
   sufficient, we should throw them away and replace with others.
 - It's possible to retrain the brain learning something intensively. _Neuroplasticity_ means that the brain can change
   through learning.
