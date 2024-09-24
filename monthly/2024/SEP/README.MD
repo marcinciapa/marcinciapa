@@ -42,6 +42,17 @@ Chapter 8: Slick tricks to build your memory
     - Sleep
 - Additional particularly useful technique is the Rubber Duck technique: Explain things to the rubber duck.
 
+Chapter 9: Why brain-links are important
+
+- Brain links are strong neural connections, which allow to solve complex problem almost automatically, without paying
+  too much attention.
+- Deep understanding is not enough to build brain links, intensive practice is required.
+- Brain links work as long as there is not too much information, external factors, cognitive load, which require putting
+  additional attention.
+- Focus is required for building brain links, disruption puts us away from achieving the goal.
+- Context switching is expensive for our brains, they quickly become tired.
+- Enjoyment comes after learning new things deeply. Every new thing seems hard when we first start learning it.
+
 # Projects
 
 ## Equino
