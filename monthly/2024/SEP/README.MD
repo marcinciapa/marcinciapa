@@ -53,6 +53,13 @@ Chapter 9: Why brain-links are important
 - Context switching is expensive for our brains, they quickly become tired.
 - Enjoyment comes after learning new things deeply. Every new thing seems hard when we first start learning it.
 
+Chapter 10: Learning with clubs and groups, finding your mission, and how Terry nearly burned down the school
+
+- Share passions with friends, it's a good way to boost creativity and more solutions to complex problems.
+- Single advise from a respected person can have huge impact on our lives.
+- Subjects are connected in a way which is hard to imagine.
+- Make new information active, don't just read about it.
+
 # Projects
 
 ## Equino
