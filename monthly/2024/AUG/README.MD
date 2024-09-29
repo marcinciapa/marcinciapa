@@ -2,7 +2,7 @@
 
 ## SQL Performance Explained (ISBN: 978-3-95-030782-5)
 
-Chapter 5: Sorting and Grouping
+Chapter 6: Sorting and Grouping
 
 - Sorting is a resource intensive operation, database must store the temporary results first.
 - Index delivers sorted representation of the data. __Using index allows avoiding sort__ operation, when data is

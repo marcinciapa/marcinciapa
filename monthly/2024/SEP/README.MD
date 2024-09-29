@@ -2,9 +2,32 @@
 
 ## SQL Performance Explained (ISBN: 978-3-95-030782-5)
 
-Chapter 6: XXX
+Chapter 7: Partial results
 
--
+- There are times, when we're interested only in first few rows (Top-N queries), for example to show only ten most
+  recent messages. If all rows have to be sorted, there could be serious performance problem. Pipelined order by helps
+  to efficiently retrieve partial results.
+- The simples way to optimise is to fetch only first rows of a query and close the statement. But optimizer doesn't
+  foresee it when preparing the execution plan, it assumes the best plan for fetching all rows (which may be most
+  efficient with full table scan when explicit sort is required). It's possible to inform optimizer using _LIMIT_ or
+  _FETCH FIRST_ (both work in PostgreSQL). Optimizer then prefers using pipelined order by if applicable.
+- It's possible to use pipelined order by (avoid explicit sort) when order by clause is covered by index. Without it
+  response time of top-N query grows with the table size. When using pipeline execution, response time grows with the
+  number of selected rows.
+- There are two ways of fetching next pages: __offset method__ (fetching rows from beginning and using filter on rows
+  number) and __seek method__ (using condition to discard preceding rows).
+- The advantage of offset method are simplicity and ease of selecting arbitrary page, the cost is increased performance
+  burden with every next page (all previous page rows need to be fetched before they get discarded) and drift when
+  inserting new rows. Seek method doesn't have this problem because it uses value from previous result as a delimiter.
+  We have to, however, ensure that the results are deterministic (sort guard: sorting and condition on the same unique
+  fields). Database may deliver results in different order every time, because it uses parallel query execution. We
+  should be responsible for deterministic results, even if they are not specified in requirements. Cursor fields should
+  be added to index.
+- Seek method may use __row values__ syntax for specifying conditions: `WHERE (sale_date, sale_id) < (?, ?)_.` (not all
+  databases support it). However, it is also possible to use approximated variant (with regular _AND_s).
+- The difference in performance between offset and seek methods is visible from about _20 pages_.
+- _Window function_ can also be used to implement pagination, but its performance is on the same level as offset method.
+  It shines in analytical calculations.
 
 ## Learning How to Learn (ISBN: 978-0-52-550446-7)
 
