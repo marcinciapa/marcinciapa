@@ -7,7 +7,7 @@ Chapter 7: Partial results
 - There are times, when we're interested only in first few rows (Top-N queries), for example to show only ten most
   recent messages. If all rows have to be sorted, there could be serious performance problem. Pipelined order by helps
   to efficiently retrieve partial results.
-- The simples way to optimise is to fetch only first rows of a query and close the statement. But optimizer doesn't
+- The simplest way to optimise is to fetch only first rows of a query and close the statement. But optimizer doesn't
   foresee it when preparing the execution plan, it assumes the best plan for fetching all rows (which may be most
   efficient with full table scan when explicit sort is required). It's possible to inform optimizer using _LIMIT_ or
   _FETCH FIRST_ (both work in PostgreSQL). Optimizer then prefers using pipelined order by if applicable.
@@ -78,15 +78,7 @@ Chapter 9: Why brain-links are important
 
 Chapter 10: Learning with clubs and groups, finding your mission, and how Terry nearly burned down the school
 
-- Share passions with friends, it's a good way to boost creativity and more solutions to complex problems.
+- Share passions with friends, it's a good way to boost creativity and find more solutions to complex problems.
 - Single advise from a respected person can have huge impact on our lives.
 - Subjects are connected in a way which is hard to imagine.
 - Make new information active, don't just read about it.
-
-# Projects
-
-## Equino
-
-## Actracker
-
-# Tutorials

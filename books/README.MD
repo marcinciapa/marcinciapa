@@ -44,9 +44,11 @@
 - [July 2024](../monthly/2024/JUL/README.MD#sql-performance-explained-isbn-978-3-95-030782-5)
 - [August 2024](../monthly/2024/AUG/README.MD#sql-performance-explained-isbn-978-3-95-030782-5)
 - [September 2024](../monthly/2024/SEP/README.MD#sql-performance-explained-isbn-978-3-95-030782-5)
+- [October 2024](../monthly/2024/OCT/README.MD#sql-performance-explained-isbn-978-3-95-030782-5)
 
 ### Barbara Oakley, Terrence Sejnowski: Learning How to Learn 
 - [June 2024](../monthly/2024/JUN/README.MD#learning-how-to-learn-isbn-978-0-52-550446-7) 
 - [July 2024](../monthly/2024/JUL/README.MD#learning-how-to-learn-isbn-978-0-52-550446-7) 
 - [August 2024](../monthly/2024/AUG/README.MD#learning-how-to-learn-isbn-978-0-52-550446-7) 
 - [September 2024](../monthly/2024/SEP/README.MD#learning-how-to-learn-isbn-978-0-52-550446-7) 
+- [October 2024](../monthly/2024/OCT/README.MD#learning-how-to-learn-isbn-978-0-52-550446-7) 
