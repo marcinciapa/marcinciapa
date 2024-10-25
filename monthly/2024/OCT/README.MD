@@ -18,6 +18,17 @@ Chapter 11: How to pump up your brain
 - __Healthy diet__ is required to support learning naturally.
 - It's OK to learn from different sources (including YouTube), but it should be followed by practice.
 
+Chapter 12: Making brain-links: How Not to Learn from a Comic Book
+
+- You become an expert when you see the big picture, even where there are some missing pieces.
+- Lazy learning is when we practice only an easy part. Deliberate practice is when we increase difficulty.
+- Interleaving is learning how to solve problems differently. Otherwise, we only use hammer, because everything looks
+  like a neil.
+- Deep focus helps with building brain links.
+- Observing other people or reading a book helps to get started, but we only become experts through practice.
+- Learning to play an instrument is healthy for our brains.
+- It's impossible to learn everything, instead it's recommended to learn few aspects and create brain links.
+
 # Projects
 
 ## Equino
