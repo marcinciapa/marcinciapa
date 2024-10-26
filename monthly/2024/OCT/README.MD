@@ -2,9 +2,32 @@
 
 ## SQL Performance Explained (ISBN: 978-3-95-030782-5)
 
-Chapter 8: XXX
+Chapter 8: Modifying Data
 
--
+- Performance of __Data Manipulation Language (DML)__ (_insert_, _update_, _delete_) is negatively impacted by indexes.
+  Indexes are redundancies, DML not only operates in table space, but must keep indexes consistent.
+- Dominant factor of _insert_ performance is the number of indexes. Insert doesn't have the _where_ clause, so it's the
+  only operation which does not benefit from indexes. Adding a row contains of several steps: find a place to store the
+  row, add data to the respective data block, __add entry to each index of this table__. Number of indexes multiplies
+  the cost. And extending index can be expensive: tree needs to be balanced, index order must be preserved. If there is
+  no space in the leaf for new data, leaf needs to be split, branch node can also get out of space etc. In worst case
+  each node to the root need to be split or tree depth needs to be extended.
+- Maintaining indexes is the most expensive part of insert, adding first index multiplies the performance by hundreds,
+  first index makes most significant difference.
+- To optimize insert performance, keep number of indexes small. Also, when large portion of data needs to be inserted,
+  we can consider dropping indexes temporarily (it's a common practice in data warehouses).
+- _delete_ statement has _where_ clause, so it can benefit from indexes. The cost of deleting reference from the index
+  is similar to insert (tree needs to be balanced). If there is no index, the entire table needs to be scanned to find
+  the row for deletion.
+- _delete_ statement without _where_ cannot use the index. _truncate table_ has the same effects as _delete_ without
+  where, but it deletes all rows in one shot, does implicit commit and doesn't execute triggers. In PostgreSQL delete
+  only sets 'deleted' flag, so the performance doesn't depend on the number of indexes. Physical removal of data is
+  performed during _VACUUM_ process.
+- _update_ statement must remove and add entry in the impacted index, so the response time is similar to _insert_ and
+  _delete_ statements together. Performance depends on the number of indexes, but during partial updates not every
+  index is impacted, only those which contain updated columns. It's beneficial to update only changed columns. ORM tools
+  tend to generate statements which update all queries. Hibernate does that when _dynamic-update mode_ is disabled. It's
+  a good practice to verify ORMs statements from time to time.
 
 ## Learning How to Learn (ISBN: 978-0-52-550446-7)
 
