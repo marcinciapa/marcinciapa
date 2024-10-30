@@ -58,4 +58,6 @@ Chapter 12: Making brain-links: How Not to Learn from a Comic Book
 
 ## Actracker
 
+- Session keep-alive was [implemented](https://github.com/marcinciapa/actracker-ui/pull/67) in actracker-ui.
+
 # Tutorials
