@@ -43,7 +43,7 @@ Chapter 11: How to pump up your brain
 
 Chapter 12: Making brain-links: How Not to Learn from a Comic Book
 
-- You become an expert when you see the big picture, even where there are some missing pieces.
+- You become an expert when you see the big picture, even if there are some missing pieces.
 - Lazy learning is when we practice only an easy part. Deliberate practice is when we increase difficulty.
 - Interleaving is learning how to solve problems differently. Otherwise, we only use hammer, because everything looks
   like a neil.
@@ -54,10 +54,6 @@ Chapter 12: Making brain-links: How Not to Learn from a Comic Book
 
 # Projects
 
-## Equino
-
 ## Actracker
 
 - Session keep-alive was [implemented](https://github.com/marcinciapa/actracker-ui/pull/67) in actracker-ui.
-
-# Tutorials
