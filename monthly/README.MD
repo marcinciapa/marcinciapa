@@ -21,3 +21,4 @@
 - [August](2024/AUG/README.MD)
 - [September](2024/SEP/README.MD)
 - [October](2024/OCT/README.MD)
+- [November](2024/NOV/README.MD)
