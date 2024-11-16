@@ -10,6 +10,10 @@ Chapter 13: XXX
 
 - 
 
+## Equino
+
+- Prometheus was [set up](https://github.com/marcinciapa/equino-kubernetes/pull/11) in Equino Kubernetes cluster.
+
 # Tutorials
 
 - 
