@@ -16,14 +16,6 @@ Chapter 13: Asking yourself important question: Should you listen to music while
 
 # Projects
 
-## Actracker
-
--
-
 ## Equino
 
 - Prometheus was [set up](https://github.com/marcinciapa/equino-kubernetes/pull/11) in Equino Kubernetes cluster.
-
-# Tutorials
-
-- 
