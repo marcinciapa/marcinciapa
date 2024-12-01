@@ -22,3 +22,4 @@
 - [September](2024/SEP/README.MD)
 - [October](2024/OCT/README.MD)
 - [November](2024/NOV/README.MD)
+- [December](2024/DEC/README.MD)

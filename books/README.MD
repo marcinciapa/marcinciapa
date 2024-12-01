@@ -53,3 +53,4 @@
 - [September 2024](../monthly/2024/SEP/README.MD#learning-how-to-learn-isbn-978-0-52-550446-7) 
 - [October 2024](../monthly/2024/OCT/README.MD#learning-how-to-learn-isbn-978-0-52-550446-7) 
 - [November 2024](../monthly/2024/NOV/README.MD#learning-how-to-learn-isbn-978-0-52-550446-7) 
+- [December 2024](../monthly/2024/DEC/README.MD#learning-how-to-learn-isbn-978-0-52-550446-7) 
