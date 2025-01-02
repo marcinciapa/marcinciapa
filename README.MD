@@ -109,6 +109,7 @@ The [repository](https://github.com/marcinciapa/tutorials) for exercises related
 
 ## My learnings
 Here's the log of my learnings, divided by months. Feel free to spy me on my progress.
+- [January 2025](monthly/2025/JAN/README.MD)
 - [December 2024](monthly/2024/DEC/README.MD)
 - [November 2024](monthly/2024/NOV/README.MD)
 - [October 2024](monthly/2024/OCT/README.MD)
@@ -121,16 +122,6 @@ Here's the log of my learnings, divided by months. Feel free to spy me on my pro
 - [March 2024](monthly/2024/MAR/README.MD)
 - [February 2024](monthly/2024/FEB/README.MD)
 - [January 2024](monthly/2024/JAN/README.MD)
-- [December 2023](monthly/2023/DEC/README.MD)
-- [November 2023](monthly/2023/NOV/README.MD)
-- [October 2023](monthly/2023/OCT/README.MD)
-- [September 2023](monthly/2023/SEP/README.MD)
-- [August 2023](monthly/2023/AUG/README.MD)
-- [July 2023](monthly/2023/JUL/README.MD)
-- [June 2023](monthly/2023/JUN/README.MD)
-- [May 2023](monthly/2023/MAY/README.MD)
-- [April 2023](monthly/2023/APR/README.MD)
-- [March 2023](monthly/2023/MAR/README.MD)
 
 ###### [Archive](monthly/README.MD)
 ###### [Books](books/README.MD)
