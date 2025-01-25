@@ -24,6 +24,26 @@ Chapter 16: Going from "have to" to "get to"
 - The younger we are learning these techniques, the more time we have to benefit from them.
 - World is changing rapidly, the ability to learn and adapt is crucial to survive.
 
+## The Practical Programmer (ISBN: 978-0-13-595705-9)
+
+From the Preface to the First Edition
+
+- __Pragmatic__ (lat. _pragmaticus_ - skilled in business)(greek. _πραγματικός_ - fit for use)
+- Software is a craft - we know how to force computers to do what we want
+- We should not stick to a single technology, but know a lot of them and know when to apply which
+- Theory and practice combined bring benefits
+- Pragmatic developers:
+  - are keen on trying new things, integrate them with rest of their knowledge 
+  - ask questions a lot
+  - usually first seek facts instead of assuming things
+  - deeply understand nature of problems, which helps them to assess how difficult problems are to solve
+  - learn new technologies often
+  - __develop software only if care about doing it right__
+  - __think about their work, every single decision__
+- In a project there is always a place for individuality
+- __Keizen__ should be our motto - improve solution a bit every single time
+- Keizen also applies to individuals - constantly improving knowledge
+
 # Projects
 
 ## Equino

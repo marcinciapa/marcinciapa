@@ -46,7 +46,7 @@
 - [September 2024](../monthly/2024/SEP/README.MD#sql-performance-explained-isbn-978-3-95-030782-5)
 - [October 2024](../monthly/2024/OCT/README.MD#sql-performance-explained-isbn-978-3-95-030782-5)
 
-### Barbara Oakley, Terrence Sejnowski: Learning How to Learn 
+### Barbara Oakley, Terrence Sejnowski: Learning How to Learn (ISBN: 978-0-14-313254-7)
 - [June 2024](../monthly/2024/JUN/README.MD#learning-how-to-learn-isbn-978-0-52-550446-7) 
 - [July 2024](../monthly/2024/JUL/README.MD#learning-how-to-learn-isbn-978-0-52-550446-7) 
 - [August 2024](../monthly/2024/AUG/README.MD#learning-how-to-learn-isbn-978-0-52-550446-7) 
@@ -54,3 +54,6 @@
 - [October 2024](../monthly/2024/OCT/README.MD#learning-how-to-learn-isbn-978-0-52-550446-7) 
 - [November 2024](../monthly/2024/NOV/README.MD#learning-how-to-learn-isbn-978-0-52-550446-7) 
 - [January 2025](../monthly/2025/JAN/README.MD#learning-how-to-learn-isbn-978-0-52-550446-7) 
+
+### The Practical Programmer: Your journey to mastery, 20th Anniversary Edition (ISBN: 978-0-13-595705-9)
+- [January 2025](../monthly/2025/JAN/README.MD#the-practical-programmer-isbn-978-0-13-595705-9)
