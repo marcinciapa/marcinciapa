@@ -28,7 +28,7 @@ Chapter 16: Going from "have to" to "get to"
 
 From the Preface to the First Edition
 
-- __Pragmatic__ (lat. _pragmaticus_ - skilled in business)(greek. _πραγματικός_ - fit for use)
+- __Pragmatic__ (lat. _pragmaticus_ - skilled in business)(gr. _πραγματικός_ - fit for use)
 - Software is a craft - we know how to force computers to do what we want
 - We should not stick to a single technology, but know a lot of them and know when to apply which
 - Theory and practice combined bring benefits
@@ -41,8 +41,8 @@ From the Preface to the First Edition
   - __develop software only if care about doing it right__
   - __think about their work, every single decision__
 - In a project there is always a place for individuality
-- __Keizen__ should be our motto - improve solution a bit every single time
-- Keizen also applies to individuals - constantly improving knowledge
+- __Kaizen__ should be our motto - improve solution a bit every single time
+- Kaizen also applies to individuals - constantly improving knowledge
 
 # Projects
 
