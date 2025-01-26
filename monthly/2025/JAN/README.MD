@@ -33,13 +33,13 @@ From the Preface to the First Edition
 - We should not stick to a single technology, but know a lot of them and know when to apply which
 - Theory and practice combined bring benefits
 - Pragmatic developers:
-  - are keen on trying new things, integrate them with rest of their knowledge 
-  - ask questions a lot
-  - usually first seek facts instead of assuming things
-  - deeply understand nature of problems, which helps them to assess how difficult problems are to solve
-  - learn new technologies often
-  - __develop software only if care about doing it right__
-  - __think about their work, every single decision__
+    - are keen on trying new things, integrate them with rest of their knowledge
+    - ask questions a lot
+    - usually first seek facts instead of assuming things
+    - deeply understand nature of problems, which helps them to assess how difficult problems are to solve
+    - learn new technologies often
+    - __develop software only if care about doing it right__
+    - __think about their work, every single decision__
 - In a project there is always a place for individuality
 - __Kaizen__ should be our motto - improve solution a bit every single time
 - Kaizen also applies to individuals - constantly improving knowledge
@@ -52,7 +52,7 @@ From the Preface to the First Edition
 
 ## Actracker
 
-- Session keep-alive was [implemented](https://github.com/marcinciapa/actracker-ui/pull/67) in actracker-ui.
+- Session was [extended](https://github.com/marcinciapa/actracker-ui/pull/68) from 12 to 24 hours in actracker-ui.
 
 # Tutorials
 
