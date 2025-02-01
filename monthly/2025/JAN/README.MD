@@ -46,14 +46,6 @@ From the Preface to the First Edition
 
 # Projects
 
-## Equino
-
--
-
 ## Actracker
 
 - Session was [extended](https://github.com/marcinciapa/actracker-ui/pull/68) from 12 to 24 hours in actracker-ui.
-
-# Tutorials
-
--
