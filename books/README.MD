@@ -57,3 +57,4 @@
 
 ### The Practical Programmer: Your journey to mastery, 20th Anniversary Edition (ISBN: 978-0-13-595705-9)
 - [January 2025](../monthly/2025/JAN/README.MD#the-practical-programmer-isbn-978-0-13-595705-9)
+- [February 2025](../monthly/2025/FEB/README.MD#the-practical-programmer-isbn-978-0-13-595705-9)
