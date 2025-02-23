@@ -32,7 +32,15 @@ Chapter 1: A Pragmatic Philosophy
 
 ## Equino
 
--
+- Reposilite was [installed](https://github.com/marcinciapa/equino-kubernetes/pull/13) in Equino Kubernetes cluster.
+  Applications were adjusted:
+  equino-gradle-plugins
+  ([step 1](https://github.com/marcinciapa/equino-gradle-plugins/pull/6), 
+  [step 2](https://github.com/marcinciapa/equino-gradle-plugins/pull/7)), 
+  [equino-security](https://github.com/marcinciapa/equino-security/pull/4),
+  [actracker-api](https://github.com/marcinciapa/actracker-api/pull/172),
+  [actracker-search-feeder](https://github.com/marcinciapa/actracker-search-feeder/pull/48),
+  [actracker-ui](https://github.com/marcinciapa/actracker-ui/pull/69).
 
 ## Actracker
 
