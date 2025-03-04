@@ -16,4 +16,4 @@ Chapter 2:
 
 # Tutorials
 
--
+- [GitHub Actions: The Big Picture](https://github.com/marcinciapa-learning/github-actions-big-picture)
