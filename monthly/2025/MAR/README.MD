@@ -17,3 +17,5 @@ Chapter 2:
 # Tutorials
 
 - [GitHub Actions: The Big Picture](https://github.com/marcinciapa-learning/github-actions-big-picture)
+- [Authoring and Maintaining GitHub Actions Workflows](https://github.com/marcinciapa-learning/course-gh-actions)
+
