@@ -33,6 +33,29 @@ Chapter 2: A Pragmatic Approach
   most likely and optimistic estimate. Measure and review the accuracy of your estimates to become more accurate. Ask
   someone who has already done something similar in the past. When asked for an estimate, answer 'I'll get back to you'.
 
+Chapter 3: The Basic Tools
+
+- Tools amplify your talent. The more tools you know and the better you know them, the more productive you are. It's a
+  common mistake to get familiar with only a single tool.
+- Knowledge should be represented with plain text. The problem with binary formats is that they require context to
+  understand them.
+- Plain text doesn't mean unstructured (JSON/XML/HTML is also plain text).
+- If there is a common standard different protocols should share, it should be plain text.
+- Using GUI is convenient for simple cases, but it has limitations when it comes to automation. You should get fluent
+  with shell, it supports automating stuff and using the full potential of your environment.
+- If you do repetitive actions in shell, identify them and search for a better way.
+- If your editor limits you, search for extensions.
+- Always use version control, even for single-person projects, non-source code projects.
+- VCS is a perfect place for storing hardware configuration, to restore it quickly after replacement.
+- When debugging, focus on fixing a problem, not blaming. Whoever introduced it, it's __your__ problem now.
+- We should focus the root cause, not a single appearance.
+- Write failing test before introducing a fix.
+- Binary chop technique (for testing data sets/VCS history) makes finding a problem faster.
+- Explain the problem to another person. It allows explicitly validating what you assume.
+- External problems are possible, but it's more efficient to focus of finding them in your code. When reporting external
+  problem, you have to check your integrations anyway.
+- Run __engineering daybook__. Paper version.
+
 # Projects
 
 ## Equino
