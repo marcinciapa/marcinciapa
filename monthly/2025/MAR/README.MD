@@ -4,7 +4,7 @@
 
 Chapter 2: A Pragmatic Approach
 
-- Good design adapts to people who use it. Is easy to change. Common sense works well when identifying places which
+- Good design adapts to people who use it, is easy to change. Common sense works well when identifying places which
   will change in the future. If using a library enforces changing the coding style, we should look someplace else.
 - DRY principle is not only about code (sometimes code looks the same only accidentally, the knowledge is different, it
   only looks the same). Repeating knowledge in code and documentation invites maintenance nightmare.
@@ -55,14 +55,6 @@ Chapter 3: The Basic Tools
 - External problems are possible, but it's more efficient to focus of finding them in your code. When reporting external
   problem, you have to check your integrations anyway.
 - Run __engineering daybook__. Paper version.
-
-# Projects
-
-## Equino
-
--
-
-## Actracker
 
 # Tutorials
 
