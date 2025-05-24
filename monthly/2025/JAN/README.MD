@@ -24,7 +24,7 @@ Chapter 16: Going from "have to" to "get to"
 - The younger we are learning these techniques, the more time we have to benefit from them.
 - World is changing rapidly, the ability to learn and adapt is crucial to survive.
 
-## The Practical Programmer (ISBN: 978-0-13-595705-9)
+## The Pragmatic Programmer (ISBN: 978-0-13-595705-9)
 
 From the Preface to the First Edition
 
