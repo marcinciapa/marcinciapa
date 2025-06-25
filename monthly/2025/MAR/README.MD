@@ -1,6 +1,6 @@
 # Readings
 
-## The Practical Programmer (ISBN: 978-0-13-595705-9)
+## The Pragmatic Programmer (ISBN: 978-0-13-595705-9)
 
 Chapter 2: A Pragmatic Approach
 
