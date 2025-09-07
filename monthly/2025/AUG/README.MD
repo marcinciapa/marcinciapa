@@ -1,17 +1,6 @@
-# Readings
-
-## The Pragmatic Programmer (ISBN: 978-0-13-595705-9)
-
-Chapter 6: 
-
-- 
-
 # Projects
 
-## ACTracker
+## Equino
 
-- 
-
-# Tutorials
-
-- 
+- Equino k3s cluster components were [updated](https://github.com/equino-pl/equino-kubernetes/pull/15) and the cluster
+  was re-installed.
