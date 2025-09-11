@@ -55,7 +55,7 @@
 - [November 2024](../monthly/2024/NOV/README.MD#learning-how-to-learn-isbn-978-0-52-550446-7) 
 - [January 2025](../monthly/2025/JAN/README.MD#learning-how-to-learn-isbn-978-0-52-550446-7) 
 
-### The Practical Programmer: Your journey to mastery, 20th Anniversary Edition (ISBN: 978-0-13-595705-9)
+### The Pragmatic Programmer: Your journey to mastery, 20th Anniversary Edition (ISBN: 978-0-13-595705-9)
 - [January 2025](../monthly/2025/JAN/README.MD#the-pragmatic-programmer-isbn-978-0-13-595705-9)
 - [February 2025](../monthly/2025/FEB/README.MD#the-pragmatic-programmer-isbn-978-0-13-595705-9)
 - [March 2025](../monthly/2025/MAR/README.MD#the-pragmatic-programmer-isbn-978-0-13-595705-9)
