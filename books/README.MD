@@ -62,3 +62,4 @@
 - [May 2025](../monthly/2025/MAY/README.MD#the-pragmatic-programmer-isbn-978-0-13-595705-9)
 - [July 2025](../monthly/2025/JUL/README.MD#the-pragmatic-programmer-isbn-978-0-13-595705-9)
 - [September 2025](../monthly/2025/SEP/README.MD#the-pragmatic-programmer-isbn-978-0-13-595705-9)
+- [October 2025](../monthly/2025/OCT/README.MD#the-pragmatic-programmer-isbn-978-0-13-595705-9)
