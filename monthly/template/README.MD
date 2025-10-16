@@ -6,7 +6,7 @@ Chapter X: X
 
 -
 
-# Projects
+# Projects - software
 
 ## Equino
 
@@ -16,7 +16,7 @@ Chapter X: X
 
 - 
 
-## Electronics
+## Projects - hardware
 
 - 
 
