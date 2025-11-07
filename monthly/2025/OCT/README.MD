@@ -1,20 +1,3 @@
-# Readings
-
-## The Pragmatic Programmer (ISBN: 978-0-13-595705-9)
-
-Chapter 7: While You Are Coding
-
--
-
-# Projects - software
-
-## Equino
-
-- 
-
-## Actracker
-
-- 
 
 ## Projects - hardware
 
@@ -25,8 +8,3 @@ Chapter 7: While You Are Coding
 - [555-based latches - PCB fabrication techniques described](https://github.com/mc-hw/0001-555-latches/pull/5)
 - [555-based latches - PCB production, Mk1](https://github.com/mc-hw/0001-555-latches/pull/6)
 - [555-based latches - PCB production, Mk2](https://github.com/mc-hw/0001-555-latches/pull/7)
-- [555-based latches - PCB production, Mk3, Mk4, Mk5, Mk6](https://github.com/mc-hw/0001-555-latches/pull/8)
-
-# Tutorials
-
-- [Title](https://github.com/link)
