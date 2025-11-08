@@ -6,13 +6,17 @@ Chapter X: X
 
 -
 
-# Projects
+# Projects - software
 
 ## Equino
 
 - 
 
 ## Actracker
+
+- 
+
+## Projects - hardware
 
 - 
 

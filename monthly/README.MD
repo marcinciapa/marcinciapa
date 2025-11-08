@@ -33,3 +33,4 @@
 - [July](2025/JUL/README.MD)
 - [August](2025/AUG/README.MD)
 - [September](2025/SEP/README.MD)
+- [October](2025/OCT/README.MD)
