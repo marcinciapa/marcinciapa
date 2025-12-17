@@ -19,6 +19,7 @@ Chapter 8: Before the Project
 ## Projects - hardware
 
 - [Clap detector - Circuit description](https://github.com/mc-hw/0002-clap-detector/pull/1)
+- [Clap detector - Electric schematic](https://github.com/mc-hw/0002-clap-detector/pull/2)
 
 # Tutorials
 
