@@ -22,6 +22,7 @@ Chapter 8: Before the Project
 - [Clap detector - Electric schematic](https://github.com/mc-hw/0002-clap-detector/pull/2)
 - [Clap detector - Components' footprints](https://github.com/mc-hw/0002-clap-detector/pull/3)
 - [Clap detector - PCB layout](https://github.com/mc-hw/0002-clap-detector/pull/4)
+- [Transistor measurement - measurement schematic](https://github.com/mc-hw/0003-transistor/pull/1)
 
 # Tutorials
 
