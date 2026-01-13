@@ -18,7 +18,7 @@ Chapter 8: Before the Project
 
 ## Projects - hardware
 
-- 
+- [Clap detector - Bill of Materials](https://github.com/mc-hw/0002-clap-detector/pull/6)
 
 # Tutorials
 
