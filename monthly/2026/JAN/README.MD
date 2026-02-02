@@ -19,7 +19,7 @@ Chapter 8: Before the Project
   software for DJs requiring them to use keyboard and mouse while they developed a feedback loop between their consoles
   and their brains.
 - Documents should not be a deliverable to customers.
-- Customers are focused on solving high-level problems. They use programmers because they pay attention to details and
+- Customers are focused on solving high-level problems. They use programmers, because we pay attention to details and
   nuances.
 - Many projects fail because of a _feature bloat_. The solution is to work with customers in short iterations, gathering
   feedback constantly.
@@ -37,20 +37,7 @@ Chapter 8: Before the Project
 - Take small steps, evaluate, repeat. Recursively, at every level of work.
 - Practice design, since good design is easy to change.
 
-# Projects - software
-
-## Equino
-
--
-
-## Actracker
-
--
-
 ## Projects - hardware
 
 - [Clap detector - Bill of Materials](https://github.com/mc-hw/0002-clap-detector/pull/6)
-
-# Tutorials
-
-- [Title](https://github.com/link)
+- 
