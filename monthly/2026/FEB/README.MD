@@ -42,7 +42,3 @@ Chapter 9: Pragmatic Projects
 - Common responsibility, supported by additional practices like pair programming, is a recommendation of eXtream
   Programming.
 - My signature should be a confirmation of the best quality.
-
-# Projects - hardware
-
--
