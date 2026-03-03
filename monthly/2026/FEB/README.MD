@@ -17,7 +17,7 @@ Chapter 9: Pragmatic Projects
   decisions.
 - It's easy to get into a trap of [cargo cult](https://en.wikipedia.org/wiki/Cargo_cult). Only using superstitious
   artifacts like 'standups' or 'iteration' is not enough to make benefits of using scrum.
-- It's recently popular to follow tech and methodologies of companies like Netflix. We should adapt and test parts of
+- It's recently popular to follow tech and processes of companies like Netflix. We should adapt and test parts of
   these which work in our environment.
 - Overinvesting in a single solution makes us blind for alternatives.
 - Manual steps leaves repeatability up to chance. Version control is required to maintain ephemeral environments. It
