@@ -11,7 +11,7 @@ Chapter 9: Pragmatic Projects
   encourage the team to monitor and maintain metrics.
 - If the team is serious about learning and innovation, it should be scheduled. Doing it in the _free time_ doesn't
   work.
-- The worst teams hold meeting with no structure, doesn't keep the documentation standardized and up-to-date,
+- The worst teams hold meetings with no structure, don't keep the documentation standardized and up-to-date,
   communicating with them is the nightmare. Cooperating with the best teams is a pleasure.
 - Developers isolated from end users don't have context in which they work. They will not be able to make informed
   decisions.
