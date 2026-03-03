@@ -23,7 +23,7 @@ Chapter 9: Pragmatic Projects
 - Manual steps leaves repeatability up to chance. Version control is required to maintain ephemeral environments. It
   should trigger builds and releases.
 - Automatic testing is crucial for continuous integration. Unit tests exercise a module and are the cheapest way to
-  catch small bugs before they grow up. Integration tests check if subsystems work with each other exercise contracts
+  catch small bugs before they grow up. Integration tests check if subsystems work with each other, exercise contracts
   between them.
 - Bug free system is not enough to be useful. Validation and verification check if they solve the real business problem.
 - Performance tests help to assess if a system is ready for predicted number of users or requests, if it's scalable.
