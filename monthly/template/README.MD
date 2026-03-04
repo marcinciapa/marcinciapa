@@ -16,7 +16,7 @@ Chapter X: X
 
 - 
 
-## Projects - hardware
+# Projects - hardware
 
 - 
 
