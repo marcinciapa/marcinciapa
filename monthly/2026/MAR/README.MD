@@ -19,7 +19,7 @@ Chapter 10: Postface
 
 ## Actracker
 
--
+- [Search criteria refactoring](https://github.com/equino-actracker/actracker-api/pull/175)
 
 # Projects - hardware
 
