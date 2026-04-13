@@ -1,8 +1,8 @@
 # Readings
 
-## Title (ISBN: X)
+## Designing Data-Intensive Applications, 2nd Edition (ISBN: 978-1-09-811902-7)
 
-Chapter X: X
+Chapter 1: X
 
 -
 
