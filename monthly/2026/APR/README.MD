@@ -58,6 +58,7 @@ Chapter 1: Trade-Offs in Data Systems Architecture
 
 - [Search cursor (page ID) refactoring - part 1](https://github.com/equino-actracker/actracker-api/pull/178)
 - [Search cursor (page ID) refactoring - part 2](https://github.com/equino-actracker/actracker-api/pull/181)
+- [Sort tags by name ascending](https://github.com/equino-actracker/actracker-api/pull/182)
 
 # Projects - hardware
 
