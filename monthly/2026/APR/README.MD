@@ -48,12 +48,6 @@ Chapter 1: Trade-Offs in Data Systems Architecture
 - The decision what data to store and what data not to store should be a balance between potential profits of storing
   all possible information speculatively (big data approach) and data minimalization. Some data is not worth storing.
 
-# Projects - software
-
-## Equino
-
--
-
 ## Actracker
 
 - [Search cursor (page ID) refactoring - part 1](https://github.com/equino-actracker/actracker-api/pull/178)
@@ -61,11 +55,3 @@ Chapter 1: Trade-Offs in Data Systems Architecture
 - [Sort tags by name ascending - Actracker API](https://github.com/equino-actracker/actracker-api/pull/182)
 - [Default tags sorting by name - Actracker UI](https://github.com/equino-actracker/actracker-ui/pull/74)
 - [Sort tags by name descending - Actracker API](https://github.com/equino-actracker/actracker-api/pull/183)
-
-# Projects - hardware
-
--
-
-# Tutorials
-
-- [Title](https://github.com/link)
