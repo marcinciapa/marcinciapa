@@ -66,3 +66,6 @@
 - [January 2026](../monthly/2026/JAN/README.MD#the-pragmatic-programmer-isbn-978-0-13-595705-9)
 - [February 2026](../monthly/2026/FEB/README.MD#the-pragmatic-programmer-isbn-978-0-13-595705-9)
 - [March 2026](../monthly/2026/MAR/README.MD#the-pragmatic-programmer-isbn-978-0-13-595705-9)
+
+### Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems, 2nd Edition (ISBN: 978-1-09-811902-7)
+- [April 2026](../monthly/2026/APR/README.MD#designing-data-intensive-applications-2nd-Edition-isbn-978-1-09-811902-7)
