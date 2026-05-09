@@ -10,17 +10,18 @@ Chapter X: X
 
 ## Equino
 
-- 
+-
 
 ## Actracker
 
 - [Actracker API JPA sort refactoring](https://github.com/equino-actracker/actracker-api/pull/184)
 - [Actracker API - Sort Tag Sets by name](https://github.com/equino-actracker/actracker-api/pull/185)
-- [Default tag sets sorting by name - Actracker UI](https://github.com/equino-actracker/actracker-ui/pull/75)
+- [Actracker UI - Default tag sets sorting by name](https://github.com/equino-actracker/actracker-ui/pull/75)
+- [Actracker API - Sort Dashboards by name](https://github.com/equino-actracker/actracker-api/pull/186)
 
 # Projects - hardware
 
-- 
+-
 
 # Tutorials
 
