@@ -18,6 +18,7 @@ Chapter X: X
 - [Actracker API - Sort Tag Sets by name](https://github.com/equino-actracker/actracker-api/pull/185)
 - [Actracker UI - Default tag sets sorting by name](https://github.com/equino-actracker/actracker-ui/pull/75)
 - [Actracker API - Sort Dashboards by name](https://github.com/equino-actracker/actracker-api/pull/186)
+- [Actracker UI - Default dashboards sorting by name](https://github.com/equino-actracker/actracker-ui/pull/76)
 
 # Projects - hardware
 
