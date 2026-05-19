@@ -21,6 +21,7 @@ Chapter X: X
 - [Actracker UI - Default dashboards sorting by name](https://github.com/equino-actracker/actracker-ui/pull/76)
 - [Actracker API - Sort Activities by title](https://github.com/equino-actracker/actracker-api/pull/187)
 - [Actracker API - Sort Activities by end time](https://github.com/equino-actracker/actracker-api/pull/188)
+- [Actracker UI - Default activities sorting by end time](https://github.com/equino-actracker/actracker-ui/pull/77)
 
 # Projects - hardware
 
