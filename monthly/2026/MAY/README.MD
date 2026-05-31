@@ -38,10 +38,6 @@ Chapter 9: Testing microservices: Part 1
 
 # Projects - software
 
-## Equino
-
--
-
 ## Actracker
 
 - [Actracker API JPA sort refactoring](https://github.com/equino-actracker/actracker-api/pull/184)
@@ -53,11 +49,3 @@ Chapter 9: Testing microservices: Part 1
 - [Actracker API - Sort Activities by end time](https://github.com/equino-actracker/actracker-api/pull/188)
 - [Actracker UI - Default activities sorting by end time](https://github.com/equino-actracker/actracker-ui/pull/77)
 - [Actracker API - Sort Activities by start time](https://github.com/equino-actracker/actracker-api/pull/189)
-
-# Projects - hardware
-
--
-
-# Tutorials
-
-- [Title](https://github.com/link)
