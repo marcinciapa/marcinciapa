@@ -5,8 +5,7 @@
 Chapter 9: Testing microservices: Part 1
 
 - Manual tests are inefficient (machine can do much more in much shorter time than a human), they happen late in the
-  process, don't give immediate feedback during the development process. The complexity of microservices demand
-  automatic tests.
+  process, don't give immediate feedback during the development. The complexity of microservices demand automatic tests.
 - Test doubles simulate the behavior of dependencies to system under tests. **Stubs** are used to return configured
   values to the code. **Mocks** are used to verify the integration with dependencies.
 - The testing quadrant describes the nature and purpose of the test. On one edge sit tests written with the business
@@ -32,7 +31,7 @@ Chapter 9: Testing microservices: Part 1
 - Domain services should be tested with solitary unit tests, where dependencies, like repositories or other services,
   are mocked.
 - Controllers should be tested using solitary tests, with dependencies, like services, mocked. _Spring Mock MVC_
-  framework support this way of testing. They provide a way to test HTTP interactions without real network calls.
+  framework supports this way of testing, providing a way to test HTTP interactions without real network calls.
 - Event adapters should be tested the similar way as controllers. _Eventuate Tram Mock Messaging_ framework supports
   such approach for asynchronous communication (same given/when/then format as Rest Assured).
 
