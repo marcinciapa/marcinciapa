@@ -25,7 +25,7 @@ Chapter X: X
 
 # Projects - hardware
 
-- 
+- [Christmas toy - Power, Detector, LEDs schematics](https://github.com/mc-hw/0004-christmas-toy/pull/2)
 
 # Tutorials
 
