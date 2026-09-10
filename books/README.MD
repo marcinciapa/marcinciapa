@@ -69,6 +69,8 @@
 
 ### Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems, 2nd Edition (ISBN: 978-1-09-811902-7)
 - [April 2026](../monthly/2026/APR/README.MD#designing-data-intensive-applications-2nd-Edition-isbn-978-1-09-811902-7)
+- [August 2026](../monthly/2026/AUG/README.MD#designing-data-intensive-applications-2nd-Edition-isbn-978-1-09-811902-7)
 
 ### Microservices Patterns (ISBN: 978-1-61-729454-9)
 - [May 2026](../monthly/2026/MAY/README.MD#microservices-patterns-isbn-978-1-61-729454-9)
+- [August 2026](../monthly/2026/AUG/README.MD#microservices-patterns-isbn-978-1-61-729454-9)
