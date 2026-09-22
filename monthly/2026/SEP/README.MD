@@ -50,6 +50,7 @@ Chapter 10: Testing microservices: Part 2
 ## Actracker
 
 - [Controllers integration tests spike](https://github.com/equino-actracker/actracker-api/pull/190)
+- [Controllers integration tests - part 2](https://github.com/equino-actracker/actracker-api/pull/191)
 
 # Projects - hardware
 
