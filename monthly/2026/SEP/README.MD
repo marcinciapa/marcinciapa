@@ -57,6 +57,7 @@ Chapter 10: Testing microservices: Part 2
 - [Christmas toy - Power, Detector, LEDs schematics](https://github.com/mc-hw/0004-christmas-toy/pull/2)
 - [Thermostat - schematic](https://github.com/mc-hw/0005-thermostat/pull/1)
 - [Thermostat - documentation](https://github.com/mc-hw/0005-thermostat/pull/2)
+- [Thermostat - footprints and BOM](https://github.com/mc-hw/0005-thermostat/pull/3)
 
 # Tutorials
 
