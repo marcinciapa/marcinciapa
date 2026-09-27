@@ -59,6 +59,7 @@ Chapter 10: Testing microservices: Part 2
 - [Thermostat - documentation](https://github.com/mc-hw/0005-thermostat/pull/2)
 - [Thermostat - footprints and BOM](https://github.com/mc-hw/0005-thermostat/pull/3)
 - [Thermostat - PCB design](https://github.com/mc-hw/0005-thermostat/pull/4)
+- [Thermostat - PCB design update](https://github.com/mc-hw/0005-thermostat/pull/5)
 
 # Tutorials
 
