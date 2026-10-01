@@ -1,11 +1,5 @@
 # Readings
 
-## Designing Data-Intensive Applications, 2nd Edition (ISBN: 978-1-09-811902-7)
-
-Chapter X: X
-
--
-
 ## Microservices Patterns (ISBN: 978-1-61-729454-9)
 
 Chapter 10: Testing microservices: Part 2
@@ -41,11 +35,6 @@ Chapter 10: Testing microservices: Part 2
   deleted etc. in a single test case).
 - To make e2e tests understandable for the business, they should be described using a human-readable DSL.
 
-# Projects - software
-
-## Equino
-
--
 
 ## Actracker
 
@@ -60,7 +49,3 @@ Chapter 10: Testing microservices: Part 2
 - [Thermostat - footprints and BOM](https://github.com/mc-hw/0005-thermostat/pull/3)
 - [Thermostat - PCB design](https://github.com/mc-hw/0005-thermostat/pull/4)
 - [Thermostat - PCB design update](https://github.com/mc-hw/0005-thermostat/pull/5)
-
-# Tutorials
-
-- [Title](https://github.com/link)
