@@ -20,7 +20,7 @@ Chapter X: X
 
 ## Actracker
 
-- 
+- [OpenCode set up in actracker-api](https://github.com/equino-actracker/actracker-api/pull/192)
 
 # Projects - hardware
 
