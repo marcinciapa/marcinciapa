@@ -25,6 +25,7 @@ Chapter X: X
 # Projects - hardware
 
 - [Thermostat - PCB re-design](https://github.com/mc-hw/0005-thermostat/pull/6)
+- [Thermostat - Plotted gerbers](https://github.com/mc-hw/0005-thermostat/pull/7)
 
 # Tutorials
 
