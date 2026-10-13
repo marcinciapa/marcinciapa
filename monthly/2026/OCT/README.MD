@@ -21,6 +21,7 @@ Chapter X: X
 ## Actracker
 
 - [OpenCode set up in actracker-api](https://github.com/equino-actracker/actracker-api/pull/192)
+- [Create activity controller integration test](https://github.com/equino-actracker/actracker-api/pull/193)
 
 # Projects - hardware
 
