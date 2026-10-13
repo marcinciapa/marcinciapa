@@ -16,12 +16,13 @@ Chapter X: X
 
 ## Equino
 
-- 
+-
 
 ## Actracker
 
 - [OpenCode set up in actracker-api](https://github.com/equino-actracker/actracker-api/pull/192)
 - [Create activity controller integration test](https://github.com/equino-actracker/actracker-api/pull/193)
+- [Create Dashboard, Tag, TagSet Controller integration test](https://github.com/equino-actracker/actracker-api/pull/194)
 
 # Projects - hardware
 
