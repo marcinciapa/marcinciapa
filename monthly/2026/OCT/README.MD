@@ -21,8 +21,9 @@ Chapter X: X
 ## Actracker
 
 - [OpenCode set up in actracker-api](https://github.com/equino-actracker/actracker-api/pull/192)
-- [Create activity controller integration test](https://github.com/equino-actracker/actracker-api/pull/193)
-- [Create Dashboard, Tag, TagSet Controller integration test](https://github.com/equino-actracker/actracker-api/pull/194)
+- [Activity controller integration test](https://github.com/equino-actracker/actracker-api/pull/193)
+- [Dashboard, Tag, TagSet Controller integration test](https://github.com/equino-actracker/actracker-api/pull/194)
+- [Activity attribute update controller integration tests](https://github.com/equino-actracker/actracker-api/pull/195)
 
 # Projects - hardware
 
