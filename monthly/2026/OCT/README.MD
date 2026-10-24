@@ -24,6 +24,7 @@ Chapter X: X
 - [Activity controller integration test](https://github.com/equino-actracker/actracker-api/pull/193)
 - [Dashboard, Tag, TagSet Controller integration test](https://github.com/equino-actracker/actracker-api/pull/194)
 - [Activity attribute update controller integration tests](https://github.com/equino-actracker/actracker-api/pull/195)
+- [Search activities controller integration test](https://github.com/equino-actracker/actracker-api/pull/196)
 
 # Projects - hardware
 
