@@ -45,3 +45,4 @@
 - [May](2026/MAY/README.MD)
 - [September](2026/SEP/README.MD)
 - [October](2026/OCT/README.MD)
+- [November](2026/NOV/README.MD)
